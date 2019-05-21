@@ -396,9 +396,20 @@ img {
   margin: 0 auto;
 }
 
-.bug {
-  font-size: 100px;
-  color: 255;
+.manyPeople__main-title {
+  font-size: 18px;
+}
+
+.manyPeople__subtitle,
+.reality,
+.inside_programing__title {
+  font-size: 13.5px;
+  font-weight: 700;
+}
+
+.manyPeople__main-title::before {
+  width: 20px;
+  height: 3px background-color;
 }
 
 @media screen and (min-width: 768px) {
