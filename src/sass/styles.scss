@@ -3,7 +3,7 @@
 */
 @import './normalize';
 
-@import './font.css';
+@import './fonts.scss';
 
 @import './specification.scss'; 
 // @import './variables.scss'; 
@@ -14,17 +14,8 @@
 
 // Defaults
 
-html {
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-}
 
-*,
-*::before,
-*::after {
-  -webkit-box-sizing: inherit;
-  box-sizing: inherit;
-}
+// Defaults
 
 img {
   display: block;
