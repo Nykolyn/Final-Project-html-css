@@ -20,7 +20,7 @@
   margin: 0;
   padding: 0;
   list-style: none;
-  
+
   &__link {
     display: block;
     background-image: url(../images/block-1/burg_menu.png);
@@ -35,7 +35,8 @@
 .header__title,
 .header__subtitle,
 .header__slogan,
-.header__lead {
+.header__lead,
+.header__title_md {
   margin: 0;
   text-align: center;
   font-family: 'Acrom';
@@ -52,6 +53,10 @@
   margin-bottom: 32px;
 }
 
+.header__title_md {
+  display: none;
+}
+
 
 .header__subtitle {
   text-transform: uppercase;
@@ -66,16 +71,27 @@
 }
 
 .header__slogan {
-  
+  font-size: 14px;
+  font-weight: 800;
+  margin-bottom: 18px;
 }
 
 .header__lead {
+  font-size: 14px;
   margin-bottom: 40px;
 }
 
 .header__button {
-  @extend %defoult-button;
+  @extend %default-button;
   margin: 0 auto;
+}
+
+.header__button:hover {
+  @extend %default-button-hover;
+}
+
+.header__button:active {
+  @extend %default-button-active;
 }
 
 // media md table
@@ -89,5 +105,27 @@
 @media (min-width:710px) {
   .header {
     background-image: url(../images/block-1/bg.png);
+  }
+
+  .navigation {
+    margin-bottom: 50px;
+  }
+
+  .header__wrap {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .header__inner {
+    width: 350px;
+  }
+
+  .header__title {
+    display: none;
+  }
+
+  .header__title_md {
+    display: block;
+    margin-bottom: 30px;
   }
 }
