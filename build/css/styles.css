@@ -487,6 +487,22 @@ input[type="radio"].visually-hidden {
   margin-bottom: 26px;
 }
 
+.menu {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.menu__link {
+  display: block;
+  background-image: url(../images/block-1/burg_menu.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 28px;
+  height: 17px;
+}
+
 .header__title,
 .header__subtitle,
 .header__slogan,
