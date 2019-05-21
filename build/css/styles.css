@@ -375,16 +375,6 @@ template {
   display: none;
 }
 
-html {
-  box-sizing: border-box;
-}
-
-*,
-*::before,
-*::after {
-  box-sizing: inherit;
-}
-
 img {
   display: block;
   max-width: 100%;
@@ -394,11 +384,6 @@ img {
 .container {
   max-width: 446px;
   margin: 0 auto;
-}
-
-.bug {
-  font-size: 100px;
-  color: 255;
 }
 
 @media screen and (min-width: 768px) {
