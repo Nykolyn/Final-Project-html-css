@@ -423,6 +423,7 @@ template {
   /* Legacy iOS */
 }
 
+<<<<<<< HEAD
 /*specification*/
 
 /*box sizing model*/
@@ -545,7 +546,7 @@ input[type="radio"].visually-hidden {
   padding: 22px 0;
 }
 
-img {
+=======>>>>>>>master img {
   display: block;
   max-width: 100%;
   height: auto;
