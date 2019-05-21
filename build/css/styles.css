@@ -1,6 +1,17 @@
 /*
-   Import partials below
+Import partials below
 */
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  max-width: 446px;
+  margin: 0 auto;
+}
 
 /*! normalize.css v8.0.0 | MIT License | github.com/necolas/normalize.css */
 
@@ -423,7 +434,6 @@ template {
   /* Legacy iOS */
 }
 
-<<<<<<< HEAD
 /*specification*/
 
 /*box sizing model*/
@@ -469,6 +479,22 @@ input[type="radio"].visually-hidden {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+.header__button {
+  width: 220px;
+  display: block;
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 800;
+  padding: 22px 0;
+  background-color: #ff6b08;
+  box-shadow: 0px 5px 6px 0px rgba(196, 87, 15, 0.26);
+  border-top: 1px solid #e0600c;
+  border-left: 1px solid #753c1b;
+  border-right: 1px solid #753c1b;
+  cursor: pointer;
 }
 
 /*header*/
@@ -535,26 +561,6 @@ input[type="radio"].visually-hidden {
   color: #17ecff;
   font-size: 30px;
   font-weight: 800;
-}
-
-.header__button {
-  width: 220px;
-  text-transform: uppercase;
-  color: #fff;
-  font-size: 12px;
-  font-weight: 800;
-  padding: 22px 0;
-}
-
-=======>>>>>>>master img {
-  display: block;
-  max-width: 100%;
-  height: auto;
-}
-
-.container {
-  max-width: 446px;
-  margin: 0 auto;
 }
 
 @media (min-width: 740px) {
