@@ -2,12 +2,15 @@
    Import partials below
 */
 @import './normalize';
+@import './color-variables.scss';
 
 // fonts
 
 @import './fonts.scss';
 
-// Defaults
+// Section 14
+
+@import './section-14/main.scss';
 
 img {
   display: block;
