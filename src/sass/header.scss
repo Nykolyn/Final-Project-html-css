@@ -1,4 +1,6 @@
-/*header*/
+// header 
+
+//sm mobile first
 .header {
   background-image: url(../images/block-1/bg-480.png);
   background-repeat: no-repeat;
@@ -6,13 +8,6 @@
   background-position: center center;
   padding-top: 15px;
   padding-bottom: 38px;
-  height: 100vh;
-}
-
-@media (min-width: 740px) {
-  .header {
-    background-image: url(../images/block-1/bg-768.png);
-  }
 }
 
 .navigation {
@@ -25,7 +20,7 @@
   margin: 0;
   padding: 0;
   list-style: none;
-
+  
   &__link {
     display: block;
     background-image: url(../images/block-1/burg_menu.png);
@@ -70,6 +65,29 @@
   font-weight: 800;
 }
 
+.header__slogan {
+  
+}
+
+.header__lead {
+  margin-bottom: 40px;
+}
+
 .header__button {
   @extend %defoult-button;
+  margin: 0 auto;
+}
+
+// media md table
+@media (min-width: 740px) {
+  .header {
+    background-image: url(../images/block-1/bg-768.png);
+  }
+}
+
+//media lg desctop
+@media (min-width:710px) {
+  .header {
+    background-image: url(../images/block-1/bg.png);
+  }
 }
