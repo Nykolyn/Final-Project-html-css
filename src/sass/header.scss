@@ -3,9 +3,16 @@
   background-image: url(../images/block-1/bg-480.png);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
+  background-position: center center;
   padding-top: 15px;
   padding-bottom: 38px;
+  height: 100vh;
+}
+
+@media (min-width: 740px) {
+  .header {
+    background-image: url(../images/block-1/bg-768.png);
+  }
 }
 
 .navigation {
@@ -61,4 +68,16 @@
   color: #17ecff;
   font-size: 30px;
   font-weight: 800;
+}
+
+.header__button {
+  width: 220px;
+  display: block;
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 800;
+  padding: 22px 0;
+  background-color: $default-orange;
+  box-shadow: 0px 5px 6px 0px rgba(196, 87, 15, 0.26);
 }
