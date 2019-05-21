@@ -82,13 +82,21 @@
 }
 
 .header__soc-list {
-  display: flex;
+  @extend %ul-reset;
   justify-content: flex-end;
 }
 
+.header__soc-item {
+  width: 30px;
+  height: 30px;
+}
+
 .header__soc-link {
-  width: 10px;
-  height: 10px;
+  display: block;
+  width: 30px;
+  height: 30px;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .header__icon-facebook {
@@ -168,18 +176,10 @@
   }
 
   .header__soc-list {
-    display: block;
-    @extend %ul-reset;
+    display: flex;
   }
 
   .header__button {
     margin-left: 58px;
-  }
-}
-
-//media lg desctop
-@media (min-width: 1200px) {
-  .header {
-    background-image: url(../images/block-1/bg.png);
   }
 }
