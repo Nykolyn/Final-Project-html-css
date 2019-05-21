@@ -1,1 +1,24 @@
 /*header*/
+.header {
+  background-image: url(../images/block-1/bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding-top: 15px;
+  padding-bottom: 38px;
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 26px;
+}
+
+.header__title,
+.header__subtitle,
+.header__slogan,
+.header__lead {
+  text-align: center;
+  font-family: 'Raleway';
+  color: #fff;
+}
