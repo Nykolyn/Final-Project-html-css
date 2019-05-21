@@ -2,17 +2,6 @@
 Import partials below
 */
 
-img {
-  display: block;
-  max-width: 100%;
-  height: auto;
-}
-
-.container {
-  max-width: 446px;
-  margin: 0 auto;
-}
-
 /*! normalize.css v8.0.0 | MIT License | github.com/necolas/normalize.css */
 
 /* Document
@@ -496,6 +485,17 @@ input[type="radio"].visually-hidden {
   border-right: 1px solid #753c1b;
   border-bottom: none;
   cursor: pointer;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  max-width: 446px;
+  margin: 0 auto;
 }
 
 .header {

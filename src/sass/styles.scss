@@ -1,6 +1,19 @@
 /*
 Import partials below
 */
+//normalize css
+@import './normalize';
+//add fonts(requires corrections)
+@import './fonts.scss';
+//add specifications
+@import './specification.scss';
+//variables
+// @import './variables.scss';
+// color set
+@import './color-variables.scss';
+//placeholers (buttons, +' '+)
+@import './placeholder.scss';
+
 
 img {
   display: block;
@@ -24,20 +37,6 @@ img {
     max-width: 712px;
   }
 }
-
-
-//normalize css
-@import './normalize';
-//add fonts(requires corrections)
-@import './fonts.scss';
-//add specifications
-@import './specification.scss';
-//variables
-// @import './variables.scss';
-// color set
-@import './color-variables.scss';
-//placeholers (buttons, +' '+)
-@import './placeholder.scss';
 
 //b
 @import './header.scss';
