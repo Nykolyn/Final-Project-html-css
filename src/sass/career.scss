@@ -85,44 +85,24 @@
 
 @media(min-width: 768px) {
     .career__flex {
-      display: flex;
+     
     }
 
     .career__row-md-1,
-    .career__row-md-2, {
+    .career__row-md-2 {
         display: flex;
         justify-content: space-between;
-        flex-wrap: wrap;
     }
 
-    .career__row-md-1 {
-        width: 640px;
-    }
-    
     .career__row-md-2 {
-        width: 640px;
         flex-direction: row-reverse;
     }
-  
-    .career__row-1 {
-        width: 272px;
-        order: 1;
-    }
-    .career__row-2{
-        width: 268px;
-        order: 2;
-    }
-    .career__row-3{
-        width: 312px;
-        order: 4;
-    }
-    .career__row-4 {
-        width: 197px;
-        order: 3;
-    }
 
-    .career__photo-1 {
-        width: 300px;
+    .career__row-1,
+    .career__row-2,
+    .career__row-3,
+    .career__row-4 {
+        width: 312px;
     }
 }
 
