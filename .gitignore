@@ -7,12 +7,9 @@ yarn-error.log*
 
 # build artifacts
 build/
-<<<<<<< HEAD
 
 #makets PSD
 psd/
-=======
->>>>>>> master
 
 # Runtime data
 pids
