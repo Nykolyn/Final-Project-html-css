@@ -498,8 +498,8 @@ input[type="radio"].visually-hidden {
   display: flex;
 }
 
-* {
-  outline: 1px solid red;
+.position_relative {
+  position: relative;
 }
 
 .header__content {
@@ -509,7 +509,7 @@ input[type="radio"].visually-hidden {
 }
 
 .header {
-  font-family: 'Raleway';
+  font-family: 'Acrom';
   background-image: url(../images/block-1/480/bg-480.png);
   background-repeat: no-repeat;
   background-size: cover;
@@ -635,14 +635,18 @@ input[type="radio"].visually-hidden {
 }
 
 .header__soc-item {
-  width: 30px;
-  height: 30px;
+  width: 13px;
+  height: 13px;
+}
+
+.header__soc-item:not(:last-child) {
+  margin-right: 16px;
 }
 
 .header__soc-link {
   display: block;
-  width: 30px;
-  height: 30px;
+  width: 13px;
+  height: 13px;
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -663,6 +667,10 @@ input[type="radio"].visually-hidden {
   margin: 0 auto;
 }
 
+.header__number {
+  display: none;
+}
+
 img {
   display: block;
   max-width: 100%;
@@ -670,7 +678,7 @@ img {
 }
 
 .container {
-  max-width: 446px;
+  max-width: 448px;
   margin: 0 auto;
 }
 
@@ -705,7 +713,7 @@ img {
 
   .header__title_md {
     margin: 0;
-    font-size: 45px;
+    font-size: 44px;
     display: block;
     text-align-last: left;
     text-transform: uppercase;
@@ -741,7 +749,7 @@ img {
 
   .header__lead {
     font-size: 10px;
-    margin-bottom: 183px;
+    margin-bottom: 86px;
   }
 
   .header__soc-list {
@@ -750,6 +758,19 @@ img {
 
   .header__button {
     margin-left: 58px;
+  }
+
+  .header__number {
+    background-image: url(../images/block-1/header_number_768.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 11px;
+    height: 39px;
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: -64px;
   }
 }
 
@@ -762,6 +783,45 @@ img {
 @media (min-width: 940px) {
   .header {
     background-image: url(../images/block-1/bg.png);
+  }
+
+  .position_relative {
+    position: static;
+  }
+
+  .header_content_xl {
+    position: relative;
+  }
+
+  .header__number {
+    background-image: url(../images/block-1/header_number_768.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 11px;
+    height: 39px;
+    display: block;
+    position: absolute;
+    left: 38px;
+    bottom: -74px;
+  }
+
+  .logo {
+    position: absolute;
+    top: 0;
+    left: 38px;
+  }
+
+  .menu {
+    position: absolute;
+    top: 0;
+    right: 38px;
+  }
+
+  .header__soc-list {
+    position: absolute;
+    right: 38px;
+    bottom: -74px;
   }
 }
 
