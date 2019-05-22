@@ -8,6 +8,9 @@ yarn-error.log*
 # build artifacts
 build/
 
+#makets PSD
+psd/
+
 # Runtime data
 pids
 *.pid
