@@ -455,7 +455,6 @@ img {
   z-index: 1;
   margin: 0 auto;
   margin-bottom: 40px;
-  background-size: cover;
 }
 
 .just-now-titles-wrap__desc {
@@ -539,44 +538,24 @@ img {
   flex-direction: column;
   align-items: center;
   list-style-type: none;
+  counter-reset: my-counter-14;
 }
 
 .just-now-item {
   max-width: 294px;
   padding-left: 24px;
   position: relative;
+  overflow: hidden;
+  counter-increment: my-counter-14;
 }
 
 .just-now-item::before {
-  width: 10px;
-  height: 53px;
+  content: "[" "00" counter(my-counter-14) "]";
   position: absolute;
-  left: 0;
-  top: 5px;
-}
-
-.just-now-item:nth-child(1)::before {
-  content: url(../images/block-14/icons/icon-001.png);
-}
-
-.just-now-item:nth-child(2)::before {
-  content: url(../images/block-14/icons/icon-002.png);
-}
-
-.just-now-item:nth-child(3)::before {
-  content: url(../images/block-14/icons/icon-003.png);
-}
-
-.just-now-item:nth-child(4)::before {
-  content: url(../images/block-14/icons/icon-004.png);
-}
-
-.just-now-item:nth-child(5)::before {
-  content: url(../images/block-14/icons/icon-005.png);
-}
-
-.just-now-item:nth-child(6)::before {
-  content: url(../../images/block-14/icons/icon-006.png);
+  -webkit-transform: rotate(-90deg) translate(-20px, -40px);
+  transform: rotate(-90deg) translate(-20px, -40px);
+  background-color: #ff6b08;
+  color: #fff;
 }
 
 .just-now-item__title {
@@ -680,31 +659,9 @@ img {
   }
 
   .just-now-item::before {
-    top: 0;
-  }
-
-  .just-now-item:nth-child(1)::before {
-    content: url(../../images/block-14/icons/icon-001-tb.png);
-  }
-
-  .just-now-item:nth-child(2)::before {
-    content: url(../../images/block-14/icons/icon-002-tb.png);
-  }
-
-  .just-now-item:nth-child(3)::before {
-    content: url(../../images/block-14/icons/icon-003-tb.png);
-  }
-
-  .just-now-item:nth-child(4)::before {
-    content: url(../../images/block-14/icons/icon-004-tb.png);
-  }
-
-  .just-now-item:nth-child(5)::before {
-    content: url(../../images/block-14/icons/icon-005-tb.png);
-  }
-
-  .just-now-item:nth-child(6)::before {
-    content: url(../../images/block-14/icons/icon-006-tb.png);
+    -webkit-transform: rotate(-90deg) translate(-10px, -30px);
+    transform: rotate(-90deg) translate(-10px, -30px);
+    font-size: 8px;
   }
 
   .just-now-item__title {
