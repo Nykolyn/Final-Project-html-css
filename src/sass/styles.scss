@@ -1,14 +1,21 @@
 /*
-   Import partials below
+Import partials below
 */
+//normalize css
 @import './normalize';
 @import './color-variables.scss';
 
 // fonts
 
+//add fonts(requires corrections)
 @import './fonts.scss';
-
-// Section 14
+//add specifications
+@import './specification.scss';
+//variables
+// color set
+@import './color-variables.scss';
+//placeholers (buttons, +' '+)
+@import './placeholder.scss';
 
 img {
   display: block;
@@ -33,4 +40,6 @@ img {
   }
 }
 
+
+@import './header.scss';
 @import './section-14/main.scss';
