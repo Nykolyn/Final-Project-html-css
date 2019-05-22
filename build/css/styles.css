@@ -430,18 +430,339 @@ img {
 }
 
 .container {
-  max-width: 446px;
+  max-width: 448px;
   margin: 0 auto;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.just-now-section {
+  font-family: 'Raleway';
+  padding-top: 18px;
+  padding-bottom: 40px;
+}
+
+.just-now-section__img-wrap {
+  height: auto;
+  margin: 0 auto;
+  position: relative;
+}
+
+.just-now-section__img-wrap .just-now-section__img {
+  position: relative;
+  z-index: 1;
+  margin: 0 auto;
+  margin-bottom: 40px;
+  background-size: cover;
+}
+
+.just-now-titles-wrap__desc {
+  position: relative;
+  margin: 0 auto;
+  margin-bottom: 22px;
+  padding: 0;
+  padding-left: 30px;
+  max-width: 320px;
+  color: #ff6b08;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.just-now-titles-wrap__desc::before {
+  content: '/';
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: #000;
+  font-size: 16px;
+}
+
+.just-now-titles-wrap__title {
+  max-width: 294px;
+  margin: 0 auto;
+  margin-bottom: 24px;
+  padding: 0;
+  text-align: center;
+  font-size: 18px;
+  line-height: 24px;
+  color: #fff;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.just-now-titles-wrap__title .just-now-title__span {
+  background-color: #181c27;
+}
+
+.just-now-titles-wrap__subtitle {
+  position: relative;
+  max-width: 294px;
+  margin: 0 auto;
+  margin-bottom: 54px;
+  padding: 0;
+  padding-left: 38px;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 500;
+  color: #000;
+}
+
+.just-now-titles-wrap__subtitle::before {
+  content: '';
+  position: absolute;
+  top: 8px;
+  left: 0;
+  display: inline-block;
+  width: 20px;
+  height: 3px;
+  background-color: #000;
+}
+
+.just-now-list-wrap__list-title {
+  margin: 0;
+  margin-bottom: 30px;
+  padding: 0;
+  padding-left: 40px;
+  font-weight: 800;
+  font-size: 14px;
+  line-height: 20px;
+  color: #000;
+  text-transform: uppercase;
+}
+
+.just-now-list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  list-style-type: none;
+}
+
+.just-now-item {
+  max-width: 294px;
+  padding-left: 24px;
+  position: relative;
+}
+
+.just-now-item::before {
+  width: 10px;
+  height: 53px;
+  position: absolute;
+  left: 0;
+  top: 5px;
+}
+
+.just-now-item:nth-child(1)::before {
+  content: url(../images/block-14/icons/icon-001.png);
+}
+
+.just-now-item:nth-child(2)::before {
+  content: url(../images/block-14/icons/icon-002.png);
+}
+
+.just-now-item:nth-child(3)::before {
+  content: url(../images/block-14/icons/icon-003.png);
+}
+
+.just-now-item:nth-child(4)::before {
+  content: url(../images/block-14/icons/icon-004.png);
+}
+
+.just-now-item:nth-child(5)::before {
+  content: url(../images/block-14/icons/icon-005.png);
+}
+
+.just-now-item:nth-child(6)::before {
+  content: url(../../images/block-14/icons/icon-006.png);
+}
+
+.just-now-item__title {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  font-weight: 700;
+  color: #000;
+  margin-bottom: 14px;
+}
+
+.just-now-item__desc {
+  margin: 0;
+  padding: 0;
+  color: #3f4144;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+}
+
+.just-now-item:not(:last-child) {
+  margin-bottom: 30px;
 }
 
 @media screen and (min-width: 768px) {
   .container {
     max-width: 640px;
   }
+
+  .just-now-section {
+    padding-top: 54px;
+    padding-bottom: 54px;
+  }
+
+  .just-now-section__wrap {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 46px;
+  }
+
+  .just-now-section__img-wrap .just-now-section__img {
+    margin-bottom: 0;
+  }
+
+  .just-now-titles-wrap {
+    max-width: 48%;
+  }
+
+  .just-now-titles-wrap__desc {
+    max-width: 146px;
+    padding-left: 24px;
+    margin: 0;
+    margin-bottom: 10px;
+    font-size: 9px;
+    line-height: 14px;
+  }
+
+  .just-now-titles-wrap__desc .just-now__desc-span {
+    display: block;
+  }
+
+  .just-now-titles-wrap__title {
+    text-align: left;
+    font-size: 27px;
+    line-height: 36px;
+    margin-bottom: 10px;
+  }
+
+  .just-now-titles-wrap__subtitle {
+    max-width: 244px;
+    margin: 0;
+    padding-left: 40px;
+  }
+
+  .just-now-titles-wrap__subtitle::before {
+    width: 30px;
+  }
+
+  .just-now-list-wrap {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .just-now-list-wrap__list-title {
+    max-width: 114px;
+    font-size: 13px;
+    padding-left: 0;
+  }
+
+  .just-now-list-wrap .just-now-list {
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 74%;
+  }
+
+  .just-now-item {
+    max-width: 148px;
+    padding-left: 22px;
+  }
+
+  .just-now-item::before {
+    top: 0;
+  }
+
+  .just-now-item:nth-child(1)::before {
+    content: url(../../images/block-14/icons/icon-001-tb.png);
+  }
+
+  .just-now-item:nth-child(2)::before {
+    content: url(../../images/block-14/icons/icon-002-tb.png);
+  }
+
+  .just-now-item:nth-child(3)::before {
+    content: url(../../images/block-14/icons/icon-003-tb.png);
+  }
+
+  .just-now-item:nth-child(4)::before {
+    content: url(../../images/block-14/icons/icon-004-tb.png);
+  }
+
+  .just-now-item:nth-child(5)::before {
+    content: url(../../images/block-14/icons/icon-005-tb.png);
+  }
+
+  .just-now-item:nth-child(6)::before {
+    content: url(../../images/block-14/icons/icon-006-tb.png);
+  }
+
+  .just-now-item__title {
+    font-size: 9px;
+  }
+
+  .just-now-item__desc {
+    font-size: 8px;
+    line-height: 12px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
   .container {
     max-width: 712px;
+  }
+
+  .just-now-section {
+    padding: 58px 0;
+  }
+
+  .just-now-titles-wrap__desc {
+    max-width: 160px;
+    font-size: 10px;
+  }
+
+  .just-now-titles-wrap__title {
+    font-size: 30px;
+    line-height: 38px;
+    text-align-last: left;
+  }
+
+  .just-now-titles-wrap__subtitle {
+    font-size: 10px;
+    max-width: 240px;
+    margin: 0;
+    padding-left: 50px;
+  }
+
+  .just-now-titles-wrap__subtitle::before {
+    width: 32px;
+  }
+
+  .just-now-list-wrap__list-title {
+    max-width: 130px;
+    font-size: 15px;
+    line-height: 22px;
+  }
+
+  .just-now-item {
+    max-width: 164px;
+  }
+
+  .just-now-item__title {
+    font-size: 10px;
+  }
+
+  .just-now-item__desc {
+    font-size: 9px;
   }
 }
