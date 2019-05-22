@@ -552,7 +552,7 @@ input[type="radio"].visually-hidden {
 
 .header__title {
   text-transform: uppercase;
-  font-size: 31px;
+  font-size: 30px;
   font-weight: 800;
   width: 246px;
   display: block;
