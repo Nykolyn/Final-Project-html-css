@@ -1,33 +1,203 @@
 // BLOCK 2
 
-@import './fonts.scss';
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
 
 // Mobile
 
 .itsTimeToMakeMoney {
-  padding-top: 56px;
 
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Raleway';
   font-size: 14px;
   font-weight: 500;
-  line-height: 20px;
+
+}
+
+.itsTimeToMakeMoney-text-div {
+
+  text-align: center;
 
   &__text {
     width: 424px;
     margin: 0;
-    margin-bottom: 26px;
+    // margin-bottom: 26px;
 
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Raleway';
     font-size: 14px;
     font-weight: 500;
     line-height: 20px;
   }
 
+  &__subquestion {
+    margin: 0;
+    font-weight: 800;
+    font-size: 15px;
+    text-indent: 22px;
+    text-transform: uppercase;
+  }
+
+  &__first {
+    margin: 0 auto;
+    margin-bottom: 18px;
+    width: 300px;
+    position: relative;
+    padding-left: 25px;
+
+    &::before {
+      position: absolute;
+      top: 50%;
+      left: 0;
+
+      content: "";
+      display: inline-block;
+      width: 25px;
+      height: 4px;
+
+      transform: translatey(-50%);
+      background-color: #000;
+    }
+  }
+
+  &__second {
+    width: 300px;
+    margin: 0 auto;
+  }
+
+  &__question {
+    width: 268px;
+    margin: 0;
+    text-align: left;
+    font-size: 21px;
+    font-weight: 800;
+    line-height: 1.2;
+    text-transform: uppercase;
+  }
+
+  &__mark {
+    background-color: #000;
+    color: #fff;
+  }
 }
 
-.itsTimeToMakeMoney-image-div {
-  height: 350px;
-  background-image: url('../images/block-2/YOU@1X.png');
-  background-position: bottom left;
-  background-repeat: no-repeat;
+.itsTimeToMakeMoney-list-div {
+  position: relative;
+
+  &__subtitle {
+    margin: 0;
+    margin-bottom: 22px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+    font-size: 15px;
+    text-transform: uppercase;
+  }
+
+  &__motivation-text {
+    width: 280px;
+    margin: 0 auto;
+    text-align: center;
+    color: $default-orange;
+  }
+}
+
+.itsTimeToMakeMoney-list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  &__item {
+    padding-left: 20px;
+    margin-bottom: 24px;
+    position: relative;
+
+    &::before {
+      position: absolute;
+      top: 5px;
+      left: 0;
+
+      content: '';
+      display: inline-block;
+      width: 8px;
+      height: 9px;
+      background-color: #000;
+    }
+  }
+
+  &__text {
+    display: inline-block;
+    margin: 0;
+    width: 374px;
+
+  }
+
+  &__bold {
+    font-weight: 800;
+  }
+
+}
+
+
+
+@media screen and (max-width: 767px) {
+  .itsTimeToMakeMoney {
+    position: relative;
+    padding-top: 56px;
+    padding-bottom: 42px;
+
+    font-family: 'Raleway';
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+
+    .itsTimeToMakeMoney-image-div {
+      position: absolute;
+      top: 152px;
+      height: 350px;
+      background-image: url('../images/block-2/YOU@1X.png');
+      background-position: bottom left;
+      background-repeat: no-repeat;
+    }
+
+    .itsTimeToMakeMoney-text-div {
+      padding-bottom: 45px;
+
+      &__text {
+        margin-bottom: 202px;
+      }
+    }
+
+    .itsTimeToMakeMoney-list {
+      margin-bottom: 20px;
+      flex-direction: column;
+
+      &__item {
+        flex: 0 0;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+
+  .itsTimeToMakeMoney {
+    padding-top: 112px;
+  }
+
+  
+  .itsTimeToMakeMoney-list {
+    width: 634px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    &__item {
+      width: 142px;
+    }
+
+    &__text {
+      width: 100%;
+    }
+  }
 }
