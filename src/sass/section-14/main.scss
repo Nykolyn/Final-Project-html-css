@@ -3,7 +3,7 @@
 }
 
 .just-now-section {
-  font-family: 'Raleway';
+  font-family: $primary-font-family;
   padding-top: 18px;
   padding-bottom: 40px;
 }
@@ -141,7 +141,7 @@
   &::before {
     content: '[' '00' counter(my-counter-14) ']';
     position: absolute;
-    transform: rotate(-90deg) translate(-20px, -40px);
+    transform: rotate(-90deg) translate(-20px, -44px);
     background-color: $default-orange;
     color: #fff;
     // width: 10px;
@@ -211,13 +211,14 @@
   }
 
   .just-now-section__img-wrap {
+    margin: 0;
     .just-now-section__img {
       margin-bottom: 0;
     }
   }
 
   .just-now-titles-wrap {
-    max-width: 48%;
+    max-width: 348px;
 
     &__desc {
       max-width: 146px;
@@ -327,6 +328,7 @@
 
     &__title {
       font-size: 30px;
+      max-width: 300px;
       line-height: 38px;
       text-align-last: left;
     }
