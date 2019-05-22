@@ -152,6 +152,13 @@ h3.value {
     max-width: 712px;
   }
 
+  div.intro {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 188px;
+  }
+
   img.intro-img {
     margin-bottom: 30px;
   }
@@ -191,32 +198,44 @@ h3.value {
   }
 
   ul.intro-list {
+    display: flex;
+    height: 251px;
+    flex-direction: column;
+    flex-wrap: wrap;
     list-style: none;
     margin: 0;
-    margin-left: 95px;
     padding: 0;
   }
   
-  li.intro-item{}
+  li.intro-item {
+    display: block;
+    height: 50px;
+    width: 306px;
+    margin: 0;
+    padding: 0;
+  }
   
   h3.intro-title {
     margin: 0;
-    margin-bottom: 30px;
     padding: 0;
     display: inline-block;
+    width: 115px;
+    height: 50px;
     text-transform: uppercase;
-    font-size: 14px;
-    line-height: 20px;
+    font-size: 10px;
+    line-height: 16px;
     color: #ffffff;
     background-color: black;
   }
   
   p.intro-text {
-    width: 300px;
+    display: inline-block;
+    width: 185px;
+    height: 50px;
     margin: 0;
     padding: 0;
-    font-size: 14px;
-    line-height: 20px;
+    font-size: 9px;
+    line-height: 13px;
     font-family: "Acrom";
     font-weight: normal;
     color: #3f4144;
@@ -264,7 +283,7 @@ h3.value {
     font-weight: normal;
     color: #3f4144;
   } 
-  
+
   h2.offer-title {
     color: black;
     background-color: #46ebfe;
