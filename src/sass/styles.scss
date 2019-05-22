@@ -2,6 +2,8 @@
    Import partials below
 */
 @import './normalize';
+@import './placeholder.scss';
+@import './variables.scss';
 
 // fonts
 
@@ -31,3 +33,5 @@ img {
     max-width: 712px;
   }
 }
+
+@import './mainstyle.scss';
