@@ -775,6 +775,10 @@ img {
 }
 
 @media screen and (min-width: 768px) {
+  .except-numbers {
+    display: flex;
+  }
+
   .container {
     max-width: 640px;
   }
