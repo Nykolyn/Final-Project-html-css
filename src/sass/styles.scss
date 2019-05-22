@@ -3,20 +3,26 @@ Import partials below
 */
 //normalize css
 @import './normalize';
+@import './color-variables.scss';
+
+// fonts
+
 //add fonts(requires corrections)
 @import './fonts.scss';
 //add specifications
 @import './specification.scss';
 //variables
-// @import './variables.scss';
 // color set
 @import './color-variables.scss';
 //placeholers (buttons, +' '+)
 @import './placeholder.scss';
 
+<<<<<<< HEAD
 //b
 @import './header.scss';
 
+=======
+>>>>>>> 442135d855be35edbaa5a1bf234bbede0b8c486d
 img {
   display: block;
   max-width: 100%;
@@ -24,7 +30,7 @@ img {
 }
 
 .container {
-  max-width: 446px;
+  max-width: 448px;
   margin: 0 auto;
 }
 
@@ -38,4 +44,12 @@ img {
   .container {
     max-width: 712px;
   }
+<<<<<<< HEAD
 }
+=======
+}
+
+
+@import './header.scss';
+@import './section-14/main.scss';
+>>>>>>> 442135d855be35edbaa5a1bf234bbede0b8c486d
