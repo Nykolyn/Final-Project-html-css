@@ -512,10 +512,11 @@ input[type="radio"].visually-hidden {
 
 @font-face {
   font-family: 'Raleway';
+  src: url(../fonts/);
 }
 
 .except-numbers {
-  font-family: 'Raleway';
+  font-family: 'Raleway', sans-serif;
   font-size: 14px;
   line-height: 20px;
   font-weight: 400;
@@ -575,9 +576,11 @@ input[type="radio"].visually-hidden {
 }
 
 .for-it__span {
-  display: block;
-  width: 440px;
   background-color: #16ebfe;
+}
+
+.except-numbers__ex-num {
+  padding-bottom: 42px;
 }
 
 .ex-num__title {
@@ -612,10 +615,29 @@ input[type="radio"].visually-hidden {
   left: 10px;
 }
 
-.ex-num__advanteges-list {
+.ex-num__advateges-list {
   margin: 0px;
   list-style: none;
   padding-left: 40px;
+}
+
+.advanteges-list__item {
+  position: relative;
+}
+
+.advanteges-list__item:not(:last-child) {
+  margin-bottom: 24px;
+}
+
+.advanteges-list__item::before {
+  display: block;
+  content: '';
+  width: 4px;
+  height: 4px;
+  background-color: #000000;
+  position: absolute;
+  top: 10px;
+  left: -15px;
 }
 
 .item__title {
@@ -627,10 +649,6 @@ input[type="radio"].visually-hidden {
 
 .item__text {
   margin: 0px;
-}
-
-.item__text:not(:last-child) {
-  margin-bottom: 24px;
 }
 
 img {

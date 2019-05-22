@@ -5,14 +5,14 @@ Import partials below
 @import './normalize';
 //add fonts(requires corrections)
 @import './fonts.scss';
+@import './color-variables.scss';
 //add specifications
 @import './specification.scss';
 //variables
 // @import './variables.scss';
-// color set
-@import './color-variables.scss';
 //placeholers (buttons, +' '+)
 @import './placeholder.scss';
+// color set
 
 //section4
 @import './ExceptNumbers.scss';
