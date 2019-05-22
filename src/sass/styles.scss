@@ -1,13 +1,19 @@
 /*
-   Import partials below
+Import partials below
 */
+//normalize css
 @import './normalize';
-
-// fonts
-
+//add fonts(requires corrections)
 @import './fonts.scss';
+//add specifications
+@import './specification.scss';
+//variables
+// @import './variables.scss';
+// color set
+@import './color-variables.scss';
+//placeholers (buttons, +' '+)
+@import './placeholder.scss';
 
-// Defaults
 
 img {
   display: block;
@@ -31,3 +37,6 @@ img {
     max-width: 712px;
   }
 }
+
+//b
+@import './header.scss';
