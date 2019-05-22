@@ -20,10 +20,9 @@ h2.intro-title {
 }
 
 p.title-info {
-  display: block;
-  margin: 0;
+  margin: 0 auto;
   margin-bottom: 37px;
-  padding: 0;
+  padding: 0px;
   width: 215px;
   height: 55px;
   font-size: 14px;
@@ -31,18 +30,19 @@ p.title-info {
   font-family: "Acrom";
   font-weight: normal;
   color: #3f4144;
+  vertical-align: middle;
 }
 
 p.title-info::before {
   content: "";
-  display: block;
-  margin: 0;
+  display: inline-block;;
+  margin-right: 20px;
   padding: 0;
   width: 20px;
   height: 2px;
   color: black;
-  vertical-align: middle;
-  color: #3f4144;
+
+  
 }
 
 img.intro-img {
@@ -129,17 +129,6 @@ h2.offer-title {
   background-color: #46ebfe;
 }
 
-ul.offer-list {
-  list-style: none;
-  margin: 0;
-  margin-bottom: 27px;
-  padding: 0;
-}
-
-li.offer-item{
-  list-style: none;
-}
-
 h3.value {
   margin: 0;
   margin-bottom: 30px;
@@ -154,12 +143,145 @@ h3.value {
   .container {
     max-width: 640px;
   }
+
 }
+
 
 @media screen and (min-width: 1200px) {
   .container {
     max-width: 712px;
   }
+
+  img.intro-img {
+    margin-bottom: 30px;
+  }
+
+  h2.intro-title {
+    padding: 0;
+    margin: 0;
+    margin-bottom: 17px;
+    font-size: 18px;
+    line-height: 24px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  
+  p.title-info {
+    margin: 0 auto;
+    margin-bottom: 37px;
+    padding: 0px;
+    width: 215px;
+    height: 55px;
+    font-size: 14px;
+    line-height: 20px;
+    font-family: "Acrom";
+    font-weight: normal;
+    color: #3f4144;
+    vertical-align: middle;
+  }
+  
+  p.title-info::before {
+    content: "";
+    display: inline-block;;
+    margin-right: 20px;
+    padding: 0;
+    width: 20px;
+    height: 2px;
+    color: black;
+  }
+
+  ul.intro-list {
+    list-style: none;
+    margin: 0;
+    margin-left: 95px;
+    padding: 0;
+  }
+  
+  li.intro-item{}
+  
+  h3.intro-title {
+    margin: 0;
+    margin-bottom: 30px;
+    padding: 0;
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 14px;
+    line-height: 20px;
+    color: #ffffff;
+    background-color: black;
+  }
+  
+  p.intro-text {
+    width: 300px;
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    line-height: 20px;
+    font-family: "Acrom";
+    font-weight: normal;
+    color: #3f4144;
+  }
+  
+  h2.advantage-title{
+    margin: 0;
+    margin-bottom: 30px;
+    padding: 0;
+    font-size: 14px;
+    line-height: 20px;
+    font-family: "Acrom";
+    font-weight: ExtraBold;
+    text-transform: uppercase;
+  }
+  
+  ul.advantage-list {
+    list-style: none;
+    margin: 0;
+    margin-bottom: 27px;
+    padding: 0;
+  }
+  
+  h3.item-title {
+    margin: 0;
+    margin-bottom: 12px;
+    padding: 0;
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 14px;
+    line-height: 20px;
+    font-family: "Acrom";
+    font-weight: Bold;
+  }
+  
+  p.item-text{
+    display: inline-block;
+    margin: 0;
+    margin-bottom: 37px;
+    padding: 0;
+    width: 240px;
+    font-size: 14px;
+    line-height: 20px;
+    font-family: "Acrom";
+    font-weight: normal;
+    color: #3f4144;
+  } 
+  
+  h2.offer-title {
+    color: black;
+    background-color: #46ebfe;
+  }
+  
+  h3.value {
+    margin: 0;
+    margin-bottom: 30px;
+    padding: 0;
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 14px;
+    line-height: 20px;
+  }
+  
+  
+  
 }
 
 //b
