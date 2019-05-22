@@ -1,0 +1,185 @@
+// header 
+
+//sm mobile first
+.header {
+  background-image: url(../images/block-1/bg-480.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  padding-top: 15px;
+  padding-bottom: 38px;
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 26px;
+}
+
+.menu {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  &__link {
+    display: block;
+    background-image: url(../images/block-1/burg_menu.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 28px;
+    height: 17px;
+  }
+}
+
+.header__title,
+.header__subtitle,
+.header__slogan,
+.header__lead,
+.header__title_md {
+  margin: 0;
+  text-align: center;
+  font-family: 'Acrom';
+  color: #fff;
+}
+
+.header__title {
+  text-transform: uppercase;
+  font-size: 30px;
+  font-weight: 900;
+  width: 260px;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 32px;
+}
+
+.header__title_md {
+  display: none;
+}
+
+
+.header__subtitle {
+  text-transform: uppercase;
+  font-size: 22px;
+  margin-bottom: 160px;
+}
+
+.mark {
+  color: #17ecff;
+  font-size: 30px;
+  font-weight: 800;
+}
+
+.header__slogan {
+  font-size: 14px;
+  font-weight: 800;
+  margin-bottom: 18px;
+}
+
+.header__lead {
+  font-size: 14px;
+  margin-bottom: 40px;
+}
+
+.header__soc-list {
+  @extend %ul-reset;
+  justify-content: flex-end;
+}
+
+.header__soc-item {
+  width: 30px;
+  height: 30px;
+}
+
+.header__soc-link {
+  display: block;
+  width: 30px;
+  height: 30px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.header__icon-facebook {
+  background-image: url(../images/block-1/icon-facebook.png);
+}
+
+.header__icon-twitter {
+  background-image: url(../images/block-1/icon-twitter.png);
+}
+
+.header__soc-list {
+  display: none;
+}
+
+.header__button {
+  @extend %default-button;
+  margin: 0 auto;
+}
+
+.header__button:hover {
+  @extend %default-button-hover;
+}
+
+.header__button:active {
+  @extend %default-button-active;
+}
+
+// media md table
+@media (min-width:768px) {
+  .header {
+    background-image: url(../images/block-1/bg-768.png);
+    padding-top: 25px;
+    padding-bottom: 95px;
+  }
+
+  .navigation {
+    margin-bottom: 50px;
+  }
+
+  .header__wrap {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 24px;
+  }
+
+  .header__inner-left {
+    width: 350px;
+  }
+
+  .header__title {
+    display: none;
+  }
+
+  .header__title_md {
+    font-size: 45px;
+    display: block;
+    margin-bottom: 30px;
+  }
+
+  .header__subtitle {
+    font-size: 45px;
+    font-size: 8px;
+  }
+
+  .header__inner-right {
+    width: 154px;
+  }
+
+  .header__slogan {
+    font-size: 10px;
+    margin-bottom: 18px;
+  }
+
+  .header__lead {
+    font-size: 10px;
+    margin-bottom: 183px;
+  }
+
+  .header__soc-list {
+    display: flex;
+  }
+
+  .header__button {
+    margin-left: 58px;
+  }
+}

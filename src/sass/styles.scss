@@ -1,5 +1,46 @@
 /*
-   Import partials below
+Import partials below
 */
+//normalize css
 @import './normalize';
+<<<<<<< HEAD
 @import "./testStyle.scss";
+=======
+//add fonts(requires corrections)
+@import './fonts.scss';
+//add specifications
+@import './specification.scss';
+//variables
+// @import './variables.scss';
+// color set
+@import './color-variables.scss';
+//placeholers (buttons, +' '+)
+@import './placeholder.scss';
+
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  max-width: 446px;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 640px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 712px;
+  }
+}
+
+//b
+@import './header.scss';
+>>>>>>> master
