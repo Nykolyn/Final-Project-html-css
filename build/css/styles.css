@@ -648,6 +648,10 @@ img {
   margin-bottom: 40px;
 }
 
+.just-now-titles-wrap {
+  margin-bottom: 54px;
+}
+
 .just-now-titles-wrap__desc {
   position: relative;
   margin: 0 auto;
@@ -690,7 +694,6 @@ img {
   position: relative;
   max-width: 294px;
   margin: 0 auto;
-  margin-bottom: 54px;
   padding: 0;
   padding-left: 38px;
   font-size: 14px;
@@ -734,14 +737,15 @@ img {
 
 .just-now-item {
   max-width: 294px;
+  margin-bottom: 24px;
   padding-left: 24px;
   position: relative;
   overflow: hidden;
   counter-increment: my-counter-14;
 }
 
-.just-now-item:not(:last-child) {
-  margin-bottom: 30px;
+.just-now-item:last-child {
+  margin: 0;
 }
 
 .just-now-item::before {
@@ -802,6 +806,11 @@ img {
   counter-increment: my-counter-15;
   position: relative;
   overflow: hidden;
+  margin-bottom: 30px;
+}
+
+.after-course-item:last-child {
+  margin-bottom: 0;
 }
 
 .after-course-item:not(:last-child)::before {
@@ -823,10 +832,6 @@ img {
   width: 6px;
   height: 6px;
   background-color: #16ebfe;
-}
-
-.after-course-item:not(:last-child) {
-  margin-bottom: 30px;
 }
 
 .after-course-item__title {
@@ -950,11 +955,11 @@ img {
   .just-now-item {
     max-width: 148px;
     padding-left: 22px;
-    margin-bottom: 0;
+    margin-bottom: 36px;
   }
 
-  .just-now-item:not(:nth-last-child(-n + 3)) {
-    margin-bottom: 30px;
+  .just-now-item:nth-last-child(-n + 3) {
+    margin: 0;
   }
 
   .just-now-item::before {
@@ -993,6 +998,10 @@ img {
 
   .after-course-item {
     max-width: 148px;
+  }
+
+  .after-course-item:nth-last-child(-n + 2) {
+    margin-bottom: 0;
   }
 
   .after-course-item:last-child {
@@ -1125,6 +1134,7 @@ img {
 
   .just-now-item {
     max-width: 164px;
+    margin-bottom: 42px;
   }
 
   .just-now-item__title {
