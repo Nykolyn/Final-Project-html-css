@@ -7,6 +7,14 @@
 
 @import './fonts.scss';
 
+// Variables 
+
+@import './variables.scss';
+
+// Footer Style
+
+@import './footerStyle.scss';
+
 // Defaults
 
 img {
@@ -31,3 +39,4 @@ img {
     max-width: 712px;
   }
 }
+
