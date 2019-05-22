@@ -524,6 +524,7 @@ input[type="radio"].visually-hidden {
 
 .except-numbers__for-it {
   padding-bottom: 50px;
+  position: relative;
 }
 
 .for-it__img {
@@ -534,33 +535,35 @@ input[type="radio"].visually-hidden {
 .for-it__title-wrap {
   margin: 0px auto;
   width: 255px;
+  text-align: left;
 }
 
 .for-it__title-fl {
   margin: 0px 0px 8px 0px;
-  padding: 0px 5px;
-  display: block;
+  padding: 0px;
   width: 130px;
-  background-color: #000;
   color: #fff;
-  text-transform: uppercase;
   font-weight: 700;
   font-size: 18px;
   line-height: 24px;
 }
 
 .for-it__title-sl {
-  display: block;
   margin: 0px;
   margin-bottom: 32px;
-  padding: 0px 5px;
+  padding: 0px;
   width: 254px;
-  background-color: #000;
   color: #fff;
-  text-transform: uppercase;
   font-weight: 700;
   font-size: 18px;
   line-height: 24px;
+}
+
+.for-it__title-span {
+  margin: 0px;
+  padding: 0px;
+  background-color: #000;
+  text-transform: uppercase;
 }
 
 .for-it__sub-title {
@@ -584,14 +587,16 @@ input[type="radio"].visually-hidden {
 }
 
 .ex-num__title {
-  display: block;
   margin: 0 auto;
   margin-bottom: 20px;
   width: 280px;
-  background-color: #000;
   color: #fff;
   text-align: center;
   font-size: 18px;
+}
+
+.ex-num__title-span {
+  background-color: #000;
   text-transform: uppercase;
 }
 
@@ -777,6 +782,104 @@ img {
 @media screen and (min-width: 768px) {
   .except-numbers {
     display: flex;
+    padding-top: 60px;
+    padding-bottom: 56px;
+  }
+
+  .except-numbers__for-it {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .for-it__img {
+    margin-bottom: 34px;
+  }
+
+  .for-it__title-wrap {
+    margin: 0px;
+    width: 90px;
+    position: absolute;
+    top: 330px;
+  }
+
+  .for-it__title-fl {
+    margin: 0px;
+    line-height: 0px;
+  }
+
+  .for-it__title-sl {
+    display: block;
+    line-height: 0px;
+    width: 90px;
+    margin: 0px;
+  }
+
+  .for-it__title-span {
+    font-size: 9px;
+    line-height: 15px;
+  }
+
+  .for-it__sub-title {
+    margin-bottom: 7px;
+    padding-left: 110px;
+    padding-right: 70px;
+    font-size: 9px;
+    line-height: 15px;
+  }
+
+  .for-it__text {
+    font-size: 8px;
+    font-weight: normal;
+    line-height: 12px;
+    padding-left: 110px;
+    padding-right: 70px;
+  }
+
+  .ex-num__title {
+    padding-top: 10px;
+    margin-left: 0px;
+    font-size: 27px;
+    line-height: 34px;
+    width: 230px;
+    text-align: left;
+  }
+
+  .ex-num__sub-title {
+    font-size: 9px;
+    line-height: 14px;
+    padding-left: 30px;
+    margin-bottom: 38px;
+  }
+
+  .ex-num__sub-title::before {
+    left: 0px;
+    width: 20px;
+    height: 2px;
+  }
+
+  .advanteges-list__item {
+    padding-left: 26px;
+  }
+
+  .advanteges-list__item:not(:last-child) {
+    margin-bottom: 18px;
+  }
+
+  .advanteges-list__item::before {
+    top: 2px;
+    left: -26px;
+  }
+
+  .item__title {
+    font-size: 9px;
+    line-height: 15px;
+    margin-bottom: 8px;
+  }
+
+  .item__text {
+    margin: 0px;
+    font-size: 8px;
+    line-height: 12px;
   }
 
   .container {
