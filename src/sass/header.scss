@@ -131,40 +131,40 @@
     padding-top: 25px;
     padding-bottom: 95px;
   }
-
+  
   .navigation {
     margin-bottom: 50px;
   }
-
+  
   .header__wrap {
     display: flex;
     justify-content: space-between;
     padding-bottom: 24px;
   }
-
+  
   .header__inner-left {
     width: 350px;
   }
-
+  
   .header__title {
     display: none;
   }
-
+  
   .header__title_md {
     font-size: 45px;
     display: block;
     margin-bottom: 30px;
   }
-
+  
   .header__subtitle {
     font-size: 45px;
     font-size: 8px;
   }
-
+  
   .header__inner-right {
     width: 154px;
   }
-
+  
   .header__slogan {
     font-size: 10px;
     margin-bottom: 18px;
@@ -174,12 +174,17 @@
     font-size: 10px;
     margin-bottom: 183px;
   }
-
+  
   .header__soc-list {
     display: flex;
   }
-
+  
   .header__button {
     margin-left: 58px;
   }
 }
+
+@media (min-width:940px) {
+  .header {
+    background-image: url(../images/block-1/bg.png);
+  }
