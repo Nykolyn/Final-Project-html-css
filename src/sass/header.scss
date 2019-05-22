@@ -1,8 +1,15 @@
 // header 
 
+.header__content {
+  max-width: 367px;
+  display: block;
+  margin: 0 auto;
+}
+
 //sm mobile first
 .header {
-  background-image: url(../images/block-1/bg-480.png);
+  font-family: 'Raleway';
+  background-image: url(../images/block-1/480/bg-480.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -39,14 +46,13 @@
 .header__title_md {
   margin: 0;
   text-align: center;
-  font-family: 'Acrom';
   color: #fff;
 }
 
 .header__title {
   text-transform: uppercase;
-  font-size: 30px;
-  font-weight: 900;
+  font-size: 32px;
+  font-weight: 800;
   width: 260px;
   display: block;
   margin: 0 auto;
@@ -57,11 +63,45 @@
   display: none;
 }
 
+.header__subtitle-wrap {
+  position: relative;
+  width: 367px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+
+* {
+  outline: 1px solid red;
+}
+
+.header__subtitle-wrap::before {
+  position: absolute;
+  top: 0;
+  left: -20px;
+  background-image: url(../images/block-1/icon_before.png);
+  width: 20px;
+  height: 20px;
+  background-repeat: no-repeat;
+  background-position: center;
+  content: '';
+}
+
+.header__subtitle-wrap::after {
+  bottom: 0;
+  right: -20px;
+  background-image: url(../images/block-1/icon_after.png);
+  width: 20px;
+  height: 20px;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  content: '';
+}
 
 .header__subtitle {
   text-transform: uppercase;
-  font-size: 22px;
-  margin-bottom: 160px;
+  font-size: 14px;
+  text-align: center;
 }
 
 .mark {
@@ -69,11 +109,19 @@
   font-size: 30px;
   font-weight: 800;
 }
+ 
+.header__goit {
+  display: block;
+  width: 312px;
+  margin: 0 auto;
+  margin-bottom: 40px;
+}
 
 .header__slogan {
   font-size: 14px;
   font-weight: 800;
   margin-bottom: 18px;
+  text-align-last: left;
 }
 
 .header__lead {
@@ -131,40 +179,40 @@
     padding-top: 25px;
     padding-bottom: 95px;
   }
-  
+
   .navigation {
     margin-bottom: 50px;
   }
-  
+
   .header__wrap {
     display: flex;
     justify-content: space-between;
     padding-bottom: 24px;
   }
-  
+
   .header__inner-left {
     width: 350px;
   }
-  
+
   .header__title {
     display: none;
   }
-  
+
   .header__title_md {
     font-size: 45px;
     display: block;
     margin-bottom: 30px;
   }
-  
+
   .header__subtitle {
     font-size: 45px;
     font-size: 8px;
   }
-  
+
   .header__inner-right {
     width: 154px;
   }
-  
+
   .header__slogan {
     font-size: 10px;
     margin-bottom: 18px;
@@ -174,11 +222,11 @@
     font-size: 10px;
     margin-bottom: 183px;
   }
-  
+
   .header__soc-list {
     display: flex;
   }
-  
+
   .header__button {
     margin-left: 58px;
   }
