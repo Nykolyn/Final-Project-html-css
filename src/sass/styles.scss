@@ -3,15 +3,11 @@ Import partials below
 */
 //normalize css
 @import './normalize';
-<<<<<<< HEAD
 @import './placeholder.scss';
 @import './variables.scss';
 
 // fonts
 
-=======
-//add fonts(requires corrections)
->>>>>>> 97c6cff32a30df651f46254b0a338a30ce2e9919
 @import './fonts.scss';
 //add specifications
 @import './specification.scss';
@@ -46,9 +42,7 @@ img {
   }
 }
 
-<<<<<<< HEAD
-@import './mainstyle.scss';
-=======
 //b
 @import './header.scss';
->>>>>>> 97c6cff32a30df651f46254b0a338a30ce2e9919
+
+@import './career.scss';
