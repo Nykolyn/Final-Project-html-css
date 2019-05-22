@@ -1,3 +1,7 @@
+* {
+  outline: 1px solid red;
+}
+
 // header 
 
 .header__content {
@@ -70,9 +74,6 @@
   margin-bottom: 30px;
 }
 
-* {
-  outline: 1px solid red;
-}
 
 .header__subtitle-wrap::before {
   position: absolute;
@@ -178,6 +179,10 @@
 
 // media md table
 @media (min-width:768px) {
+  .header__content {
+    max-width: 640px;
+  }
+
   .header {
     background-image: url(../images/block-1/bg-768.png);
     padding-top: 25px;
@@ -203,14 +208,30 @@
   }
 
   .header__title_md {
+    margin: 0;
     font-size: 45px;
     display: block;
+    text-align-last: left;
+    text-transform: uppercase;
     margin-bottom: 30px;
   }
 
+  .header__subtitle-wrap {
+    width: 225px;
+    margin: 0;
+    margin-left: 38px;
+  }
+
   .header__subtitle {
+    display: block;
+    margin: 0 auto;
     font-size: 45px;
     font-size: 8px;
+    width: 177px;
+  }
+
+  .header__goit {
+    display: none;
   }
 
   .header__inner-right {
