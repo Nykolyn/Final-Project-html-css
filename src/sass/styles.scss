@@ -1,21 +1,21 @@
 /*
-   Import partials below
+Import partials below
 */
+//normalize css
 @import './normalize';
+@import './color-variables.scss';
 
-// Defaults
+// fonts
 
-html {
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-}
-
-*,
-*::before,
-*::after {
-  -webkit-box-sizing: inherit;
-  box-sizing: inherit;
-}
+//add fonts(requires corrections)
+@import './fonts.scss';
+//add specifications
+@import './specification.scss';
+//variables
+// color set
+@import './color-variables.scss';
+//placeholers (buttons, +' '+)
+@import './placeholder.scss';
 
 img {
   display: block;
@@ -24,7 +24,7 @@ img {
 }
 
 .container {
-  max-width: 446px;
+  max-width: 448px;
   margin: 0 auto;
 }
 
@@ -39,6 +39,7 @@ img {
     max-width: 712px;
   }
 }
+<<<<<<< HEAD
 // Section manyPeople //
 .manyPeople__main-title{
   font-size: 18px;
@@ -52,3 +53,9 @@ img {
   height: 3px
   background-color:#000000;
 }
+=======
+
+
+@import './header.scss';
+@import './section-14/main.scss';
+>>>>>>> master
