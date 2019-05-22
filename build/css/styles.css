@@ -465,7 +465,6 @@ template {
   display: flex;
   flex-direction: column;
   min-width: 66px;
-  margin: 0 70px 0 0;
 }
 
 .footer__info__headline {
@@ -528,6 +527,15 @@ img {
 }
 
 @media screen and (min-width: 768px) {
+  .footer__socials__list {
+    display: block;
+    margin: 0 70px 0 0;
+  }
+
+  .footer__info {
+    margin: 0 42px 0 0;
+  }
+
   .container {
     max-width: 640px;
   }
