@@ -2,24 +2,16 @@
    Import partials below
 */
 @import './normalize';
+@import './fonts.scss';
 @import './variables.scss';
 @import './placeholder.scss';
 
 @import './StepCourseStyles.scss';
 
+// fonts
+
+
 // Defaults
-
-html {
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-}
-
-*,
-*::before,
-*::after {
-  -webkit-box-sizing: inherit;
-  box-sizing: inherit;
-}
 
 img {
   display: block;
