@@ -1,0 +1,33 @@
+// BLOCK 2
+
+@import './fonts.scss';
+
+// Mobile
+
+.itsTimeToMakeMoney {
+  padding-top: 56px;
+
+  font-family: 'Raleway', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+
+  &__text {
+    width: 424px;
+    margin: 0;
+    margin-bottom: 26px;
+
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+  }
+
+}
+
+.itsTimeToMakeMoney-image-div {
+  height: 350px;
+  background-image: url('../images/block-2/YOU@1X.png');
+  background-position: bottom left;
+  background-repeat: no-repeat;
+}
