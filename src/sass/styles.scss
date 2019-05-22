@@ -3,9 +3,6 @@ Import partials below
 */
 //normalize css
 @import './normalize';
-<<<<<<< HEAD
-@import "./testStyle.scss";
-=======
 //add fonts(requires corrections)
 @import './fonts.scss';
 //add specifications
@@ -17,6 +14,7 @@ Import partials below
 //placeholers (buttons, +' '+)
 @import './placeholder.scss';
 
+@import "../sass/testStyle.scss";
 
 img {
   display: block;
@@ -43,4 +41,3 @@ img {
 
 //b
 @import './header.scss';
->>>>>>> master
