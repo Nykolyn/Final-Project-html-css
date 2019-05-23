@@ -666,6 +666,7 @@ img {
   .stepcourse__list {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
     padding: 0;
     margin: 0;
   }
@@ -673,10 +674,10 @@ img {
   .stepcourse__item {
     width: 120px;
     height: 96px;
-    margin: 0 28px 0 0;
+    margin: 0 0 28px 0;
   }
 
-  .stepcourse__item:nth-child(3n+0) {
+  .stepcourse__item:nth-child(n+4) {
     margin: 0;
   }
 
@@ -721,6 +722,77 @@ img {
 }
 
 @media screen and (min-width: 1200px) {
+  .stepcourse {
+    padding: 38px 0 63px 0;
+  }
+
+  .stepcourse__picture-block {
+    margin: 0 0 63px 0;
+  }
+
+  .stepcourse__picture {
+    margin: 0 60px 0 0;
+  }
+
+  .stepcourse__title-block {
+    width: 286px;
+    height: 188px;
+  }
+
+  .stepcourse__title {
+    font-size: 30px;
+    line-height: 38px;
+    font-weight: 800;
+    margin: 20px 0 28px 0;
+  }
+
+  .stepcourse__title-text {
+    font-size: 10px;
+    line-height: 15px;
+    padding: 0 98px 0 46px;
+  }
+
+  .stepcourse__text--orange {
+    display: block;
+    width: 158px;
+    font-size: 10px;
+    margin: 0;
+    padding: 7px 0 0 0;
+  }
+
+  .stepcourse__text--orange::before {
+    left: -32px;
+  }
+
+  .stepcourse__item {
+    width: 140px;
+    height: 96px;
+  }
+
+  .stepcourse__item-title {
+    font-size: 10px;
+    line-height: 13px;
+  }
+
+  .stepcourse__item-text {
+    font-size: 9px;
+    line-height: 13px;
+  }
+
+  .stepcourse__button {
+    width: 132px;
+    height: 30px;
+  }
+
+  .stepcourse__button--margin {
+    margin: 0 72px 0 0;
+  }
+
+  .stepcourse__button-link {
+    font-size: 7px;
+    line-height: 11px;
+  }
+
   .container {
     max-width: 712px;
   }
