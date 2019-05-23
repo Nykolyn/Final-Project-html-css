@@ -1,17 +1,42 @@
 /*
-   Import partials below
+Import partials below
 */
-@import './normalize';
-@import './fonts.scss';
-@import './variables.scss';
-@import './placeholder.scss';
-
-@import './StepCourseStyles.scss';
 
 // fonts
 
+//normalize css
 
-// Defaults
+// fonts
+
+@import './normalize';
+//add fonts
+@import './fonts.scss';
+@import './color-variables.scss';
+
+// fonts
+
+//add specifications
+@import './specification.scss';
+//variables
+// @import './variables.scss';
+//add specifications
+@import './specification.scss';
+//variables
+// color set
+//placeholers (buttons, +' '+)
+@import './placeholder.scss';
+// color set
+
+//section4
+@import './ExceptNumbers.scss';
+@import './header.scss';
+@import './itsTimeToMakeMoney.scss';
+@import './section-14/main.scss';
+@import './career.scss';
+@import './section-15/styles.scss';
+@import './important.scss';
+@import './StepCourseStyles.scss';
+
 
 img {
   display: block;
@@ -20,7 +45,7 @@ img {
 }
 
 .container {
-  max-width: 446px;
+  max-width: 448px;
   margin: 0 auto;
 }
 
@@ -35,3 +60,4 @@ img {
     max-width: 712px;
   }
 }
+

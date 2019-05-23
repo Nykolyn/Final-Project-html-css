@@ -30,3 +30,43 @@
   position: absolute;
   transform: rotate(-90deg) translate(-22px, -46px);
 }
+
+%default-button {
+  width: 220px;
+  display: block;
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 800;
+  padding: 22px 0;
+  background-color: $default-orange;
+  box-shadow: 0px 5px 6px 0px rgba(196, 87, 15, 0.26);
+  border-top: 1px solid #e0600c;
+  border-left: 1px solid #753c1b;
+  border-right: 1px solid #753c1b;
+  border-bottom: none;
+  cursor: pointer;
+}
+
+%default-button-hover {
+  background-color: #17ecff;
+  box-shadow: 0px 5px 6px 0px #355251;
+  border-left: 1px solid #6a886e;
+  border-right: 1px solid #6a886e;
+  border-top: 1px solid #177e8d;
+}
+
+%default-button-active {
+  background-color: #06a4b2;
+  box-shadow: 0px 5px 6px 0px #314340;
+  border-left: 1px solid #646c51;
+  border-right: 1px solid #646c51;
+  border-top: 1px solid #105c69;
+}
+
+%ul-reset {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+}
