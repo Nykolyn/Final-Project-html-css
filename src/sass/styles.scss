@@ -23,9 +23,10 @@ Import partials below
 
 @import './header.scss';
 @import './itsTimeToMakeMoney.scss';
-@import './section-14/main.scss';
 @import './career.scss';
+@import './section-14/main.scss';
 @import './section-15/styles.scss';
+@import './register.scss';
 
 img {
   display: block;
@@ -49,5 +50,3 @@ img {
     max-width: 712px;
   }
 }
-
-
