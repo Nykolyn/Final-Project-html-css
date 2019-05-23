@@ -114,8 +114,8 @@
         justify-content: flex-start;
         padding-top: 60px;
         padding-bottom: 56px;
-        background-image: url(../../images/block-3/bgimg-768.png);
-        background-position: right;
+        background-image: url(../images/block-3/bgimg-768.png);
+        background-position: 420px 120px;
         background-repeat: no-repeat;
     }
     
@@ -123,7 +123,7 @@
 
     .data__title{
         margin: 0px;
-        width: 244px;
+        width: 240px;
     }
 
     .data__first-title{
@@ -155,13 +155,15 @@
 
     .data__facts-list{
         padding: 0px;
+        margin-left: 30px;
         display: flex;
         flex-wrap: wrap;     
     }
 
     .facts-list__item{
-        width: 190px;
+        width: 164px;
         margin-bottom: 0px;
+        margin-right: 40px;
     }
 
     .facts-list__item::before{
