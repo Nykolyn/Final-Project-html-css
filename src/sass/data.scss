@@ -1,0 +1,77 @@
+@font-face {
+    font-family: 'Raleway', sans-serif;
+    src: url(../fonts/)
+}
+
+.data {
+    padding: 36px 0px 56px 0px;
+    margin: 0px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+}
+//-----------TITLE------------
+
+.data__title {
+    width: 210px;
+    margin: 0 auto;
+}
+
+.data__first-title{
+    margin: 0px;
+    margin-bottom: 40px;
+    padding: 0px;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 24px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.data__second-title {
+    margin: 0px;
+    margin-bottom: 44px;
+    padding: 0px;
+    font-size: 11px;
+    line-height: 15px;
+    font-weight: 300;
+    position: relative;
+}
+
+.data__second-title::before{
+    display: block;
+    content: '';
+    background-color: #000;
+    width: 18px;
+    height: 2px;
+    position: absolute;
+    top: 8px;
+    left: -40px;
+}
+
+//----------------FACTS----------------
+
+.data__facts-list{
+    margin: 0px;
+    padding: 0px;
+    padding-left: 56px;
+    list-style: none;
+}
+
+.facts-list__item-title {
+    margin: 0px;
+    font-size: 23px;
+    text-transform: uppercase;
+}
+
+.facts-list__item-title--span{
+    font-size: 13px;
+}
+
+.facts-list__item-title-description{
+    margin: 0px;
+    line-height: 20px;
+}
+
+.facts-list__item-title-description--span{
+    background-color: $default-blue;
+}
