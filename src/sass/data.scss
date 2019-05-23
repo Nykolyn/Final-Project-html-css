@@ -3,9 +3,6 @@
     src: url(../fonts/)
 }
 
-* {
-    outline: 1px red solid;
-}
 
 .data {
     padding: 36px 0px 56px 0px;
@@ -117,16 +114,16 @@
         justify-content: flex-start;
         padding-top: 60px;
         padding-bottom: 56px;
+        background-image: url(../../images/block-3/bgimg-768.png);
+        background-position: right;
+        background-repeat: no-repeat;
     }
     
 //------------TITLE----------------
 
     .data__title{
         margin: 0px;
-        width: 210px;
-        background-image: url(../images/block-3/bgimg-768.png);
-        background-position: right;
-        background-repeat: no-repeat;
+        width: 244px;
     }
 
     .data__first-title{
@@ -163,7 +160,7 @@
     }
 
     .facts-list__item{
-        width: 160px;
+        width: 190px;
         margin-bottom: 0px;
     }
 
@@ -178,6 +175,22 @@
 
     .facts-list__item-title--span{
         font-size: 9px;
+    }
+
+    .facts-list__item--order1 {
+        order: 0;
+    }
+
+    .facts-list__item--order2 {
+        order: 3;
+    }
+
+    .facts-list__item--order3 {
+        order: 2;
+    }
+
+    .facts-list__item--order4 {
+        order: 1;
     }
 
     .facts-list__item-title-description{
