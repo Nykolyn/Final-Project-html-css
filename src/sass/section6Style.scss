@@ -1,3 +1,8 @@
+
+@import './variables.scss';
+
 .warning__headline__text {
+  font-family: $primary-font-family, sans-serif;
+  max-width: 196px;
   font-size: $font-size-section-headline;
 }
