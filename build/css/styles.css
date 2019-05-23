@@ -1,5 +1,5 @@
 /*
-   Import partials below
+Import partials below
 */
 
 /*! normalize.css v8.0.0 | MIT License | github.com/necolas/normalize.css */
@@ -423,6 +423,93 @@ template {
   /* Legacy iOS */
 }
 
+/*specification*/
+
+/*box sizing model*/
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+/* max width img*/
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/*clearfix for float*/
+
+.clearfix::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+/*visually hidden for reader*/
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbo"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.header__button {
+  width: 220px;
+  display: block;
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 800;
+  padding: 22px 0;
+  background-color: #ff6b08;
+  box-shadow: 0px 5px 6px 0px rgba(196, 87, 15, 0.26);
+  border-top: 1px solid #e0600c;
+  border-left: 1px solid #753c1b;
+  border-right: 1px solid #753c1b;
+  border-bottom: none;
+  cursor: pointer;
+}
+
+.header__button:hover {
+  background-color: #17ecff;
+  box-shadow: 0px 5px 6px 0px #355251;
+  border-left: 1px solid #6a886e;
+  border-right: 1px solid #6a886e;
+  border-top: 1px solid #177e8d;
+}
+
+.header__button:active {
+  background-color: #06a4b2;
+  box-shadow: 0px 5px 6px 0px #314340;
+  border-left: 1px solid #646c51;
+  border-right: 1px solid #646c51;
+  border-top: 1px solid #105c69;
+}
+
+.header__soc-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+}
+
 img {
   display: block;
   max-width: 100%;
@@ -434,9 +521,180 @@ img {
   margin: 0 auto;
 }
 
+.header {
+  background-image: url(../images/block-1/bg-480.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  padding-top: 15px;
+  padding-bottom: 38px;
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 26px;
+}
+
+.menu {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.menu__link {
+  display: block;
+  background-image: url(../images/block-1/burg_menu.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 28px;
+  height: 17px;
+}
+
+.header__title,
+.header__subtitle,
+.header__slogan,
+.header__lead,
+.header__title_md {
+  margin: 0;
+  text-align: center;
+  font-family: 'Acrom';
+  color: #fff;
+}
+
+.header__title {
+  text-transform: uppercase;
+  font-size: 30px;
+  font-weight: 900;
+  width: 260px;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 32px;
+}
+
+.header__title_md {
+  display: none;
+}
+
+.header__subtitle {
+  text-transform: uppercase;
+  font-size: 22px;
+  margin-bottom: 160px;
+}
+
+.mark {
+  color: #17ecff;
+  font-size: 30px;
+  font-weight: 800;
+}
+
+.header__slogan {
+  font-size: 14px;
+  font-weight: 800;
+  margin-bottom: 18px;
+}
+
+.header__lead {
+  font-size: 14px;
+  margin-bottom: 40px;
+}
+
+.header__soc-list {
+  justify-content: flex-end;
+}
+
+.header__soc-item {
+  width: 30px;
+  height: 30px;
+}
+
+.header__soc-link {
+  display: block;
+  width: 30px;
+  height: 30px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.header__icon-facebook {
+  background-image: url(../images/block-1/icon-facebook.png);
+}
+
+.header__icon-twitter {
+  background-image: url(../images/block-1/icon-twitter.png);
+}
+
+.header__soc-list {
+  display: none;
+}
+
+.header__button {
+  margin: 0 auto;
+}
+
 @media screen and (min-width: 768px) {
   .container {
     max-width: 640px;
+  }
+}
+
+@media (min-width: 768px) {
+  .header {
+    background-image: url(../images/block-1/bg-768.png);
+    padding-top: 25px;
+    padding-bottom: 95px;
+  }
+
+  .navigation {
+    margin-bottom: 50px;
+  }
+
+  .header__wrap {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 24px;
+  }
+
+  .header__inner-left {
+    width: 350px;
+  }
+
+  .header__title {
+    display: none;
+  }
+
+  .header__title_md {
+    font-size: 45px;
+    display: block;
+    margin-bottom: 30px;
+  }
+
+  .header__subtitle {
+    font-size: 45px;
+    font-size: 8px;
+  }
+
+  .header__inner-right {
+    width: 154px;
+  }
+
+  .header__slogan {
+    font-size: 10px;
+    margin-bottom: 18px;
+  }
+
+  .header__lead {
+    font-size: 10px;
+    margin-bottom: 183px;
+  }
+
+  .header__soc-list {
+    display: flex;
+  }
+
+  .header__button {
+    margin-left: 58px;
   }
 }
 
