@@ -2,6 +2,9 @@
 Import partials below
 */
 //normalize css
+
+// fonts
+
 @import './normalize';
 @import './color-variables.scss';
 
@@ -9,6 +12,7 @@ Import partials below
 
 //add fonts
 @import './fonts.scss';
+@import './normalize';
 //add specifications
 @import './specification.scss';
 //variables
@@ -17,7 +21,10 @@ Import partials below
 //placeholers (buttons, +' '+)
 @import './placeholder.scss';
 
+@import './career.scss';
 @import './header.scss';
+@import './section-14/main.scss';
+@import './section-15/styles.scss';
 
 img {
   display: block;
@@ -43,6 +50,3 @@ img {
 }
 
 
-@import './header.scss';
-@import './section-14/main.scss';
-@import './section-15/styles.scss';
