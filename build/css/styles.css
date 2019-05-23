@@ -423,6 +423,42 @@ template {
   /* Legacy iOS */
 }
 
+.button-feedback {
+  display: inline-block;
+  text-decoration: none;
+  border: none;
+}
+
+.button-feedback {
+  background-color: black;
+}
+
+.advertizing__title {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  -webkit-text-decoration: uppercase;
+  text-decoration: uppercase;
+}
+
+.advertizing__title__article {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 500;
+}
+
+.advertizing__title__article::before {
+  display: inline-block;
+  content: '';
+  width: 21px;
+  height: 2px;
+  color: black;
+}
+
 img {
   display: block;
   max-width: 100%;

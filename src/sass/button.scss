@@ -1,0 +1,10 @@
+%button {
+  display: inline-block;
+  text-decoration: none;
+  border: none;
+}
+
+.button-feedback {
+  @extend %button;
+  background-color: black;
+}

@@ -1,0 +1,23 @@
+.advertizing__title {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  text-decoration: uppercase;
+     &__article {
+      font-family: 'Raleway';
+      font-style: normal;
+      font-size: 18px;
+      line-height: 24px;
+      font-weight: 500;
+       &::before {
+         display: inline-block;
+         content:'';
+         width: 21px;
+         height: 2px;
+         color: black;
+       }
+
+}
+}
