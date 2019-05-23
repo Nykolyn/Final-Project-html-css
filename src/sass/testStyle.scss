@@ -8,8 +8,17 @@ img {
   max-width: 446px;
   margin: 0 auto;
 }
+div.intro {
+  display: flex;
+  flex-direction: column-reverse;
 
+}
+div.intro-cont{
+  display: flex;
+  flex-direction: column;
+}
 h2.intro-title {
+  display: block;
   padding: 0;
   margin: 0;
   margin-bottom: 17px;
@@ -20,6 +29,7 @@ h2.intro-title {
 }
 
 p.title-info {
+  display: block;
   margin: 0 auto;
   margin-bottom: 37px;
   padding: 0px;
@@ -56,7 +66,9 @@ ul.intro-list {
   padding: 0;
 }
 
-li.intro-item{}
+li.intro-item{
+  
+}
 
 h3.intro-title {
   margin: 0;
@@ -66,6 +78,8 @@ h3.intro-title {
   text-transform: uppercase;
   font-size: 14px;
   line-height: 20px;
+  font-family: "Acrom";
+  font-weight: 700;
   color: #ffffff;
   background-color: black;
 }
@@ -73,6 +87,7 @@ h3.intro-title {
 p.intro-text {
   width: 300px;
   margin: 0;
+  margin-bottom: 15px;
   padding: 0;
   font-size: 14px;
   line-height: 20px;
@@ -80,11 +95,25 @@ p.intro-text {
   font-weight: normal;
   color: #3f4144;
 }
+img.img-2 {
+  display: block;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+
+}
 
 h2.advantage-title{
   margin: 0;
   margin-bottom: 30px;
   padding: 0;
+  padding-left: 55px;
   font-size: 14px;
   line-height: 20px;
   font-family: "Acrom";
@@ -97,6 +126,11 @@ ul.advantage-list {
   margin: 0;
   margin-bottom: 27px;
   padding: 0;
+}
+
+li.advantage-item{
+  display: inline-block;
+  width: 287px;
 }
 
 h3.item-title {
@@ -208,15 +242,18 @@ h3.value {
   }
   
   li.intro-item {
+    align-items: center;
     display: block;
     height: 50px;
     width: 306px;
     margin: 0;
+    margin-bottom: 30px;
     padding: 0;
   }
   
   h3.intro-title {
     margin: 0;
+    margin-right: 27px;
     padding: 0;
     display: inline-block;
     width: 115px;
@@ -240,51 +277,84 @@ h3.value {
     font-weight: normal;
     color: #3f4144;
   }
-  
+
+  div.advantage {
+    display: flex;
+    justify-content: space-between;
+  }
+
+
   h2.advantage-title{
     margin: 0;
     margin-bottom: 30px;
+    margin-right: 70px;
     padding: 0;
-    font-size: 14px;
-    line-height: 20px;
+    width: 114px;
+    height: 90px;
+    font-size: 10px;
+    line-height: 16px;
     font-family: "Acrom";
     font-weight: ExtraBold;
     text-transform: uppercase;
   }
-  
+
+
   ul.advantage-list {
-    list-style: none;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+    width: 518px;
+    height: 176px;
+   
+  } 
+
+  li.advantage-item {
+    display: block;
+    padding: 0;
     margin: 0;
     margin-bottom: 27px;
-    padding: 0;
+    margin-right: 20px;
+    width: 165px;
+    height: 70px;  
   }
   
   h3.item-title {
+    display: block;
+    width: 165px;
+    height: 30px;
     margin: 0;
     margin-bottom: 12px;
     padding: 0;
-    display: inline-block;
     text-transform: uppercase;
-    font-size: 14px;
-    line-height: 20px;
+    font-size: 10px;
+    line-height: 13px;
     font-family: "Acrom";
     font-weight: Bold;
   }
   
   p.item-text{
-    display: inline-block;
+    display: block;
     margin: 0;
-    margin-bottom: 37px;
+    margin-bottom: 3px;
     padding: 0;
-    width: 240px;
-    font-size: 14px;
-    line-height: 20px;
+    width: 165px;
+    height: 85px;
+    font-size: 9px;
+    line-height: 13px;
     font-family: "Acrom";
     font-weight: normal;
     color: #3f4144;
   } 
 
   h2.offer-title {
+    display: inline-block;
+    font-size: 9px;
+    line-height: 15px;
+    font-family: "Acrom";
+    font-weight: normal;    
     color: black;
     background-color: #46ebfe;
   }
@@ -295,8 +365,8 @@ h3.value {
     padding: 0;
     display: inline-block;
     text-transform: uppercase;
-    font-size: 14px;
-    line-height: 20px;
+    font-size: 9px;
+    line-height: 23px;
   }
   
   
