@@ -14,7 +14,11 @@ Import partials below
 
 @import './variables.scss';
 
-// Footer Style
+//Section-6 Style
+
+@import './section6Style.scss'
+
+//Footer Style
 
 @import './footerStyle.scss';
 
@@ -42,4 +46,3 @@ img {
     max-width: 712px;
   }
 }
-
