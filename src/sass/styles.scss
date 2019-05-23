@@ -7,22 +7,15 @@ Import partials below
 
 // fonts
 
-//add fonts(requires corrections)
+//add fonts
 @import './fonts.scss';
 
 // Variables 
 
 @import './variables.scss';
 
-//Section-6 Style
-
-@import './section6Style.scss'
-
-//Footer Style
-
-@import './footerStyle.scss';
-
 // Defaults
+
 
 img {
   display: block;
@@ -46,3 +39,10 @@ img {
     max-width: 712px;
   }
 }
+
+
+@import './header.scss';
+@import './section6Style.scss';
+@import './section-14/main.scss';
+@import './section-15/styles.scss';
+@import './footerStyle.scss';
