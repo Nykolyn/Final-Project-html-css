@@ -510,6 +510,7 @@ input[type="radio"].visually-hidden {
   display: flex;
 }
 
+<<<<<<< HEAD
 @font-face {
   font-family: 'Raleway';
   src: url(../fonts/);
@@ -657,6 +658,8 @@ input[type="radio"].visually-hidden {
   margin: 0px;
 }
 
+=======
+>>>>>>> master
 img {
   display: block;
   max-width: 100%;
