@@ -2,18 +2,30 @@
 Import partials below
 */
 //normalize css
+
+// fonts
+
 @import './normalize';
-//add fonts(requires corrections)
+@import './color-variables.scss';
+
+// fonts
+
+//add fonts
 @import './fonts.scss';
+@import './normalize';
 //add specifications
 @import './specification.scss';
 //variables
-// @import './variables.scss';
 // color set
 @import './color-variables.scss';
 //placeholers (buttons, +' '+)
 @import './placeholder.scss';
 
+@import './header.scss';
+@import './itsTimeToMakeMoney.scss';
+@import './section-14/main.scss';
+@import './career.scss';
+@import './section-15/styles.scss';
 
 img {
   display: block;
@@ -22,7 +34,7 @@ img {
 }
 
 .container {
-  max-width: 446px;
+  max-width: 448px;
   margin: 0 auto;
 }
 
@@ -38,7 +50,4 @@ img {
   }
 }
 
-//b
-@import './header.scss';
-@import './itsTimeToMakeMoney.scss';
 
