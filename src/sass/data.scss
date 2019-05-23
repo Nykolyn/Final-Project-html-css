@@ -14,6 +14,7 @@
 .data__title {
     width: 210px;
     margin: 0 auto;
+    font-weight: 700;
 }
 
 .data__first-title{
@@ -31,7 +32,7 @@
     margin: 0px;
     margin-bottom: 44px;
     padding: 0px;
-    font-size: 11px;
+    font-size: 12px;
     line-height: 15px;
     font-weight: 300;
     position: relative;
@@ -57,9 +58,31 @@
     list-style: none;
 }
 
+.facts-list__item{
+    position: relative;
+    width: 360px;
+}
+
+.facts-list__item::before {
+    display: block;
+    content: '';
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    top: 10px;
+    left: -24px;
+    background-color: $default-orange;
+}
+
+.facts-list__item:not(:last-child) {
+    margin-bottom: 25px;
+}
+
 .facts-list__item-title {
     margin: 0px;
+    margin-bottom: 6px;
     font-size: 23px;
+    font-weight: 600;
     text-transform: uppercase;
 }
 
@@ -69,9 +92,14 @@
 
 .facts-list__item-title-description{
     margin: 0px;
+    margin-bottom: 12px;
     line-height: 20px;
 }
 
 .facts-list__item-title-description--span{
     background-color: $default-blue;
+}
+
+.facts-list__item-text{
+    margin: 0px;
 }
