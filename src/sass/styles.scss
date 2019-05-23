@@ -2,22 +2,38 @@
 Import partials below
 */
 //normalize css
+
+// fonts
+
 @import './normalize';
+//add fonts
+@import './fonts.scss';
 @import './color-variables.scss';
 
 // fonts
 
-//add fonts
-@import './fonts.scss';
+//add specifications
+@import './specification.scss';
+//variables
+// @import './variables.scss';
 //add specifications
 @import './specification.scss';
 //variables
 // color set
-@import './color-variables.scss';
 //placeholers (buttons, +' '+)
 @import './placeholder.scss';
+// color set
 
+
+
+//section4
+@import './ExceptNumbers.scss';
 @import './header.scss';
+@import './itsTimeToMakeMoney.scss';
+@import './section-14/main.scss';
+@import './career.scss';
+@import './section-15/styles.scss';
+@import './important.scss';
 
 img {
   display: block;
@@ -46,5 +62,4 @@ img {
 @import './header.scss';
 @import './section-14/main.scss';
 @import './section-15/styles.scss';
-
 @import './section-17/styles.scss';
