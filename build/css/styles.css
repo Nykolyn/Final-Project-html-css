@@ -1202,6 +1202,67 @@ img {
   font-size: 13px;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.first-step__title {
+  font-family: 'Acrom', sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 900;
+  text-transform: uppercase;
+  width: 196px;
+  margin-bottom: 43px;
+}
+
+.first-step__mark {
+  color: #ffffff;
+  background-color: #000000;
+}
+
+.step-decoration {
+  position: relative;
+}
+
+.step-decoration__text {
+  font-family: 'Acrom', sans-serif;
+  font-size: 13.5px;
+  line-height: 19.5px;
+  font-weight: normal;
+  width: 269px;
+}
+
+.step-decoration__text::before {
+  content: '';
+  width: 20px;
+  height: 2px;
+  background-color: #000000;
+  position: absolute;
+  left: 12%;
+  top: 40%;
+}
+
+.second-step-list {
+  width: 286px;
+  list-style: none;
+}
+
+.second-step-item__title {
+  font-family: 'Acrom', sans-serif;
+  font-size: 13.5px;
+  line-height: 21.27px;
+  font-weight: 800;
+}
+
+.second-step-item__text {
+  font-family: 'Acrom', sans-serif;
+  font-size: 13.5px;
+  line-height: 19.5px;
+  font-weight: normal;
+}
+
 .after-course-section {
   padding-top: 20px;
   padding-bottom: 48px;
@@ -2004,6 +2065,42 @@ img {
     margin: 0;
   }
 
+  .step {
+    display: flex;
+  }
+
+  .first-step__title {
+    font-size: 27px;
+    line-height: 33.65px;
+    font-weight: 900;
+    width: 198px;
+    text-align: center;
+  }
+
+  .first-step__mark {
+    color: #ffffff;
+    background-color: #000000;
+  }
+
+  .step-decoration {
+    position: relative;
+  }
+
+  .step-decoration__text {
+    font-size: 9px;
+    line-height: 13.5px;
+    width: 180px;
+    font-weight: 600;
+    padding-left: 47px;
+  }
+
+  .step-decoration__text::before {
+    position: absolute;
+    width: 30px;
+    height: 3px;
+    left: 0;
+  }
+
   .important {
     padding-bottom: 55px;
     padding-top: 74px;
@@ -2575,6 +2672,10 @@ img {
 }
 
 @media (min-width: 320px) and (max-width: 767px) {
+  .first-step__title {
+    text-align: center;
+  }
+
   .important-box {
     margin: 0 auto;
     margin-bottom: 43px;
