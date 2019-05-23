@@ -1,8 +1,25 @@
+// * {
+//   outline: 1px solid red;
+// }
+
 // header 
+
+.position_relative {
+  position: relative;
+}
+
+.header__content {
+  max-width: 367px;
+  display: block;
+  margin: 0 auto;
+}
 
 //sm mobile first
 .header {
-  background-image: url(../images/block-1/bg-480.png);
+  font-family: 'Acrom';
+
+
+  background-image: url(../images/block-1/480/bg-480.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -39,15 +56,14 @@
 .header__title_md {
   margin: 0;
   text-align: center;
-  font-family: 'Acrom';
   color: #fff;
 }
 
 .header__title {
   text-transform: uppercase;
   font-size: 30px;
-  font-weight: 900;
-  width: 260px;
+  font-weight: 800;
+  width: 246px;
   display: block;
   margin: 0 auto;
   margin-bottom: 32px;
@@ -57,11 +73,43 @@
   display: none;
 }
 
+.header__subtitle-wrap {
+  position: relative;
+  width: 367px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+
+
+.header__subtitle-wrap::before {
+  position: absolute;
+  top: 0;
+  left: -20px;
+  background-image: url(../images/block-1/icon_before.png);
+  width: 20px;
+  height: 20px;
+  background-repeat: no-repeat;
+  background-position: center;
+  content: '';
+}
+
+.header__subtitle-wrap::after {
+  bottom: 0;
+  right: -20px;
+  background-image: url(../images/block-1/icon_after.png);
+  width: 20px;
+  height: 20px;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  content: '';
+}
 
 .header__subtitle {
   text-transform: uppercase;
-  font-size: 22px;
-  margin-bottom: 160px;
+  font-size: 13px;
+  font-weight: 700;
+  text-align: center;
 }
 
 .mark {
@@ -70,15 +118,26 @@
   font-weight: 800;
 }
 
+.header__goit {
+  display: block;
+  width: 312px;
+  margin: 0 auto;
+  margin-bottom: 40px;
+}
+
 .header__slogan {
   font-size: 14px;
+  text-transform: uppercase;
   font-weight: 800;
   margin-bottom: 18px;
+  text-align: left;
 }
 
 .header__lead {
-  font-size: 14px;
+  font-size: 15px;
   margin-bottom: 40px;
+  text-align: left;
+  color: #afb0b3;
 }
 
 .header__soc-list {
@@ -87,14 +146,18 @@
 }
 
 .header__soc-item {
-  width: 30px;
-  height: 30px;
+  width: 13px;
+  height: 13px;
+}
+
+.header__soc-item:not(:last-child) {
+  margin-right: 16px;
 }
 
 .header__soc-link {
   display: block;
-  width: 30px;
-  height: 30px;
+  width: 13px;
+  height: 13px;
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -124,8 +187,17 @@
   @extend %default-button-active;
 }
 
+
+.header__number {
+  display: none;
+}
+
 // media md table
 @media (min-width:768px) {
+  .header__content {
+    max-width: 640px;
+  }
+
   .header {
     background-image: url(../images/block-1/bg-768.png);
     padding-top: 25px;
@@ -151,14 +223,30 @@
   }
 
   .header__title_md {
-    font-size: 45px;
+    margin: 0;
+    font-size: 44px;
     display: block;
+    text-align-last: left;
+    text-transform: uppercase;
     margin-bottom: 30px;
   }
 
+  .header__subtitle-wrap {
+    width: 225px;
+    margin: 0;
+    margin-left: 38px;
+  }
+
   .header__subtitle {
+    display: block;
+    margin: 0 auto;
     font-size: 45px;
     font-size: 8px;
+    width: 177px;
+  }
+
+  .header__goit {
+    display: none;
   }
 
   .header__inner-right {
@@ -172,7 +260,7 @@
 
   .header__lead {
     font-size: 10px;
-    margin-bottom: 183px;
+    margin-bottom: 86px;
   }
 
   .header__soc-list {
@@ -181,5 +269,63 @@
 
   .header__button {
     margin-left: 58px;
+  }
+
+  .header__number {
+    background-image: url(../images/block-1/header_number_768.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 11px;
+    height: 39px;
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: -64px;
+  }
+}
+
+@media (min-width:940px) {
+  .header {
+    background-image: url(../images/block-1/bg.png);
+  }
+
+  .position_relative {
+    position: static;
+  }
+
+  .header_content_xl {
+    position: relative;
+  }
+
+  .header__number {
+    background-image: url(../images/block-1/header_number_768.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 11px;
+    height: 39px;
+    display: block;
+    position: absolute;
+    left: 38px;
+    bottom: -74px;
+  }
+
+  .logo {
+    position: absolute;
+    top: 0;
+    left: 38px;
+  }
+
+  .menu {
+    position: absolute;
+    top: 0;
+    right: 38px;
+  }
+
+  .header__soc-list {
+    position: absolute;
+    right: 38px;
+    bottom: -74px;
   }
 }
