@@ -14,6 +14,8 @@ Import partials below
 //placeholers (buttons, +' '+)
 @import './placeholder.scss';
 
+@import './important.scss';
+
 
 img {
   display: block;
@@ -38,5 +40,4 @@ img {
   }
 }
 
-//b
-@import './header.scss';
+
