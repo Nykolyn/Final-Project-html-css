@@ -6,16 +6,18 @@ Import partials below
 // fonts
 
 @import './normalize';
+@import './fonts.scss';
 @import './color-variables.scss';
+@import './placeholder.scss';
 
 // fonts
 
 //add fonts
-@import './fonts.scss';
-
-// Variables 
-
-// @import './variables.scss';
+@import './header.scss';
+@import './section6Style.scss';
+@import './section-14/main.scss';
+@import './section-15/styles.scss';
+@import './footerStyle.scss';
 
 // Defaults
 
@@ -43,9 +45,3 @@ img {
   }
 }
 
-
-@import './header.scss';
-@import './section6Style.scss';
-@import './section-14/main.scss';
-@import './section-15/styles.scss';
-@import './footerStyle.scss';
