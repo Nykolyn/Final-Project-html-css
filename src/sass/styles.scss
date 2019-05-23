@@ -1,32 +1,43 @@
 /*
 Import partials below
 */
+
+// fonts
+
 //normalize css
 
 // fonts
 
 @import './normalize';
+//add fonts
+@import './fonts.scss';
 @import './color-variables.scss';
 
 // fonts
 
-//add fonts
-@import './fonts.scss';
-@import './normalize';
+//add specifications
+@import './specification.scss';
+//variables
+// @import './variables.scss';
 //add specifications
 @import './specification.scss';
 //variables
 // color set
-@import './color-variables.scss';
 //placeholers (buttons, +' '+)
 @import './placeholder.scss';
+// color set
 
+//section4
 @import './header.scss';
 @import './itsTimeToMakeMoney.scss';
+@import './ExceptNumbers.scss';
 @import './career.scss';
+@import './StepCourseStyles.scss';
 @import './section-14/main.scss';
 @import './section-15/styles.scss';
+@import './important.scss';
 @import './register.scss';
+
 
 img {
   display: block;
