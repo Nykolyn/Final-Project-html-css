@@ -8,6 +8,7 @@
     font-size: 14px;
     line-height: 20px;
     font-weight: 400;
+    padding-top: 6px;
 }
 
 //--------------FOR - IT----------------
@@ -168,6 +169,7 @@
     }
 
     .for-it__img {
+        width: 276px;
         margin-bottom: 34px;
         padding: 0px;
     }
@@ -199,7 +201,7 @@
     .for-it__sub-title {
         margin-bottom: 7px;
         padding-left: 110px;
-        padding-right: 70px;
+        padding-right: 92px;
         font-size: 9px;
         line-height: 14px;
         font-weight: 900;
@@ -210,7 +212,7 @@
         font-weight: normal;
         line-height: 12px;
         padding-left: 110px;
-        padding-right: 70px;
+        padding-right: 92px;
     }
     
 //---------------EX - NUM ---------------
@@ -281,4 +283,74 @@
 
 @media screen and (min-width: 1200px) {
 
+    .except-numbers {
+        padding: 66px 0px;
+    }
+
+    //------------FOT - IT ------------
+
+    .except-numbers__for-it {
+        width: 356px;
+        padding: 0px 10px;
+    }
+
+    .for-it__img {
+        width: 306px;
+        height: 312px;
+        margin-bottom: 18px;
+    }
+
+
+    .for-it__title-wrap {
+        font-size: 10px;
+        top: 330px;
+    }
+
+    .for-it__sub-title {
+        font-size: 10px;
+        padding-right: 70px;
+    }
+
+    .for-it__text {
+        padding-right: 80px;
+        font-size: 9px;
+    }
+
+    //---------EX - NUM ----------
+
+    .except-numbers__ex-num{
+        width: 356px;
+        padding: 0px 10px;
+    }
+
+    .ex-num__title {
+        margin-bottom: 25px;
+    }
+
+    .ex-num__sub-title {
+        font-size: 10px;
+        margin-bottom: 46px;
+    }
+
+    .advanteges-list__item {
+        width: 290px;
+        padding-left: 36px;
+        margin-bottom: 20px;
+    }
+
+    .advanteges-list__item::before{
+        width: 8px;
+        height: 8px;
+        top: 4px;
+    }
+
+    .item__title {
+        font-size: 10px;
+        margin-bottom: 8px;
+    }
+
+
+    .item__text {
+        font-size: 9px;
+    }
 }
