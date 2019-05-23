@@ -12,7 +12,7 @@
 
 
   .main-title__text {
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Acrom', sans-serif;
     font-weight: 900;
     font-size: 18px;
     line-height: 24px;
@@ -42,7 +42,7 @@
 
     margin: 0;
     padding: 0;
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Acrom', sans-serif;
     font-size: 12.89px;
     line-height: 19.33px;
     color: #fff;
@@ -113,6 +113,7 @@
 
   .row-s__mark-price {
     font-family: sans-serif;
+    font-size: 18px;
     color: #fff;
     text-transform: uppercase;
     font-weight: 700;
@@ -122,8 +123,6 @@
 
 
 .important-second-div {
-
-
   text-align: center;
 
 
@@ -140,7 +139,7 @@
 
 
 .important-part-two__text-gift {
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Acrom', sans-serif;
   font-size: 14.37px;
   line-height: 18.86px;
   font-weight: 700;
@@ -149,7 +148,7 @@
 }
 
 .important-part-two__text-goal {
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Acrom', sans-serif;
   font-size: 13px;
   line-height: 18.86px;
   font-weight: 500;
@@ -165,7 +164,7 @@
 
 .orange-section__text-copy {
 
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Acrom', sans-serif;
   font-size: 14.37px;
   line-height: 21.55px;
   font-weight: 500;
@@ -197,7 +196,7 @@
   box-shadow: 0px 5px 6px 0px rgba(196, 87, 15, 0.26);
   border: none;
   padding: 14px 44px;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Acrom', sans-serif;
   font-size: 10px;
   line-height: 14.59px;
   font-weight: 900;
@@ -260,7 +259,7 @@
     }
 
     .main-title__text {
-      font-family: 'Raleway', sans-serif;
+      font-family: 'Acrom', sans-serif;
       font-weight: 900;
       font-size: 27px;
       line-height: 33.65px;
@@ -282,12 +281,19 @@
       top: 5%;
     }
 
+    .row-f__price-text {
+    
+      font-size: 10px;
+      line-height: 20px;
+     
+    }
+
     .row-f__text,
     .row-s__mark {
 
       margin: 0;
       padding: 0;
-      font-family: 'Raleway', sans-serif;
+      font-family: 'Acrom', sans-serif;
       font-size: 9px;
 
       color: #fff;
@@ -300,15 +306,20 @@
       font-size: 27px;
     }
 
+
+    .row-s__mark-price{
+      font-size: 18px;
+    }
+    
     .row-f__text::after {
       content: '';
       display: block;
-      width: 25px;
+      width: 18px;
       height: 1px;
       background-color: #fff;
       position: absolute;
       top: 50%;
-      margin-left: 60px;
+      margin-left: 65px;
 
 
 
@@ -382,7 +393,7 @@
   }
 
   .main-title__text {
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Acrom', sans-serif;
     font-weight: 900;
     font-size: 30px;
     line-height: 37.35px;
@@ -409,7 +420,7 @@
   .row-s__mark {
 
 
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Acrom', sans-serif;
     font-size: 10px;
 
     color: #fff;
@@ -423,6 +434,9 @@
   }
 
 
+  .row-s__mark-price{
+    font-size: 10px;
+  }
   .important__second-div {
     width: 205px;
     ;
@@ -457,6 +471,15 @@
     line-height: 11.23px;
     font-weight: 900;
     width: 225px;
+
+  }
+
+  .row-f__price-text {
+    
+    font-size: 11x;
+    line-height: 22px;
+ 
+
 
   }
 
