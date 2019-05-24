@@ -1599,6 +1599,63 @@ img {
     left: 0;
     bottom: -64px;
   }
+
+  .content {
+    display: flex;
+    margin-top: 20px;
+  }
+
+  .profession__text {
+    text-align: left;
+    margin: 0;
+    font-family: 'Acrom';
+    font-weight: 800;
+    font-size: 24px;
+  }
+
+  .profession__subtitle {
+    width: 137px;
+    text-align: left;
+    font-family: 'Acrom';
+    font-weight: 500;
+    font-size: 10px;
+    padding-left: 24px;
+    word-spacing: 2px;
+  }
+
+  .profession__row-1 {
+    margin: 0;
+    padding: 0 10px;
+  }
+
+  .profession__row__wrap {
+    margin-right: 0;
+    padding-left: 30px;
+  }
+
+  .profession__text::before {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 20px;
+    height: 3px;
+    background-color: #000;
+    top: 86px;
+    left: 0px;
+  }
+
+  .profession__row__wrap {
+    margin: 0 auto;
+    text-align: left;
+  }
+
+  .profession__text-wrap {
+    font-family: 'Acrom';
+    font-weight: 800;
+    font-size: 13px;
+    text-align: left;
+    word-spacing: 1px;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -1820,6 +1877,51 @@ img {
   .career__subject-wrap {
     padding-top: 30px;
     margin-bottom: 20px;
+  }
+
+  .content {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+
+  .profession__text {
+    width: 266px;
+    text-align: left;
+    margin: 0;
+    font-family: 'Acrom';
+    font-weight: 800;
+    font-size: 24px;
+    margin-bottom: 15px;
+  }
+
+  .profession__subtitle {
+    width: 200px;
+    text-align: left;
+    font-family: 'Acrom';
+    font-weight: 500;
+    font-size: 12px;
+    padding: 0;
+  }
+
+  .profession__text::before {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 20px;
+    height: 3px;
+    background-color: #000;
+    top: 102px;
+    left: 0;
+  }
+
+  .profession__row-1 {
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  .profession__row-image {
+    margin: 0;
   }
 }
 
