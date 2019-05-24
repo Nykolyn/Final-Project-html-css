@@ -1,0 +1,74 @@
+/*
+Import partials below
+*/
+
+// fonts
+
+//normalize css
+
+// fonts
+
+@import './normalize';
+//add fonts
+@import './fonts.scss';
+@import './color-variables.scss';
+
+// fonts
+
+//add specifications
+@import './specification.scss';
+//variables
+// @import './variables.scss';
+//add specifications
+@import './specification.scss';
+//variables
+// color set
+//placeholers (buttons, +' '+)
+@import './placeholder.scss';
+// color set
+
+
+@import './ExceptNumbers.scss';
+//section4
+@import './header.scss';
+@import './itsTimeToMakeMoney.scss';
+@import './ExceptNumbers.scss';
+@import './section6Style.scss';
+@import './career.scss';
+@import './StepCourseStyles.scss';
+@import './section-14/main.scss';
+@import './section-15/styles.scss';
+@import './section-7.scss';
+@import './important.scss';
+@import './register.scss';
+@import './footerStyle.scss';
+
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  max-width: 448px;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 640px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 712px;
+  }
+}
+
+
+@import './header.scss';
+@import './section-14/main.scss';
+@import './section-15/styles.scss';
+@import './section-17/styles.scss';
