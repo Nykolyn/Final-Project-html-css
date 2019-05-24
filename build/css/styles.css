@@ -534,7 +534,8 @@ input[type="radio"].visually-hidden {
 
 .header__button,
 .after-course-item__button,
-.important-second-div__but {
+.important-second-div__but,
+.register-button {
   width: 220px;
   display: block;
   text-transform: uppercase;
@@ -552,7 +553,8 @@ input[type="radio"].visually-hidden {
 }
 
 .header__button:hover,
-.after-course-item__button:hover {
+.after-course-item__button:hover,
+.register-button:hover {
   background-color: #17ecff;
   box-shadow: 0px 5px 6px 0px #355251;
   border-left: 1px solid #6a886e;
@@ -578,19 +580,19 @@ input[type="radio"].visually-hidden {
 }
 
 @font-face {
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Acrom', sans-serif;
   src: url(../fonts/);
 }
 
 .data {
   padding: 36px 0px 56px 0px;
   margin: 0px;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Acrom', sans-serif;
   font-size: 14px;
 }
 
 .data__title {
-  width: 210px;
+  width: 224px;
   margin: 0 auto;
   font-weight: 700;
 }
@@ -663,7 +665,7 @@ input[type="radio"].visually-hidden {
 }
 
 .facts-list__item-title--span {
-  font-size: 13px;
+  font-size: 12px;
 }
 
 .facts-list__item-title-description {
@@ -674,6 +676,7 @@ input[type="radio"].visually-hidden {
 
 .facts-list__item-title-description--span {
   background-color: #16ebfe;
+  font-weight: 700;
 }
 
 .facts-list__item-text {
@@ -681,12 +684,12 @@ input[type="radio"].visually-hidden {
 }
 
 @font-face {
-  font-family: 'Raleway';
+  font-family: 'Acrom', sans-serif;
   src: url(../fonts/);
 }
 
 .except-numbers {
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Acrom', sans-serif;
   font-size: 14px;
   line-height: 20px;
   font-weight: 400;
@@ -760,7 +763,7 @@ input[type="radio"].visually-hidden {
 .ex-num__title {
   margin: 0 auto;
   margin-bottom: 20px;
-  width: 280px;
+  width: 300px;
   color: #fff;
   text-align: center;
   font-size: 18px;
@@ -825,119 +828,6 @@ input[type="radio"].visually-hidden {
 
 .item__text {
   margin: 0px;
-}
-
-.position_relative {
-  position: relative;
-}
-
-.header__content {
-  max-width: 367px;
-  display: block;
-  margin: 0 auto;
-}
-
-.header {
-  font-family: 'Acrom';
-  background-image: url(../images/block-1/480/bg-480.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
-  padding-top: 15px;
-  padding-bottom: 38px;
-}
-
-.navigation {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 26px;
-}
-
-.menu {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-.menu__link {
-  display: block;
-  background-image: url(../images/block-1/burg_menu.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  width: 28px;
-  height: 17px;
-}
-
-/*clearfix for float*/
-
-.clearfix::after {
-  content: '';
-  display: table;
-  clear: both;
-}
-
-/*visually hidden for reader*/
-
-.visually-hidden:not(:focus):not(:active),
-input[type="checkbo"].visually-hidden,
-input[type="radio"].visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  -webkit-clip-path: inset(100%);
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
-
-.header__button,
-.after-course-item__button,
-.register-button {
-  width: 220px;
-  display: block;
-  text-transform: uppercase;
-  color: #fff;
-  font-size: 12px;
-  font-weight: 800;
-  padding: 22px 0;
-  background-color: #ff6b08;
-  box-shadow: 0px 5px 6px 0px rgba(196, 87, 15, 0.26);
-  border-top: 1px solid #e0600c;
-  border-left: 1px solid #753c1b;
-  border-right: 1px solid #753c1b;
-  border-bottom: none;
-  cursor: pointer;
-}
-
-.header__button:hover,
-.after-course-item__button:hover,
-.register-button:hover {
-  background-color: #17ecff;
-  box-shadow: 0px 5px 6px 0px #355251;
-  border-left: 1px solid #6a886e;
-  border-right: 1px solid #6a886e;
-  border-top: 1px solid #177e8d;
-}
-
-.header__button:active,
-.after-course-item__button:active {
-  background-color: #06a4b2;
-  box-shadow: 0px 5px 6px 0px #314340;
-  border-left: 1px solid #646c51;
-  border-right: 1px solid #646c51;
-  border-top: 1px solid #105c69;
-}
-
-.header__soc-list,
-.after-course-list {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  display: flex;
 }
 
 .position_relative {
@@ -1225,6 +1115,153 @@ img {
   font-weight: 800;
 }
 
+@font-face {
+  font-family: 'Acrom', sans-serif;
+  src: url(../fonts/);
+}
+
+.except-numbers {
+  font-family: 'Acrom', sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  padding-top: 6px;
+}
+
+.except-numbers__for-it {
+  padding-bottom: 50px;
+  position: relative;
+}
+
+.for-it__img {
+  padding-top: 10px;
+  margin-bottom: 34px;
+}
+
+.for-it__title-wrap {
+  margin: 0px auto;
+  width: 255px;
+  text-align: left;
+}
+
+.for-it__title-fl {
+  margin: 0px 0px 8px 0px;
+  padding: 0px;
+  width: 130px;
+  color: #fff;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.for-it__title-sl {
+  margin: 0px;
+  margin-bottom: 32px;
+  padding: 0px;
+  width: 254px;
+  color: #fff;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.for-it__title-span {
+  margin: 0px;
+  padding: 0px;
+  background-color: #000;
+  text-transform: uppercase;
+}
+
+.for-it__sub-title {
+  margin: 0px;
+  margin-bottom: 14px;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 700;
+}
+
+.for-it__text {
+  margin: 0px;
+}
+
+.for-it__span {
+  background-color: #16ebfe;
+}
+
+.except-numbers__ex-num {
+  padding-bottom: 42px;
+}
+
+.ex-num__title {
+  margin: 0 auto;
+  margin-bottom: 20px;
+  width: 300px;
+  color: #fff;
+  text-align: center;
+  font-size: 18px;
+}
+
+.ex-num__title-span {
+  background-color: #000;
+  text-transform: uppercase;
+}
+
+.ex-num__sub-title {
+  margin: 0px auto;
+  margin-bottom: 48px;
+  width: 290px;
+  padding-left: 38px;
+  position: relative;
+  font-weight: 500;
+}
+
+.ex-num__sub-title::before {
+  display: block;
+  content: '';
+  width: 16px;
+  height: 2px;
+  background-color: #000;
+  position: absolute;
+  top: 8px;
+  left: 10px;
+}
+
+.ex-num__advateges-list {
+  margin: 0px;
+  list-style: none;
+  padding-left: 40px;
+}
+
+.advanteges-list__item {
+  position: relative;
+}
+
+.advanteges-list__item:not(:last-child) {
+  margin-bottom: 24px;
+}
+
+.advanteges-list__item::before {
+  display: block;
+  content: '';
+  width: 4px;
+  height: 4px;
+  background-color: #000000;
+  position: absolute;
+  top: 10px;
+  left: -15px;
+}
+
+.item__title {
+  margin: 0px;
+  margin-bottom: 14px;
+  text-transform: uppercase;
+  font-weight: 800;
+}
+
+.item__text {
+  margin: 0px;
+}
+
 .career {
   padding-top: 30px;
   padding-bottom: 40px;
@@ -1293,6 +1330,65 @@ img {
 
 .career__desc {
   font-size: 13px;
+}
+
+.list {
+  margin: 0 auto;
+  list-style: none;
+}
+
+.link {
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.stepcourse__text {
+  font-family: 'Raleway';
+  font-weight: 800;
+}
+
+.stepcourse__text--orange {
+  font-family: 'Raleway';
+  font-weight: 500;
+  color: #ff6b08;
+  position: relative;
+}
+
+.stepcourse__text--orange::before {
+  content: '/';
+  color: #000000;
+  font-family: 'Raleway';
+  font-weight: 500;
+  font-size: 28px;
+  position: absolute;
+}
+
+.stepcourse__list {
+  counter-reset: my-counter;
+}
+
+.stepcourse__item {
+  counter-increment: my-counter;
+  position: relative;
+}
+
+.stepcourse__item-title {
+  font-family: 'Raleway';
+  font-weight: 700;
+}
+
+.stepcourse__item-text {
+  margin: 0;
+  font-family: 'Raleway';
+  color: #3f4144;
+}
+
+.stepcourse__button-link {
+  font-family: 'Raleway';
+  font-size: 11px;
+  line-height: 18px;
+  font-weight: 800;
+  color: #ffffff;
 }
 
 * {
@@ -1563,107 +1659,6 @@ img {
   margin-bottom: 16px;
 }
 
-<<<<<<< HEAD
-@media screen and (min-width: 768px) {
-  .data {
-    display: flex;
-    justify-content: flex-start;
-    padding-top: 60px;
-    padding-bottom: 56px;
-    background-image: url(../images/block-3/bgimg-768.png);
-    background-position: 420px 120px;
-    background-repeat: no-repeat;
-  }
-
-  .data__title {
-    margin: 0px;
-    width: 240px;
-  }
-
-  .data__first-title {
-    font-weight: 600;
-    margin-bottom: 20px;
-    font-size: 27px;
-    line-height: 33px;
-    text-align: left;
-  }
-
-  .data__second-title {
-    width: 166px;
-    margin: 0px;
-    font-size: 9px;
-    line-height: 13px;
-    font-weight: 500;
-    padding-left: 46px;
-  }
-
-  .data__second-title::before {
-    left: 0px;
-  }
-
-  .data__facts {
-    height: 190px;
-  }
-
-  .data__facts-list {
-    padding: 0px;
-    display: flex;
-    flex-wrap: wrap;
-  }
-
-  .facts-list__item {
-    width: 164px;
-    margin-bottom: 0px;
-    margin-right: 40px;
-  }
-
-  .facts-list__item::before {
-    display: none;
-  }
-
-  .facts-list__item-title {
-    font-size: 17px;
-    margin-bottom: 5px;
-  }
-
-  .facts-list__item-title--span {
-    font-size: 9px;
-  }
-
-  .facts-list__item--order1 {
-    order: 0;
-  }
-
-  .facts-list__item--order2 {
-    order: 3;
-  }
-
-  .facts-list__item--order3 {
-    order: 2;
-  }
-
-  .facts-list__item--order4 {
-    order: 1;
-  }
-
-  .facts-list__item-title-description {
-    font-size: 8px;
-    font-weight: 600;
-    line-height: 14px;
-    margin-bottom: 12px;
-  }
-
-  .facts-list__item-text {
-    font-size: 8px;
-    line-height: 12px;
-  }
-
-  .except-numbers {
-    display: flex;
-    padding-top: 60px;
-    padding-bottom: 56px;
-  }
-=======
 .manyPeoples__bar {
   display: block;
   position: absolute;
@@ -1672,7 +1667,6 @@ img {
   height: 3px;
   background-color: black;
 }
->>>>>>> master
 
 .manyPeoples__text {
   font-family: 'Acrom';
@@ -1924,63 +1918,153 @@ img {
   margin: 0 auto;
 }
 
-.list {
-  margin: 0 auto;
-  list-style: none;
+.stepcourse__button {
+  box-shadow: 0px 2px 8px 1px #f0d5c4;
+  width: 216px;
+  height: 50px;
+  background-color: #ff6b08;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.link {
-  text-transform: uppercase;
-  text-decoration: none;
-}
-
-.stepcourse__text {
+.stepcourse__item::before {
+  content: "[ " "00" counter(my-counter) " ]";
+  display: block;
+  width: 49px;
+  height: 16px;
+  background-color: #ff6b08;
   font-family: 'Raleway';
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: #ffffff;
+  text-align: center;
+  position: absolute;
+  -webkit-transform: rotate(-90deg) translate(-22px, -46px);
+  transform: rotate(-90deg) translate(-22px, -46px);
+}
+
+.header__button,
+.after-course-item__button,
+.important-second-div__but,
+.register-button {
+  width: 220px;
+  display: block;
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 800;
+  padding: 22px 0;
+  background-color: #ff6b08;
+  box-shadow: 0px 5px 6px 0px rgba(196, 87, 15, 0.26);
+  border-top: 1px solid #e0600c;
+  border-left: 1px solid #753c1b;
+  border-right: 1px solid #753c1b;
+  border-bottom: none;
+  cursor: pointer;
+}
+
+.header__button:hover,
+.after-course-item__button:hover,
+.register-button:hover {
+  background-color: #17ecff;
+  box-shadow: 0px 5px 6px 0px #355251;
+  border-left: 1px solid #6a886e;
+  border-right: 1px solid #6a886e;
+  border-top: 1px solid #177e8d;
+}
+
+.header__button:active,
+.after-course-item__button:active {
+  background-color: #06a4b2;
+  box-shadow: 0px 5px 6px 0px #314340;
+  border-left: 1px solid #646c51;
+  border-right: 1px solid #646c51;
+  border-top: 1px solid #105c69;
+}
+
+.header__soc-list,
+.after-course-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+}
+
+.register-button-div {
+  position: relative;
+}
+
+.register-button-div__background {
+  position: absolute;
+  margin: 0;
+  display: inline;
+  font-family: "Acrom", sans-serif;
+  font-weight: 800;
+  line-height: 1;
+  color: #f7f7f7;
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+
+.register-button-div__title {
+  margin: 0;
+  font-family: "Acrom", sans-serif;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.register-button-div__before-div {
+  position: relative;
+}
+
+.register-button-div__before-div::before {
+  position: absolute;
+  left: 0;
+  display: block;
+  content: '';
+  height: 4px;
+  background-color: #000;
+}
+
+.register-button-div__text {
+  margin: 0;
+  font-family: "Acrom", sans-serif;
+  font-weight: 500;
+}
+
+.register-button {
+  font-family: "Acrom", sans-serif;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+.register-text-div {
+  margin: 0 auto;
+}
+
+.register-text-div__title {
+  margin: 0;
+  font-family: "Acrom", sans-serif;
   font-weight: 800;
 }
 
-.stepcourse__text--orange {
-  font-family: 'Raleway';
-  font-weight: 500;
-  color: #ff6b08;
-  position: relative;
+.register-text-div__text {
+  margin: 0;
+  font-family: "Acrom", sans-serif;
+  font-weight: 400;
 }
 
-.stepcourse__text--orange::before {
-  content: '/';
-  color: #000000;
-  font-family: 'Raleway';
-  font-weight: 500;
-  font-size: 28px;
-  position: absolute;
-}
-
-.stepcourse__list {
-  counter-reset: my-counter;
-}
-
-.stepcourse__item {
-  counter-increment: my-counter;
-  position: relative;
-}
-
-.stepcourse__item-title {
-  font-family: 'Raleway';
+.register-text-div__bold {
   font-weight: 700;
 }
 
-.stepcourse__item-text {
+.register-text-div__motivation {
   margin: 0;
-  font-family: 'Raleway';
-  color: #3f4144;
-}
-
-.stepcourse__button-link {
-  font-family: 'Raleway';
-  font-size: 11px;
-  line-height: 18px;
-  font-weight: 800;
-  color: #ffffff;
+  font-family: "Acrom", sans-serif;
+  font-weight: 500;
+  color: #ff6b08;
 }
 
 img {
@@ -2058,6 +2142,100 @@ img {
 }
 
 @media screen and (min-width: 768px) {
+  .data {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 60px;
+    padding-bottom: 56px;
+    background-image: url(./images/block-3/bgimg-768.png);
+    background-position: 420px 150px;
+    background-repeat: no-repeat;
+  }
+
+  .data__title {
+    margin: 0px;
+    width: 190px;
+  }
+
+  .data__first-title {
+    font-weight: 600;
+    margin-bottom: 20px;
+    font-size: 27px;
+    line-height: 33px;
+    text-align: left;
+  }
+
+  .data__second-title {
+    width: 166px;
+    margin: 0px;
+    font-size: 9px;
+    line-height: 13px;
+    font-weight: 500;
+    padding-left: 46px;
+  }
+
+  .data__second-title::before {
+    left: 0px;
+  }
+
+  .data__facts {
+    height: 190px;
+    width: 420px;
+  }
+
+  .data__facts-list {
+    padding: 0px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .facts-list__item {
+    width: 164px;
+    margin-bottom: 0px;
+    margin-right: 10px;
+  }
+
+  .facts-list__item::before {
+    display: none;
+  }
+
+  .facts-list__item-title {
+    font-size: 17px;
+    margin-bottom: 5px;
+  }
+
+  .facts-list__item-title--span {
+    font-size: 9px;
+  }
+
+  .facts-list__item--order1 {
+    order: 0;
+  }
+
+  .facts-list__item--order2 {
+    order: 3;
+  }
+
+  .facts-list__item--order3 {
+    order: 2;
+  }
+
+  .facts-list__item--order4 {
+    order: 1;
+  }
+
+  .facts-list__item-title-description {
+    font-size: 8px;
+    font-weight: 600;
+    line-height: 14px;
+    margin-bottom: 12px;
+  }
+
+  .facts-list__item-text {
+    font-size: 8px;
+    line-height: 12px;
+  }
+
   .except-numbers {
     display: flex;
     padding-top: 60px;
@@ -2129,7 +2307,7 @@ img {
     margin-left: 0px;
     font-size: 27px;
     line-height: 34px;
-    width: 230px;
+    width: 240px;
     text-align: left;
   }
 
@@ -2264,6 +2442,263 @@ img {
     width: 100%;
     font-size: 9px;
     line-height: 12px;
+  }
+
+  .except-numbers {
+    display: flex;
+    padding-top: 60px;
+    padding-bottom: 56px;
+  }
+
+  .except-numbers {
+    padding: 54px 0px;
+  }
+
+  .except-numbers__for-it {
+    display: flex;
+    flex-direction: column;
+    padding: 0px;
+  }
+
+  .for-it__img {
+    width: 276px;
+    margin-bottom: 34px;
+    padding: 0px;
+  }
+
+  .for-it__title-wrap {
+    margin: 0px;
+    width: 90px;
+    position: absolute;
+    top: 320px;
+  }
+
+  .for-it__title-fl {
+    margin: 0px;
+    line-height: 0px;
+  }
+
+  .for-it__title-sl {
+    display: block;
+    line-height: 0px;
+    width: 90px;
+    margin: 0px;
+  }
+
+  .for-it__title-span {
+    font-size: 9px;
+    line-height: 15px;
+  }
+
+  .for-it__sub-title {
+    margin-bottom: 7px;
+    padding-left: 110px;
+    padding-right: 92px;
+    font-size: 9px;
+    line-height: 14px;
+    font-weight: 900;
+  }
+
+  .for-it__text {
+    font-size: 8px;
+    font-weight: normal;
+    line-height: 12px;
+    padding-left: 110px;
+    padding-right: 92px;
+  }
+
+  .except-numbers__ex-num {
+    padding: 0px;
+  }
+
+  .ex-num__title {
+    margin-left: 0px;
+    font-size: 27px;
+    line-height: 34px;
+    width: 240px;
+    text-align: left;
+  }
+
+  .ex-num__sub-title {
+    margin-left: 0px;
+    font-weight: 900;
+    font-size: 9px;
+    line-height: 14px;
+    padding-left: 30px;
+    margin-bottom: 30px;
+    width: 190px;
+  }
+
+  .ex-num__sub-title::before {
+    left: 0px;
+    width: 20px;
+    height: 2px;
+  }
+
+  .ex-num__advanteges-list {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+  }
+
+  .advanteges-list__item {
+    padding-left: 30px;
+    width: 266px;
+  }
+
+  .advanteges-list__item:not(:last-child) {
+    margin-bottom: 18px;
+  }
+
+  .advanteges-list__item::before {
+    top: 5px;
+    left: 0px;
+    width: 6px;
+    height: 6px;
+  }
+
+  .item__title {
+    font-size: 9px;
+    line-height: 15px;
+    margin-bottom: 8px;
+  }
+
+  .item__text {
+    margin: 0px;
+    font-size: 8px;
+    line-height: 12px;
+  }
+
+  .stepcourse {
+    padding: 33px 0 57px 0;
+  }
+
+  .stepcourse__picture-block {
+    display: flex;
+    margin: 0 0 54px 0;
+  }
+
+  .stepcourse__picture {
+    margin: 0 54px 0 0;
+  }
+
+  .stepcourse__title-block {
+    display: block;
+    width: 248px;
+    height: 170px;
+  }
+
+  .stepcourse__title,
+  .stepcourse__title-text {
+    margin: 0;
+    font-family: 'Raleway';
+  }
+
+  .stepcourse__title {
+    font-size: 27px;
+    line-height: 34px;
+    font-weight: 800;
+    text-transform: uppercase;
+    margin: 20px 0 22px 0;
+  }
+
+  .stepcourse__title-text {
+    font-size: 9px;
+    font-weight: 500;
+    line-height: 13px;
+    padding: 0 86px 0 46px;
+    position: relative;
+  }
+
+  .stepcourse__title-text::before {
+    content: '';
+    width: 28px;
+    height: 4px;
+    background-color: #000000;
+    position: absolute;
+    left: 0;
+    top: 8px;
+  }
+
+  .stepcourse__about {
+    margin: 0 0 14px 0;
+    display: flex;
+  }
+
+  .stepcourse__text {
+    display: block;
+    width: 204px;
+    height: 148px;
+    font-size: 11px;
+    margin: 0 32px 0 0;
+    padding: 0;
+  }
+
+  .stepcourse__text--orange {
+    display: block;
+    width: 158px;
+    font-size: 9px;
+    margin: 0;
+    padding: 8px 0 0 0;
+  }
+
+  .stepcourse__text--orange::before {
+    left: -26px;
+    top: 6px;
+    font-size: 22px;
+  }
+
+  .stepcourse__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0;
+  }
+
+  .stepcourse__item {
+    width: 150px;
+    height: 96px;
+    margin: 0 0 28px 0;
+  }
+
+  .stepcourse__item:nth-child(n+4) {
+    margin: 0;
+  }
+
+  .stepcourse__item::before {
+    -webkit-transform: rotate(-90deg) translate(-19px, -46px);
+    transform: rotate(-90deg) translate(-19px, -46px);
+  }
+
+  .stepcourse__item-title {
+    font-size: 9px;
+    line-height: 12px;
+  }
+
+  .stepcourse__item-text {
+    font-size: 8px;
+    line-height: 12px;
+  }
+
+  .stepcourse__page-bottom {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row-reverse;
+  }
+
+  .stepcourse__button {
+    width: 120px;
+    height: 28px;
+  }
+
+  .stepcourse__button--margin {
+    margin: 0 64px 0 0;
+  }
+
+  .stepcourse__button-link {
+    font-size: 6px;
+    line-height: 10px;
   }
 
   .just-now-section {
@@ -2421,264 +2856,6 @@ img {
     display: block;
   }
 
-  .stepcourse {
-    padding: 33px 0 57px 0;
-  }
-
-  .stepcourse__picture-block {
-    display: flex;
-    margin: 0 0 54px 0;
-  }
-
-  .stepcourse__picture {
-    margin: 0 54px 0 0;
-  }
-
-  .stepcourse__title-block {
-    display: block;
-    width: 248px;
-    height: 170px;
-  }
-
-  .stepcourse__title,
-  .stepcourse__title-text {
-    margin: 0;
-    font-family: 'Raleway';
-  }
-
-  .stepcourse__title {
-    font-size: 27px;
-    line-height: 34px;
-    font-weight: 800;
-    text-transform: uppercase;
-    margin: 20px 0 22px 0;
-  }
-
-  .stepcourse__title-text {
-    font-size: 9px;
-    font-weight: 500;
-    line-height: 13px;
-    padding: 0 86px 0 46px;
-    position: relative;
-  }
-
-  .stepcourse__title-text::before {
-    content: '';
-    width: 28px;
-    height: 4px;
-    background-color: #000000;
-    position: absolute;
-    left: 0;
-    top: 8px;
-  }
-
-  .stepcourse__about {
-    margin: 0 0 14px 0;
-    display: flex;
-  }
-
-  .stepcourse__text {
-    display: block;
-    width: 204px;
-    height: 148px;
-    font-size: 11px;
-    margin: 0 32px 0 0;
-    padding: 0;
-  }
-
-  .stepcourse__text--orange {
-    display: block;
-    width: 158px;
-    font-size: 9px;
-    margin: 0;
-    padding: 8px 0 0 0;
-  }
-
-  .stepcourse__text--orange::before {
-    left: -26px;
-    top: 6px;
-    font-size: 22px;
-  }
-
-  .stepcourse__list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    padding: 0;
-    margin: 0;
-  }
-
-  .stepcourse__item {
-    width: 150px;
-    height: 96px;
-    margin: 0 0 28px 0;
-  }
-
-  .stepcourse__item:nth-child(n+4) {
-    margin: 0;
-  }
-
-  .stepcourse__item::before {
-    -webkit-transform: rotate(-90deg) translate(-19px, -46px);
-    transform: rotate(-90deg) translate(-19px, -46px);
-  }
-
-  .stepcourse__item-title {
-    font-size: 9px;
-    line-height: 12px;
-  }
-
-  .stepcourse__item-text {
-    font-size: 8px;
-    line-height: 12px;
-  }
-
-  .stepcourse__page-bottom {
-    display: flex;
-    justify-content: flex-end;
-    flex-direction: row-reverse;
-  }
-
-  .stepcourse__button {
-    width: 120px;
-    height: 28px;
-  }
-
-.header__button,
-.after-course-item__button,
-.register-button {
-  width: 220px;
-  display: block;
-  text-transform: uppercase;
-  color: #fff;
-  font-size: 12px;
-  font-weight: 800;
-  padding: 22px 0;
-  background-color: #ff6b08;
-  box-shadow: 0px 5px 6px 0px rgba(196, 87, 15, 0.26);
-  border-top: 1px solid #e0600c;
-  border-left: 1px solid #753c1b;
-  border-right: 1px solid #753c1b;
-  border-bottom: none;
-  cursor: pointer;
-}
-
-.header__button:hover,
-.after-course-item__button:hover,
-.register-button:hover {
-  background-color: #17ecff;
-  box-shadow: 0px 5px 6px 0px #355251;
-  border-left: 1px solid #6a886e;
-  border-right: 1px solid #6a886e;
-  border-top: 1px solid #177e8d;
-}
-
-.header__button:active,
-.after-course-item__button:active {
-  background-color: #06a4b2;
-  box-shadow: 0px 5px 6px 0px #314340;
-  border-left: 1px solid #646c51;
-  border-right: 1px solid #646c51;
-  border-top: 1px solid #105c69;
-}
-
-.header__soc-list,
-.after-course-list {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  display: flex;
-}
-
-.register-button-div {
-  position: relative;
-}
-
-.register-button-div__background {
-  position: absolute;
-  margin: 0;
-  display: inline;
-  font-family: "Acrom", sans-serif;
-  font-weight: 800;
-  line-height: 1;
-  color: #f7f7f7;
-  -webkit-transform: rotate(90deg);
-  transform: rotate(90deg);
-}
-
-.register-button-div__title {
-  margin: 0;
-  font-family: "Acrom", sans-serif;
-  font-weight: 800;
-  text-transform: uppercase;
-}
-
-.register-button-div__before-div {
-  position: relative;
-}
-
-.register-button-div__before-div::before {
-  position: absolute;
-  left: 0;
-  display: block;
-  content: '';
-  height: 4px;
-  background-color: #000;
-}
-
-.register-button-div__text {
-  margin: 0;
-  font-family: "Acrom", sans-serif;
-  font-weight: 500;
-}
-
-.register-button {
-  font-family: "Acrom", sans-serif;
-  padding-top: 16px;
-  padding-bottom: 16px;
-}
-
-.register-text-div {
-  margin: 0 auto;
-}
-
-.register-text-div__title {
-  margin: 0;
-  font-family: "Acrom", sans-serif;
-  font-weight: 800;
-}
-
-.register-text-div__text {
-  margin: 0;
-  font-family: "Acrom", sans-serif;
-  font-weight: 400;
-}
-
-.register-text-div__bold {
-  font-weight: 700;
-}
-
-.register-text-div__motivation {
-  margin: 0;
-  font-family: "Acrom", sans-serif;
-  font-weight: 500;
-  color: #ff6b08;
-}
-
-img {
-  display: block;
-  max-width: 100%;
-  height: auto;
-}
-  .stepcourse__button--margin {
-    margin: 0 64px 0 0;
-  }
-
-  .stepcourse__button-link {
-    font-size: 6px;
-    line-height: 10px;
-  }
-
   .container {
     max-width: 640px;
   }
@@ -2777,6 +2954,89 @@ img {
   .coding-about__text {
     font-size: 7.85px;
     line-height: 11.78px;
+  }
+
+  .register {
+    padding-top: 44px;
+    padding-bottom: 112px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .register-button-div {
+    width: 310px;
+  }
+
+  .register-button-div__background {
+    top: 24px;
+    right: -42px;
+    font-size: 146px;
+    z-index: -1;
+  }
+
+  .register-button-div__title {
+    margin-bottom: 24px;
+    padding-left: 4px;
+    font-size: 27px;
+    line-height: 34px;
+  }
+
+  .register-button-div__before-div {
+    padding-left: 46px;
+    margin-bottom: 30px;
+  }
+
+  .register-button-div__before-div::before {
+    width: 28px;
+    top: 6px;
+  }
+
+  .register-button-div__text {
+    width: 184px;
+    font-size: 9px;
+    line-height: 14px;
+  }
+
+  .register-button {
+    width: 146px;
+    font-size: 9px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
+
+  .register-text-div {
+    width: 310px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .register-text-div__title {
+    font-size: 16px;
+  }
+
+  .register-text-div__text-inner {
+    width: 246px;
+  }
+
+  .register-text-div__text {
+    font-size: 10px;
+    line-height: 12px;
+    margin-bottom: 24px;
+  }
+
+  .register-text-div__text-first {
+    margin-bottom: 14px;
+  }
+
+  .register-text-div__bold {
+    font-size: 10px;
+    line-height: 14px;
+  }
+
+  .register-text-div__motivation {
+    font-size: 10px;
+    line-height: 14px;
+    text-align: right;
   }
 
   .container {
@@ -3034,91 +3294,6 @@ img {
     line-height: 11.78px;
   }
 
-  .register {
-    padding-top: 44px;
-    padding-bottom: 112px;
-    display: flex;
-    justify-content: space-between;
-  }
-
-  .register-button-div {
-    width: 310px;
-  }
-
-  .register-button-div__background {
-    top: 24px;
-    right: -42px;
-    font-size: 146px;
-    z-index: -1;
-  }
-
-  .register-button-div__title {
-    margin-bottom: 24px;
-    padding-left: 4px;
-    font-size: 27px;
-    line-height: 34px;
-  }
-
-  .register-button-div__before-div {
-    padding-left: 46px;
-    margin-bottom: 30px;
-  }
-
-  .register-button-div__before-div::before {
-    width: 28px;
-    top: 6px;
-  }
-
-  .register-button-div__text {
-    width: 184px;
-    font-size: 9px;
-    line-height: 14px;
-  }
-
-  .register-button {
-    width: 146px;
-    font-size: 9px;
-    padding-top: 12px;
-    padding-bottom: 12px;
-  }
-
-  .register-text-div {
-    width: 310px;
-    display: flex;
-    justify-content: space-between;
-  }
-
-  .register-text-div__title {
-    font-size: 16px;
-  }
-
-  .register-text-div__text-inner {
-    width: 246px;
-  }
-
-  .register-text-div__text {
-    font-size: 10px;
-    line-height: 12px;
-    margin-bottom: 24px;
-  }
-
-  .register-text-div__text-first {
-    margin-bottom: 14px;
-  }
-
-  .register-text-div__bold {
-    font-size: 10px;
-    line-height: 14px;
-  }
-
-  .register-text-div__motivation {
-    font-size: 10px;
-    line-height: 14px;
-    text-align: right;
-  }
-
-  .container {
-    max-width: 640px;
   .important .orange-section__text-copy {
     font-size: 9px;
     line-height: 13.76px;
@@ -3179,6 +3354,39 @@ img {
 }
 
 @media screen and (min-width: 1200px) {
+  .data {
+    padding: 63px  0px;
+    background-position: 494px 140px;
+  }
+
+  .data__title {
+    width: 235px;
+    padding: 0px 10px;
+  }
+
+  .data__first-title {
+    font-size: 30px;
+  }
+
+  .data__second-title {
+    font-size: 10px;
+    width: 200px;
+  }
+
+  .data__facts {
+    width: 470px;
+    padding: 0px 10px;
+    font-size: 9px;
+  }
+
+  .facts-list__item-title {
+    font-size: 18px;
+  }
+
+  .facts-list__item-title--span {
+    font-size: 10px;
+  }
+
   .except-numbers {
     padding: 66px 0px;
   }
@@ -3191,21 +3399,21 @@ img {
   .for-it__img {
     width: 306px;
     height: 312px;
-    margin-bottom: 18px;
+    margin-bottom: 40px;
   }
 
   .for-it__title-wrap {
     font-size: 10px;
-    top: 330px;
+    top: 352px;
   }
 
   .for-it__sub-title {
     font-size: 10px;
-    padding-right: 70px;
+    padding-right: 30px;
   }
 
   .for-it__text {
-    padding-right: 80px;
+    padding-right: 30px;
     font-size: 9px;
   }
 
@@ -3220,7 +3428,7 @@ img {
 
   .ex-num__sub-title {
     font-size: 10px;
-    margin-bottom: 46px;
+    margin-bottom: 56px;
   }
 
   .advanteges-list__item {
@@ -3338,6 +3546,142 @@ img {
     line-height: 14px;
   }
 
+  .except-numbers {
+    padding: 66px 0px;
+  }
+
+  .except-numbers__for-it {
+    width: 356px;
+    padding: 0px 10px;
+  }
+
+  .for-it__img {
+    width: 306px;
+    height: 312px;
+    margin-bottom: 40px;
+  }
+
+  .for-it__title-wrap {
+    font-size: 10px;
+    top: 352px;
+  }
+
+  .for-it__sub-title {
+    font-size: 10px;
+    padding-right: 30px;
+  }
+
+  .for-it__text {
+    padding-right: 30px;
+    font-size: 9px;
+  }
+
+  .except-numbers__ex-num {
+    width: 356px;
+    padding: 0px 10px;
+  }
+
+  .ex-num__title {
+    margin-bottom: 25px;
+  }
+
+  .ex-num__sub-title {
+    font-size: 10px;
+    margin-bottom: 56px;
+  }
+
+  .advanteges-list__item {
+    width: 290px;
+    padding-left: 36px;
+    margin-bottom: 20px;
+  }
+
+  .advanteges-list__item::before {
+    width: 8px;
+    height: 8px;
+    top: 4px;
+  }
+
+  .item__title {
+    font-size: 10px;
+    margin-bottom: 8px;
+  }
+
+  .item__text {
+    font-size: 9px;
+  }
+
+  .stepcourse {
+    padding: 38px 0 63px 0;
+  }
+
+  .stepcourse__picture-block {
+    margin: 0 0 63px 0;
+  }
+
+  .stepcourse__picture {
+    margin: 0 60px 0 0;
+  }
+
+  .stepcourse__title-block {
+    width: 286px;
+    height: 188px;
+  }
+
+  .stepcourse__title {
+    font-size: 30px;
+    line-height: 38px;
+    font-weight: 800;
+    margin: 20px 0 28px 0;
+  }
+
+  .stepcourse__title-text {
+    font-size: 10px;
+    line-height: 15px;
+    padding: 0 98px 0 46px;
+  }
+
+  .stepcourse__text--orange {
+    display: block;
+    width: 158px;
+    font-size: 10px;
+    margin: 0;
+    padding: 7px 0 0 0;
+  }
+
+  .stepcourse__text--orange::before {
+    left: -32px;
+  }
+
+  .stepcourse__item {
+    width: 170px;
+    height: 96px;
+  }
+
+  .stepcourse__item-title {
+    font-size: 10px;
+    line-height: 13px;
+  }
+
+  .stepcourse__item-text {
+    font-size: 9px;
+    line-height: 13px;
+  }
+
+  .stepcourse__button {
+    width: 132px;
+    height: 30px;
+  }
+
+  .stepcourse__button--margin {
+    margin: 0 72px 0 0;
+  }
+
+  .stepcourse__button-link {
+    font-size: 7px;
+    line-height: 11px;
+  }
+
   .just-now-section {
     padding: 58px 0;
   }
@@ -3425,127 +3769,6 @@ img {
     max-width: 150px;
   }
 
-  .register {
-    padding-top: 50px;
-    padding-bottom: 124px;
-  }
-
-  .register-button-div {
-    width: 348px;
-  }
-
-  .register-button-div__background {
-    font-size: 162px;
-  }
-
-  .register-button-div__title {
-    font-size: 30px;
-    line-height: 38px;
-    margin-bottom: 28px;
-  }
-
-  .register-button-div__before-div {
-    padding-left: 52px;
-    margin-bottom: 34px;
-  }
-
-  .register-button-div__before-div::before {
-    width: 32px;
-  }
-
-  .register-button-div__text {
-    width: 208px;
-    font-size: 10px;
-    line-height: 15px;
-  }
-
-  .register-button {
-    margin-left: 52px;
-    width: 162px;
-    font-size: 10px;
-  }
-
-  .register-text-div {
-    width: 348px;
-  }
-
-  .register-text-div__title {
-    font-size: 19px;
-  }
-
-  .register-text-div__text-inner {
-    width: 274px;
-  .stepcourse {
-    padding: 38px 0 63px 0;
-  }
-
-  .stepcourse__picture-block {
-    margin: 0 0 63px 0;
-  }
-
-  .stepcourse__picture {
-    margin: 0 60px 0 0;
-  }
-
-  .stepcourse__title-block {
-    width: 286px;
-    height: 188px;
-  }
-
-  .stepcourse__title {
-    font-size: 30px;
-    line-height: 38px;
-    font-weight: 800;
-    margin: 20px 0 28px 0;
-  }
-
-  .stepcourse__title-text {
-    font-size: 10px;
-    line-height: 15px;
-    padding: 0 98px 0 46px;
-  }
-
-  .stepcourse__text--orange {
-    display: block;
-    width: 158px;
-    font-size: 10px;
-    margin: 0;
-    padding: 7px 0 0 0;
-  }
-
-  .stepcourse__text--orange::before {
-    left: -32px;
-  }
-
-  .stepcourse__item {
-    width: 170px;
-    height: 96px;
-  }
-
-  .stepcourse__item-title {
-    font-size: 10px;
-    line-height: 13px;
-  }
-
-  .stepcourse__item-text {
-    font-size: 9px;
-    line-height: 13px;
-  }
-
-  .stepcourse__button {
-    width: 132px;
-    height: 30px;
-  }
-
-  .stepcourse__button--margin {
-    margin: 0 72px 0 0;
-  }
-
-  .stepcourse__button-link {
-    font-size: 7px;
-    line-height: 11px;
-  }
-
   .container {
     max-width: 712px;
   }
@@ -3616,6 +3839,58 @@ img {
 
   .coding__wraper {
     max-width: 126px;
+  }
+
+  .register {
+    padding-top: 50px;
+    padding-bottom: 124px;
+  }
+
+  .register-button-div {
+    width: 348px;
+  }
+
+  .register-button-div__background {
+    font-size: 162px;
+  }
+
+  .register-button-div__title {
+    font-size: 30px;
+    line-height: 38px;
+    margin-bottom: 28px;
+  }
+
+  .register-button-div__before-div {
+    padding-left: 52px;
+    margin-bottom: 34px;
+  }
+
+  .register-button-div__before-div::before {
+    width: 32px;
+  }
+
+  .register-button-div__text {
+    width: 208px;
+    font-size: 10px;
+    line-height: 15px;
+  }
+
+  .register-button {
+    margin-left: 52px;
+    width: 162px;
+    font-size: 10px;
+  }
+
+  .register-text-div {
+    width: 348px;
+  }
+
+  .register-text-div__title {
+    font-size: 19px;
+  }
+
+  .register-text-div__text-inner {
+    width: 274px;
   }
 
   .container {
@@ -3778,7 +4053,6 @@ img {
     background-color: #000;
   }
 
-<<<<<<< HEAD
   .subtitle-wraper {
     margin: 0 auto;
   }
@@ -3801,7 +4075,8 @@ img {
 
   .coding {
     margin-top: 20px;
-=======
+  }
+
   .register {
     padding-top: 26px;
     padding-bottom: 40px;
@@ -3863,7 +4138,6 @@ img {
     text-align: right;
     font-size: 14px;
     line-height: 20px;
->>>>>>> 606c7f50e2eaa8a6db4b2331854360f622dd7414
   }
 }
 

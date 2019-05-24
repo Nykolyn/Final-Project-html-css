@@ -1,5 +1,5 @@
 @font-face {
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Acrom', sans-serif;
     src: url(../fonts/)
 }
 
@@ -7,13 +7,13 @@
 .data {
     padding: 36px 0px 56px 0px;
     margin: 0px;
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Acrom', sans-serif;
     font-size: 14px;
 }
 //-----------TITLE------------
 
 .data__title {
-    width: 210px;
+    width: 224px;
     margin: 0 auto;
     font-weight: 700;
 }
@@ -33,6 +33,7 @@
     margin: 0px;
     margin-bottom: 44px;
     padding: 0px;
+
     font-size: 12px;
     line-height: 15px;
     font-weight: 300;
@@ -88,7 +89,7 @@
 }
 
 .facts-list__item-title--span{
-    font-size: 13px;
+    font-size: 12px;
 }
 
 .facts-list__item-title-description{
@@ -99,6 +100,7 @@
 
 .facts-list__item-title-description--span{
     background-color: $default-blue;
+    font-weight: 700;
 }
 
 .facts-list__item-text{
@@ -111,11 +113,11 @@
     
     .data{
         display: flex;
-        justify-content: flex-start;
+        justify-content: space-between;
         padding-top: 60px;
         padding-bottom: 56px;
-        background-image: url(../images/block-3/bgimg-768.png);
-        background-position: 420px 120px;
+        background-image: url(./images/block-3/bgimg-768.png);
+        background-position: 420px 150px;
         background-repeat: no-repeat;
     }
     
@@ -123,7 +125,7 @@
 
     .data__title{
         margin: 0px;
-        width: 240px;
+        width: 190px;
     }
 
     .data__first-title{
@@ -151,11 +153,11 @@
 
     .data__facts{
         height: 190px;
+        width: 420px;
     }
 
     .data__facts-list{
         padding: 0px;
-        margin-left: 30px;
         display: flex;
         flex-wrap: wrap;     
     }
@@ -163,7 +165,7 @@
     .facts-list__item{
         width: 164px;
         margin-bottom: 0px;
-        margin-right: 40px;
+        margin-right: 10px;
     }
 
     .facts-list__item::before{
@@ -209,5 +211,40 @@
 }
 
 @media screen and (min-width: 1200px) {
+    .data {
+        padding: 63px  0px;
+        background-position: 494px 140px;
+    }
 
+    //---------TITLE-------------
+
+    .data__title{
+        width: 235px;
+        padding: 0px 10px;
+    }
+
+    .data__first-title{
+        font-size: 30px;
+    }
+
+    .data__second-title{
+        font-size: 10px;
+        width: 200px;
+    }
+
+    //-------FACTS------------
+
+    .data__facts{
+        width: 470px;
+        padding: 0px 10px;
+        font-size: 9px;
+    }
+
+    .facts-list__item-title{
+        font-size: 18px;
+    }
+
+    .facts-list__item-title--span{
+        font-size: 10px;
+    }
 }
