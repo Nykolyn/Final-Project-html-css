@@ -1,0 +1,320 @@
+.manyPeoples {
+  position: relative;
+  margin: 0 auto;
+  margin-bottom: 32px;
+}
+
+.manyPeoples__title {
+  font-family: 'Acrom';
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 24px;
+  margin: 0;
+  padding: 0;
+  padding-left: 38px;
+  max-width: 208px;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+}
+
+.manyPeoples__bar {
+  display: block;
+  position: absolute;
+  top: 72px;
+  width: 20px;
+  height: 3px;
+  background-color: black;
+}
+
+.manyPeoples__text {
+  font-family: 'Acrom';
+  font-weight: 500;
+  font-size: 13.5px;
+  line-height: 19.5px;
+  color: #000000;
+  margin: 0;
+  padding: 0;
+  padding-left: 38px;
+}
+
+.photo-thougts {
+  background-image: url('../img/Layer338.png');
+
+
+}
+
+.photo-coder {
+  background-image: url('../img/Layer337.png');
+
+
+}
+
+
+/* SUBTITLE */
+.true,
+.coding {
+  width: 370px;
+  margin: 0 auto;
+}
+
+.true__wraper,
+.coding__wraper {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 190px;
+  margin-bottom: 20px;
+}
+
+.true__title,
+.coding__title {
+  margin: 0;
+  padding: 0 3px;
+  text-transform: uppercase;
+  background-color: black;
+  color: white;
+  display: inline;
+  font-size: 13.5px;
+  line-height: 19.5px;
+  font-family: 'Acrom';
+  font-weight: 800;
+}
+
+.true-about__text--bold,
+.coding-about__text--bold {
+  margin: 0;
+  margin-bottom: 18px;
+  padding: 0;
+  font-family: 'Acrom';
+  font-weight: 700;
+  font-size: 13.5px;
+  line-height: 19.5px;
+  color: #3f4144;
+}
+
+.true-about__text,
+.coding-about__text {
+  margin: 0;
+  padding: 0;
+  font-family: 'Acrom';
+  font-weight: 400;
+  font-size: 13.5px;
+  line-height: 19.5px;
+  color: #3f4144;
+}
+
+.true__title,
+.coding__title:not(:last-child) {
+  margin-bottom: 2px;
+}
+
+.sizePhoto {
+  width: 100%;
+}
+
+/* MEDIA */
+@media screen and (max-width: 767px) {
+
+  .subtitle-wraper {
+    margin: 0 auto;
+
+  }
+
+  .photo1 {
+    width: 100%;
+  }
+
+  .photo2 {
+    width: 100%;
+  }
+
+  .manyPeoples__text {
+    margin-bottom: 32px;
+  }
+
+  .true-about__text {
+    margin-bottom: 42px;
+  }
+  .coding{
+      margin-top: 20px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 640px;
+  }
+
+  .photo1 {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  .photo2 {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+  }
+
+  .manyPeoples {
+    position: relative;
+    padding-left: 54px;
+    padding-right: 390px;
+    margin: 0;
+  }
+
+  .manyPeoples__bar {
+    top: 120px;
+    padding: 0;
+    width: 28px;
+  }
+
+  .manyPeoples__title {
+    padding: 0;
+    max-width: 100%;
+
+  }
+
+  .manyPeoples__text {
+    padding-left: 48px;
+  }
+
+  .subtitle-wraper {
+    padding-left: 328px;
+    position: relative;
+  }
+
+  .true,
+  .coding {
+    width: 100%;
+    padding-left: 146px;
+    margin: 0;
+    position: relative;
+  }
+
+  .true {
+    margin-bottom: 36px;
+  }
+
+
+  .true__wraper {
+    max-width: 88px;
+    margin: 0;
+    position: absolute;
+    left: 0px;
+  }
+
+  .coding__wraper {
+    max-width: 114px;
+    margin: 0;
+    position: absolute;
+    left: 0px;
+  }
+
+  .manyPeoples,
+  .subtitle-wraper {
+    width: 100%;
+  }
+
+  /* TEXT CHANGES */
+
+  .manyPeoples__title {
+    font-size: 27px;
+    line-height: 33.65px;
+  }
+
+  .true__title,
+  .coding__title {
+    font-size: 8.97px;
+    line-height: 14.58px;
+  }
+
+  .manyPeoples__text,
+  .true-about__text--bold,
+  .coding-about__text--bold {
+    font-size: 8.97px;
+    line-height: 13.46px;
+  }
+
+  .true-about__text,
+  .coding-about__text {
+    font-size: 7.85px;
+    line-height: 11.78px;
+  }
+
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 712px;
+  }
+
+  /* TEXT CHANGES */
+
+
+  .true__title,
+  .coding__title {
+    font-size: 10px;
+    line-height: 16.25px;
+  }
+
+  .manyPeoples__text,
+  .true-about__text--bold,
+  .coding-about__text--bold {
+    font-size: 10px;
+    line-height: 15px;
+  }
+
+  .true-about__text,
+  .coding-about__text {
+    font-size: 8.75px;
+    line-height: 13.13px;
+  }
+
+  /* POSITION CHANGES */
+  .manyPeoples {
+    padding-left: 62px;
+    padding-right: 432px;
+    margin: 0;
+  }
+
+  .manyPeoples__title {
+    max-width: 100%;
+    font-size: 30px;
+    line-height: 37.5px;
+    margin-bottom: 36px;
+  }
+
+  .manyPeoples__bar {
+    top: 152px;
+    width: 32px;
+    height: 4px;
+  }
+
+  .manyPeoples__text {
+    padding-left: 52px;
+  }
+
+  .subtitle-wraper {
+    padding-left: 368px;
+  }
+
+  .true,
+  .coding {
+    width: 100%;
+    padding-left: 158px;
+  }
+
+  .true {
+    margin-bottom: 46px;
+  }
+
+  .true__wraper {
+    max-width: 98px;
+    ;
+  }
+
+  .coding__wraper {
+    max-width: 126px;
+  }
+}
