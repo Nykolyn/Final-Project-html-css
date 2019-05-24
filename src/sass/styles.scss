@@ -43,7 +43,13 @@ Import partials below
 @import './important.scss';
 @import './register.scss';
 @import './footerStyle.scss';
+@import './newFooterTwo.scss';
+@import './section-12.scss';
 
+@import './header.scss';
+@import './section-14/main.scss';
+@import './section-15/styles.scss';
+@import './section-17/styles.scss';
 
 img {
   display: block;
@@ -68,8 +74,3 @@ img {
   }
 }
 
-
-@import './header.scss';
-@import './section-14/main.scss';
-@import './section-15/styles.scss';
-@import './section-17/styles.scss';
