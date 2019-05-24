@@ -1,4 +1,4 @@
-// default orange button: 
+// default orange button:
 // you can put 'a' or 'p' tag inside)
 %default-button-orange {
   -webkit-box-shadow: 0px 2px 8px 1px rgba(240, 213, 196, 1);
@@ -10,10 +10,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  border: none;
 }
 
-// default orange counter 
-// (put counter-increment, 
+// default orange counter
+// (put counter-increment,
 // counter-reset for respective classes)
 %default-counter {
   content: '[ '"00"counter(my-counter) ' ]';
@@ -21,7 +22,7 @@
   width: 49px;
   height: 16px;
   background-color: #ff6b08;
-  font-family: 'Raleway';
+  font-family: 'Acrom';
   font-size: 14px;
   font-weight: 700;
   letter-spacing: 1px;

@@ -2,6 +2,10 @@
 //   outline: 1px solid green;
 // }
 
+.stepcourse {
+  font-family: $primary-font-family;
+}
+
 .list {
   margin: 0 auto;
   list-style: none;
@@ -47,13 +51,13 @@
 }
 
 .stepcourse__item-title {
-  font-family: 'Raleway';
+  font-family: $primary-font-family;
   font-weight: 700;
 }
 
 .stepcourse__item-text {
   margin: 0;
-  font-family: 'Raleway';
+  font-family: $primary-font-family;
   color: #3f4144;
 }
 
@@ -62,7 +66,7 @@
 }
 
 .stepcourse__button-link {
-  font-family: 'Raleway';
+  font-family: $primary-font-family;
   font-size: 11px;
   line-height: 18px;
   font-weight: 800;
@@ -73,28 +77,36 @@
   .stepcourse {
     padding: 22px 0 45px 0;
   }
+
   .stepcourse__picture-block {
     margin: 0 0 21px 0;
   }
+
   .stepcourse__title-block {
     display: none;
   }
+
   .stepcourse__about {
     margin: 0 0 46px 0;
   }
+
   .stepcourse__text {
     margin: 0 0 32px 0;
     padding: 0 76px;
     font-size: 14px;
+    font-family: $primary-font-family;
   }
+
   .stepcourse__text--orange {
     margin: 0 0 32px 0;
     padding: 0 63px;
     font-size: 14px;
+    font-family: $primary-font-family;
   }
+
   .stepcourse__text--orange::before {
     left: 33px;
-    top: -2px;  
+    top: -2px;
   }
   .stepcourse__list {
     padding: 0 76px;
@@ -103,6 +115,7 @@
     margin: 0 0 28px 0;
     padding: 0 0 0 30px;
   }
+
   .stepcourse__item:last-child {
     margin: 0;
   }
@@ -113,11 +126,14 @@
   }
   .stepcourse__item-text {
     font-size: 13px;
-    line-height: 21px;  
+    line-height: 21px;
   }
   .stepcourse__button--margin {
     margin: 0 auto;
   }
+}
+.stepcourse__item::before {
+  transform: rotate(-90deg) translate(-22px, -55px);
 }
 
 @media screen and (min-width: 768px) {
@@ -137,9 +153,10 @@
     width: 248px;
     height: 170px;
   }
-  .stepcourse__title, .stepcourse__title-text {
+  .stepcourse__title,
+  .stepcourse__title-text {
     margin: 0;
-    font-family: 'Raleway';
+    font-family: $primary-font-family;
   }
   .stepcourse__title {
     font-size: 27px;
@@ -199,12 +216,13 @@
     width: 150px;
     height: 96px;
     margin: 0 0 28px 0;
+    overflow: hidden;
   }
-  .stepcourse__item:nth-child(n+4) {
+  .stepcourse__item:nth-child(n + 4) {
     margin: 0;
   }
   .stepcourse__item::before {
-    transform: rotate(-90deg) translate(-19px, -46px);
+    transform: rotate(-90deg) translate(-22px, -50px);
   }
   .stepcourse__item-title {
     font-size: 9px;
@@ -212,7 +230,7 @@
   }
   .stepcourse__item-text {
     font-size: 8px;
-    line-height: 12px;  
+    line-height: 12px;
   }
   .stepcourse__page-bottom {
     display: flex;
@@ -229,7 +247,7 @@
   .stepcourse__button-link {
     font-size: 6px;
     line-height: 10px;
-  }   
+  }
 }
 @media screen and (min-width: 1200px) {
   .stepcourse {
@@ -276,7 +294,7 @@
   }
   .stepcourse__item-text {
     font-size: 9px;
-    line-height: 13px;  
+    line-height: 13px;
   }
   .stepcourse__button {
     width: 132px;

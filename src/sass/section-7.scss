@@ -39,16 +39,11 @@
 
 .photo-thougts {
   background-image: url('../img/Layer338.png');
-
-
 }
 
 .photo-coder {
   background-image: url('../img/Layer337.png');
-
-
 }
-
 
 /* SUBTITLE */
 .true,
@@ -113,10 +108,8 @@
 
 /* MEDIA */
 @media screen and (max-width: 767px) {
-
   .subtitle-wraper {
     margin: 0 auto;
-
   }
 
   .photo1 {
@@ -134,14 +127,15 @@
   .true-about__text {
     margin-bottom: 42px;
   }
-  .coding{
-      margin-top: 20px;
+  
+  .coding {
+    margin-top: 20px;
   }
 }
 
 @media screen and (min-width: 768px) {
-  .container {
-    max-width: 640px;
+  .section-7 {
+    padding: 50px 0;
   }
 
   .photo1 {
@@ -172,7 +166,6 @@
   .manyPeoples__title {
     padding: 0;
     max-width: 100%;
-
   }
 
   .manyPeoples__text {
@@ -195,7 +188,6 @@
   .true {
     margin-bottom: 36px;
   }
-
 
   .true__wraper {
     max-width: 88px;
@@ -241,7 +233,6 @@
     font-size: 7.85px;
     line-height: 11.78px;
   }
-
 }
 
 @media screen and (min-width: 1200px) {
@@ -250,7 +241,6 @@
   }
 
   /* TEXT CHANGES */
-
 
   .true__title,
   .coding__title {
@@ -311,7 +301,6 @@
 
   .true__wraper {
     max-width: 98px;
-    ;
   }
 
   .coding__wraper {
