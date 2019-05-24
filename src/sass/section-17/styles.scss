@@ -144,11 +144,13 @@
   }
 
   &__submit {
-    @extend %default-button;
-    text-align: center;
+    @extend %default-button-orange;
     width: 174px;
-    padding: 10px 0;
+    color: #fff;
+    text-transform: uppercase;
     font-size: 8px;
+    display: block;
+    font-family: $primary-font-family;
 
     &:hover {
       @extend %default-button-hover;
@@ -252,6 +254,7 @@
     &__submit {
       font-size: 7px;
       width: 146px;
+      height: 30px;
     }
   }
 }

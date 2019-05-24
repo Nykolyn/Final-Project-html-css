@@ -2,7 +2,7 @@
 //   outline: 1px solid red;
 // }
 
-// header 
+// header
 
 .position_relative {
   position: relative;
@@ -17,7 +17,6 @@
 //sm mobile first
 .header {
   font-family: 'Acrom';
-
 
   background-image: url(../images/block-1/480/bg-480.png);
   background-repeat: no-repeat;
@@ -79,7 +78,6 @@
   margin: 0 auto;
   margin-bottom: 30px;
 }
-
 
 .header__subtitle-wrap::before {
   position: absolute;
@@ -164,10 +162,12 @@
 
 .header__icon-facebook {
   background-image: url(../images/block-1/icon-facebook.png);
+  display: none;
 }
 
 .header__icon-twitter {
   background-image: url(../images/block-1/icon-twitter.png);
+  display: none;
 }
 
 .header__soc-list {
@@ -187,13 +187,12 @@
   @extend %default-button-active;
 }
 
-
 .header__number {
   display: none;
 }
 
 // media md table
-@media (min-width:768px) {
+@media (min-width: 768px) {
   .header__content {
     max-width: 640px;
   }
@@ -283,9 +282,23 @@
     left: 0;
     bottom: -64px;
   }
+  
+  .header__icon-facebook {
+    background-image: url(../images/block-1/icon-facebook.png);
+    display: block;
+  }
+
+  .header__icon-twitter {
+    background-image: url(../images/block-1/icon-twitter.png);
+    display: block;
+  }
+
+  // .header__soc-list {
+  //   display: none;
+  // }
 }
 
-@media (min-width:940px) {
+@media (min-width: 940px) {
   .header {
     background-image: url(../images/block-1/bg.png);
   }

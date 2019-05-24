@@ -93,6 +93,10 @@
 
 }
 
+.warning__list__item:last-child {
+  margin-bottom: 60px;
+}
+
 @media screen and (min-width: 768px) {
   .warning__section {
     padding-top: 54px;
@@ -153,7 +157,7 @@
     max-width: 311px;
   }
 
-  // Заголовок правой подсекции 
+  // Заголовок правой подсекции
 
   .warning__headline__text {
     max-width: 298px;
@@ -187,7 +191,7 @@
 
 @media screen and (min-width: 1200px) {
 
-  // Правая подсекция 
+  // Правая подсекция
 
   .warning__inner {
     max-width: 347px;

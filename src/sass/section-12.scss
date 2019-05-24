@@ -1,9 +1,12 @@
+.sec-12 {
+  padding: 50px 0;
+}
+
 .sec-12__box {
   display: block;
   width: 290px;
   margin: 0 auto;
 }
-
 
 .record__course {
   font-size: 18px;
@@ -13,7 +16,7 @@
   font-weight: 800;
   text-transform: uppercase;
   margin: 20px auto 34px;
-
+  margin-top: 0;
 }
 
 .record__banner {
@@ -58,7 +61,7 @@
 
 .about__link {
   font-size: 14px;
-  font-family: "Acrom";
+  font-family: 'Acrom';
   font-style: normal;
   font-weight: 800;
   text-transform: uppercase;
@@ -73,7 +76,7 @@
   margin: 0;
   margin-bottom: 30px;
 }
- 
+
 .about__link-info:last-child {
   margin-bottom: 0;
 }
@@ -109,7 +112,7 @@
     width: 29px;
     left: 0;
   }
-  
+
   .record__banner {
     padding-left: 44px;
     font-size: 9px;
@@ -117,22 +120,21 @@
     margin: 0;
   }
 
-  .about__alex{
+  .about__alex {
     width: 236px;
     position: absolute;
     right: 0;
     top: 156px;
   }
-  
+
   .about__link {
     font-size: 9px;
   }
-  
+
   .about__link-info {
     font-size: 8px;
     margin: 0 auto;
   }
-
 
   .about__item:not(:last-child) {
     margin-bottom: 14px;
@@ -141,23 +143,22 @@
   .about__list {
     padding-right: 30px;
   }
-    
+
   .photo__img {
     width: 312px;
     height: 330px;
-  } 
+  }
 
   .photo__alex {
     margin: 0 auto;
   }
 }
 
-
 @media screen and (min-width: 1200px) {
   .photo__img {
     width: 348px;
     height: 368px;
-  } 
+  }
 
   .sec-12 {
     height: 493px;

@@ -1,356 +1,351 @@
 @font-face {
-    font-family: 'Acrom', sans-serif;
-    src: url(../fonts/)
+  font-family: 'Acrom', sans-serif;
+  src: url(../fonts/);
 }
 
 .except-numbers {
-    font-family: 'Acrom', sans-serif;
-    font-size: 14px;
-    line-height: 20px;
-    font-weight: 400;
-    padding-top: 6px;
+  font-family: 'Acrom', sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  padding-top: 6px;
 }
 
 //--------------FOR - IT----------------
 
 .except-numbers__for-it {
-    padding-bottom: 50px;
-    position: relative;
+  padding-bottom: 50px;
+  position: relative;
 }
 
 .for-it__img {
-    padding-top: 10px;
-    margin-bottom: 34px;
+  padding-top: 10px;
+  margin-bottom: 34px;
 }
 
 .for-it__title-wrap {
-    margin: 0px auto;
-    width: 255px;
-    text-align: left;
+  margin: 0px auto;
+  width: 255px;
+  text-align: left;
 }
 
-.for-it__title-fl  {
-    margin: 0px 0px 8px 0px;
-    padding: 0px;
-    width: 130px;
-    color: #fff;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 24px;
+.for-it__title-fl {
+  margin: 0px 0px 8px 0px;
+  padding: 0px;
+  width: 130px;
+  color: #fff;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
 }
-.for-it__title-sl  {
-    margin: 0px;
-    margin-bottom: 32px;
-    padding: 0px;
-    width: 254px;
-    color: #fff;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 24px;
+.for-it__title-sl {
+  margin: 0px;
+  margin-bottom: 32px;
+  padding: 0px;
+  width: 254px;
+  color: #fff;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
 }
 
 .for-it__title-span {
-    margin: 0px;
-    padding: 0px;
-    background-color: #000;
-    text-transform: uppercase;
+  margin: 0px;
+  padding: 0px;
+  background-color: #000;
+  text-transform: uppercase;
 }
 
-.for-it__sub-title{
-    margin: 0px;
-    margin-bottom: 14px;
-    font-size: 14px;
-    line-height: 20px;
-    font-weight: 700;
+.for-it__sub-title {
+  margin: 0px;
+  margin-bottom: 14px;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 700;
 }
 
 .for-it__text {
-    margin: 0px;
+  margin: 0px;
 }
 
 .for-it__span {
-    background-color: $default-blue;
+  background-color: $default-blue;
 }
 
 //------------EX - NUM -----------------
 
 .except-numbers__ex-num {
-    padding-bottom: 42px;
+  padding-bottom: 42px;
 }
 
 .ex-num__title {
-    margin: 0 auto;
-    margin-bottom: 20px;
-    width: 300px;
-    color: #fff;
-    text-align: center;
-    font-size: 18px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  width: 300px;
+  color: #fff;
+  text-align: center;
+  font-size: 18px;
 }
 
 .ex-num__title-span {
-    background-color: #000;
-    text-transform: uppercase;
-}
- 
-.ex-num__sub-title {
-    margin: 0px auto;
-    margin-bottom: 48px;
-    width: 290px;
-    padding-left: 38px;
-    position: relative;
-    font-weight: 500;
+  background-color: #000;
+  text-transform: uppercase;
 }
 
-.ex-num__sub-title::before{
-    display: block;
-    content: '';
-    width: 16px;
-    height: 2px;
-    background-color: #000;
-    position: absolute;
-    top: 8px;
-    left: 10px;
+.ex-num__sub-title {
+  margin: 0px auto;
+  margin-bottom: 48px;
+  width: 290px;
+  padding-left: 38px;
+  position: relative;
+  font-weight: 500;
+}
+
+.ex-num__sub-title::before {
+  display: block;
+  content: '';
+  width: 16px;
+  height: 2px;
+  background-color: #000;
+  position: absolute;
+  top: 8px;
+  left: 10px;
 }
 
 .ex-num__advateges-list {
-    margin: 0px;
-    list-style: none;
-    padding-left: 40px;
+  margin: 0px;
+  list-style: none;
+  padding-left: 40px;
 }
 
 .advanteges-list__item {
-    position: relative;
+  position: relative;
 }
 
-.advanteges-list__item:not(:last-child){
-    margin-bottom: 24px;
+.advanteges-list__item:not(:last-child) {
+  margin-bottom: 24px;
 }
 
-.advanteges-list__item::before{
-    display: block;
-    content: '';
-    width: 4px;
-    height: 4px;
-    background-color: #000000;
-    position: absolute;
-    top: 10px;
-    left: -15px;
+.advanteges-list__item::before {
+  display: block;
+  content: '';
+  width: 4px;
+  height: 4px;
+  background-color: #000000;
+  position: absolute;
+  top: 10px;
+  left: -15px;
 }
 
 .item__title {
-    margin: 0px;
-    margin-bottom: 14px;
-    text-transform: uppercase;
-    font-weight: 800;
+  margin: 0px;
+  margin-bottom: 14px;
+  text-transform: uppercase;
+  font-weight: 800;
 }
 
 .item__text {
-    margin: 0px;
+  margin: 0px;
 }
 
 @media screen and (min-width: 768px) {
-    .except-numbers {
-        display: flex;
-        padding-top: 60px;
-        padding-bottom: 56px;
-    }
+  .except-numbers {
+    display: flex;
+    padding-top: 60px;
+    padding-bottom: 56px;
+  }
 
-//---------------- FOR - IT --------------
+  //---------------- FOR - IT --------------
 
-    .except-numbers {
-        padding: 54px 0px;
-    }
+  .except-numbers {
+    padding: 54px 0px;
+  }
 
+  .except-numbers__for-it {
+    display: flex;
+    flex-direction: column;
+    padding: 0px;
+  }
 
-    .except-numbers__for-it{
-        display: flex;
-        flex-direction: column;
-        padding: 0px;
-    }
+  .for-it__img {
+    width: 276px;
+    margin-bottom: 34px;
+    padding: 0px;
+  }
 
-    .for-it__img {
-        width: 276px;
-        margin-bottom: 34px;
-        padding: 0px;
-    }
+  .for-it__title-wrap {
+    margin: 0px;
+    width: 90px;
+    position: absolute;
+    top: 320px;
+  }
 
-    .for-it__title-wrap {
-        margin: 0px;
-        width: 90px;
-        position: absolute; 
-        top: 320px;
-    }
+  .for-it__title-fl {
+    margin: 0px;
+    line-height: 0px;
+  }
 
-    .for-it__title-fl {
-        margin: 0px;
-        line-height: 0px;
-    }
+  .for-it__title-sl {
+    display: block;
+    line-height: 0px;
+    width: 90px;
+    margin: 0px;
+  }
 
-    .for-it__title-sl{
-        display: block;
-        line-height: 0px;
-        width: 90px;
-        margin: 0px;
-    }
+  .for-it__title-span {
+    font-size: 9px;
+    line-height: 15px;
+  }
 
-    .for-it__title-span {
-        font-size: 9px;
-        line-height: 15px;
-    }
+  .for-it__sub-title {
+    margin-bottom: 7px;
+    padding-left: 110px;
+    padding-right: 92px;
+    font-size: 9px;
+    line-height: 14px;
+    font-weight: 900;
+  }
 
-    .for-it__sub-title {
-        margin-bottom: 7px;
-        padding-left: 110px;
-        padding-right: 92px;
-        font-size: 9px;
-        line-height: 14px;
-        font-weight: 900;
-    }
+  .for-it__text {
+    font-size: 8px;
+    font-weight: normal;
+    line-height: 12px;
+    padding-left: 110px;
+    padding-right: 92px;
+  }
 
-    .for-it__text{
-        font-size: 8px;
-        font-weight: normal;
-        line-height: 12px;
-        padding-left: 110px;
-        padding-right: 92px;
-    }
-    
-//---------------EX - NUM ---------------
+  //---------------EX - NUM ---------------
 
-    .except-numbers__ex-num{
-        padding: 0px;
-    }
+  .except-numbers__ex-num {
+    padding: 0px;
+  }
 
-    .ex-num__title {
-        margin-left: 0px;
-        font-size: 27px;
-        line-height: 34px;
-        width: 240px;
-        text-align: left;
-    }
+  .ex-num__title {
+    margin-left: 0px;
+    font-size: 27px;
+    line-height: 34px;
+    width: 240px;
+    text-align: left;
+  }
 
-    .ex-num__sub-title {
-        margin-left: 0px;
-        font-weight: 900;
-        font-size: 9px;
-        line-height: 14px;
-        padding-left: 30px;
-        margin-bottom: 30px;
-        width: 190px;
-    }
+  .ex-num__sub-title {
+    margin-left: 0px;
+    font-weight: 900;
+    font-size: 9px;
+    line-height: 14px;
+    padding-left: 30px;
+    margin-bottom: 30px;
+    width: 190px;
+  }
 
-    .ex-num__sub-title::before {
-        left: 0px;
-        width: 20px;
-        height: 2px;
-    }
+  .ex-num__sub-title::before {
+    left: 0px;
+    width: 20px;
+    height: 2px;
+  }
 
-    .ex-num__advanteges-list{
-        margin: 0px;
-        padding: 0px;
-        list-style: none;
-    }
+  .ex-num__advanteges-list {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+  }
 
-    .advanteges-list__item{
-        padding-left: 30px;
-        width: 266px;
-    }
+  .advanteges-list__item {
+    padding-left: 30px;
+    width: 266px;
+  }
 
-    .advanteges-list__item:not(:last-child){
-        margin-bottom: 18px;
-    }
+  .advanteges-list__item:not(:last-child) {
+    margin-bottom: 18px;
+  }
 
-    .advanteges-list__item::before {
-        top: 5px;
-        left: 0px;
-        width: 6px;
-        height: 6px;
-    }
+  .advanteges-list__item::before {
+    top: 5px;
+    left: 0px;
+    width: 6px;
+    height: 6px;
+  }
 
-    .item__title {
-        font-size: 9px;
-        line-height: 15px;
-        margin-bottom: 8px;
-    }
+  .item__title {
+    font-size: 9px;
+    line-height: 15px;
+    margin-bottom: 8px;
+  }
 
-    .item__text {
-        margin: 0px;
-        font-size: 8px;
-        line-height: 12px;
-    }
+  .item__text {
+    margin: 0px;
+    font-size: 8px;
+    line-height: 12px;
+  }
 }
 
-
 @media screen and (min-width: 1200px) {
+  .except-numbers {
+    padding: 66px 0px;
+  }
 
-    .except-numbers {
-        padding: 66px 0px;
-    }
+  //------------FOT - IT ------------
 
-    //------------FOT - IT ------------
+  .except-numbers__for-it {
+    width: 356px;
+    padding: 0px 10px;
+  }
 
-    .except-numbers__for-it {
-        width: 356px;
-        padding: 0px 10px;
-    }
+  .for-it__img {
+    width: 306px;
+    height: 312px;
+    margin-bottom: 40px;
+  }
 
-    .for-it__img {
-        width: 306px;
-        height: 312px;
-        margin-bottom: 40px;
-    }
+  .for-it__title-wrap {
+    font-size: 10px;
+    top: 352px;
+  }
 
+  .for-it__sub-title {
+    font-size: 10px;
+    padding-right: 30px;
+  }
 
-    .for-it__title-wrap {
-        font-size: 10px;
-        top: 352px;
-    }
+  .for-it__text {
+    padding-right: 30px;
+    font-size: 9px;
+  }
 
-    .for-it__sub-title {
-        font-size: 10px;
-        padding-right: 30px;
-    }
+  //---------EX - NUM ----------
 
-    .for-it__text {
-        padding-right: 30px;
-        font-size: 9px;
-    }
+  .except-numbers__ex-num {
+    width: 356px;
+    padding: 0px 10px;
+  }
 
-    //---------EX - NUM ----------
+  .ex-num__title {
+    margin-bottom: 25px;
+  }
 
-    .except-numbers__ex-num{
-        width: 356px;
-        padding: 0px 10px;
-    }
+  .ex-num__sub-title {
+    font-size: 10px;
+    margin-bottom: 56px;
+  }
 
-    .ex-num__title {
-        margin-bottom: 25px;
-    }
+  .advanteges-list__item {
+    width: 290px;
+    padding-left: 36px;
+    margin-bottom: 20px;
+  }
 
-    .ex-num__sub-title {
-        font-size: 10px;
-        margin-bottom: 56px;
-    }
+  .advanteges-list__item::before {
+    width: 8px;
+    height: 8px;
+    top: 4px;
+  }
 
-    .advanteges-list__item {
-        width: 290px;
-        padding-left: 36px;
-        margin-bottom: 20px;
-    }
+  .item__title {
+    font-size: 10px;
+    margin-bottom: 8px;
+  }
 
-    .advanteges-list__item::before{
-        width: 8px;
-        height: 8px;
-        top: 4px;
-    }
-
-    .item__title {
-        font-size: 10px;
-        margin-bottom: 8px;
-    }
-
-
-    .item__text {
-        font-size: 9px;
-    }
+  .item__text {
+    font-size: 9px;
+  }
 }
