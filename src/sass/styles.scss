@@ -27,6 +27,8 @@ Import partials below
 @import './placeholder.scss';
 // color set
 
+
+@import './ExceptNumbers.scss';
 //section4
 @import './header.scss';
 @import './itsTimeToMakeMoney.scss';
@@ -62,3 +64,9 @@ img {
     max-width: 712px;
   }
 }
+
+
+@import './header.scss';
+@import './section-14/main.scss';
+@import './section-15/styles.scss';
+@import './section-17/styles.scss';
