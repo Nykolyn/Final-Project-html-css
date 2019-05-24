@@ -3,6 +3,11 @@ html {
   box-sizing: border-box;
 }
 
+@font-face {
+  font-family: 'Acrom', sans-serif;
+  src: url("../fonts/")
+}
+
 *,
 *::before,
 *::after {
@@ -19,7 +24,9 @@ img {
   max-width: 100%;
   height: auto;
 }
-
+body {
+  font-family: 'Acrom', sans-serif;
+}
 @media screen and (min-width: 468px) {
 .container {
   max-width: 446px;
