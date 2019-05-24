@@ -8,15 +8,17 @@ img {
   max-width: 446px;
   margin: 0 auto;
 }
+
 div.intro {
   display: flex;
   flex-direction: column-reverse;
-
 }
+
 div.intro-cont{
   display: flex;
   flex-direction: column;
 }
+
 h2.intro-title {
   display: block;
   padding: 0;
@@ -29,10 +31,12 @@ h2.intro-title {
 }
 
 p.title-info {
+  position: relative;
   display: block;
   margin: 0 auto;
   margin-bottom: 37px;
   padding: 0px;
+  padding-left: 15px;
   width: 215px;
   height: 55px;
   font-size: 14px;
@@ -42,16 +46,18 @@ p.title-info {
   color: #3f4144;
   vertical-align: middle;
 }
-
+div.img-2 {
+  display: none;
+}
 p.title-info::before {
-  content: "";
-  display: inline-block;;
-  margin-right: 20px;
-  padding: 0;
+  content: '';
+  position: absolute;
+  top: 8px;
+  left: -15px;
+  display: inline-block;
   width: 20px;
-  height: 2px;
-  color: black;
-
+  height: 3px;
+  background-color: #000;
   
 }
 
@@ -74,13 +80,18 @@ h3.intro-title {
   margin: 0;
   margin-bottom: 30px;
   padding: 0;
-  display: inline-block;
+  width: 236px;
+  height: 40px;
+  display: block;
   text-transform: uppercase;
   font-size: 14px;
   line-height: 20px;
   font-family: "Acrom";
   font-weight: 700;
   color: #ffffff;
+  
+}
+.intro-title span{
   background-color: black;
 }
 
@@ -94,19 +105,6 @@ p.intro-text {
   font-family: "Acrom";
   font-weight: normal;
   color: #3f4144;
-}
-img.img-2 {
-  display: block;
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-
 }
 
 h2.advantage-title{
@@ -124,13 +122,28 @@ h2.advantage-title{
 ul.advantage-list {
   list-style: none;
   margin: 0;
-  margin-bottom: 27px;
+  margin-bottom: 13px;
+  margin-left: 120px;
   padding: 0;
 }
 
 li.advantage-item{
+  position: relative;
   display: inline-block;
   width: 287px;
+}
+
+
+li.advantage-item::before {
+  counter-increment: section;
+  content: '[' '00' counter(v) ']';
+  position: absolute;
+  top: 5px;
+  width: 56px;
+  transform: rotate(-90deg) translate(-20px, -44px);
+  background-color: orangered;
+  color: #fff;
+  
 }
 
 h3.item-title {
@@ -155,27 +168,268 @@ p.item-text{
   line-height: 20px;
   font-family: "Acrom";
   font-weight: normal;
-  color: #3f4144;
+  color: rgb(63, 65, 68);
+}
+  
+div.offer-section {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 90px;
+  width: 295px;
 }
 
 h2.offer-title {
-  color: black;
-  background-color: #46ebfe;
-}
-
-h3.value {
+  display: inline-block;
   margin: 0;
   margin-bottom: 30px;
-  padding: 0;
-  display: inline-block;
-  text-transform: uppercase;
-  font-size: 14px;
-  line-height: 20px;
+  margin-right: 25px;
+  padding-top: 5px;
+  width: 145px;
+  height: 50px;
+  color: black;
+  font-size: 17px;
+  line-height: 30px;
 }
+
+.offer-title span {
+  background-color: #46ebfe;
+
+}
+
+div.value {
+  justify-content: space-between;
+}
+
+h2.old {
+  display: block;
+  width: 100px;
+  margin: 0;
+  padding: 0;
+  text-decoration: line-through;
+  vertical-align: super;
+  color: rgb(63, 65, 68);
+  font-size: 17px;
+  font-family: "Acrom";
+}
+
+h2.current {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  width: 125px;
+  text-transform: uppercase;
+  font-size: 17px;
+  line-height: 44px;
+  font-family: "Acrom";
+}
+
+.current span {
+  display: inline-block;
+  width: 55px;
+  font-size: 25px;
+  font-weight: 900;
+  font-family: sans-serif;
+}
+
 
 @media screen and (min-width: 768px) {
   .container {
     max-width: 640px;
+  }
+
+  div.intro {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 188px;
+  }
+
+  img.intro-img {
+    margin: 0;
+    margin-bottom: 30px;
+  }
+
+  h2.intro-title {
+    padding: 0;
+    margin: 0;
+    margin-bottom: 17px;
+    font-size: 27px;
+    line-height: 34px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  
+  p.title-info {
+    margin: 0 auto;
+    margin-bottom: 37px;
+    padding: 0px;
+    width: 215px;
+    height: 55px;
+    font-size: 9px;
+    line-height: 14px;
+    font-family: "Acrom";
+    font-weight: normal;
+    color: #3f4144;
+    vertical-align: middle;
+  }
+  
+  p.title-info::before {
+    content: "";
+    display: inline-block;
+    margin-right: 20px;
+    padding: 0;
+    width: 20px;
+    height: 2px;
+    color: black;
+  }
+
+  div.p2 {
+    
+  }
+
+  img.img-2 {
+    display: block;
+    margin: 0;
+    padding: 0;
+    width: 223px;
+    height: 202px;
+  }
+
+  ul.intro-list {
+    display: inline-block;
+    height: 251px;
+    width: 306px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  li.intro-item {
+    display: inline-block;
+    height: 45px;
+    width: 306px;
+    margin: 0;
+    margin-bottom: 30px;
+    padding: 0;
+  }
+  
+  h3.intro-title {
+    margin: 0;
+    padding: 0;
+    display: block;
+    width: 96px;
+    height: 42px;
+    text-transform: uppercase;
+    font-size: 9px;
+    line-height: 15px;
+    color: #ffffff;
+    background-color: black;
+  }
+  
+  p.intro-text {
+    display: block;
+    width: 160px;
+    height: 42px;
+    margin: 0;
+    padding: 0;
+    font-size: 8px;
+    line-height: 12px;
+    font-family: "Acrom";
+    font-weight: normal;
+    color: #3f4144;
+  }
+
+  div.advantage {
+    display: flex;
+    justify-content: space-between;
+  }
+
+
+  h2.advantage-title{
+    margin: 0;
+    margin-bottom: 30px;
+    margin-right: 70px;
+    padding: 0;
+    width: 114px;
+    height: 90px;
+    font-size: 9px;
+    line-height: 15px;
+    font-family: "Acrom";
+    font-weight: ExtraBold;
+    text-transform: uppercase;
+  }
+
+
+  ul.advantage-list {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+    width: 518px;
+    height: 176px;
+   
+  } 
+
+  li.advantage-item {
+    display: block;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 27px;
+    margin-right: 20px;
+    width: 165px;
+    height: 70px;  
+  }
+  
+  h3.item-title {
+    display: block;
+    width: 165px;
+    height: 30px;
+    margin: 0;
+    margin-bottom: 12px;
+    padding: 0;
+    text-transform: uppercase;
+    font-size: 10px;
+    line-height: 13px;
+    font-family: "Acrom";
+    font-weight: Bold;
+  }
+  
+  p.item-text{
+    display: block;
+    margin: 0;
+    margin-bottom: 3px;
+    padding: 0;
+    width: 165px;
+    height: 85px;
+    font-size: 9px;
+    line-height: 13px;
+    font-family: "Acrom";
+    font-weight: normal;
+    color: #3f4144;
+  } 
+
+  h2.offer-title {
+    display: block;
+    font-size: 9px;
+    line-height: 15px;
+    font-family: "Acrom";
+    font-weight: normal;    
+    color: black;
+    background-color: #46ebfe;
+  
+  }
+
+  h3.value {
+    margin: 0;
+    margin-bottom: 30px;
+    padding: 0;
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 9px;
+    line-height: 23px;
   }
 
 }
@@ -194,6 +448,7 @@ h3.value {
   }
 
   img.intro-img {
+    margin: 0;
     margin-bottom: 30px;
   }
 
@@ -369,9 +624,12 @@ h3.value {
     line-height: 23px;
   }
   
-  
-  
 }
+
+* {
+  box-sizing: border-box;
+}
+ 
 
 //b
 @import './header.scss';
