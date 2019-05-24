@@ -1,6 +1,9 @@
 /*
 Import partials below
 */
+
+// fonts
+
 //normalize css
 
 // fonts
@@ -26,12 +29,18 @@ Import partials below
 
 
 @import './ExceptNumbers.scss';
+//section4
 @import './header.scss';
 @import './itsTimeToMakeMoney.scss';
-@import './section-14/main.scss';
+@import './ExceptNumbers.scss';
 @import './career.scss';
+@import './StepCourseStyles.scss';
+@import './section-14/main.scss';
 @import './section-15/styles.scss';
+@import './section-7.scss';
 @import './important.scss';
+@import './register.scss';
+
 
 img {
   display: block;
