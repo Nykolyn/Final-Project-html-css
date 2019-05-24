@@ -84,6 +84,7 @@ body {
 }
 
 
+
 .box-look {
   /* padding-top: 14px; */
   width: 300px;
@@ -132,7 +133,7 @@ body {
 
 .feedback__text {
   font-size: 6px;
-  line-height: 10px;
+  line-height: 8px;
   padding-right: 30px;
   margin: 0;
 
@@ -158,8 +159,11 @@ body {
 
 .button__box {
   position: absolute;
+  display: flex;
+  bottom: -15px;
   right: 0;
- transform: translateY(-15px);
+//   right: 0;
+//  transform: translateY(-15px);
   height: 15px;
   width: 35px;
 }
@@ -193,6 +197,9 @@ body {
 
 
 }
+.cookie {
+  overflow: hidden;
+}
 
 
 
@@ -204,6 +211,7 @@ body {
     display: flex;
     justify-content: space-between;
   }
+
 
   .advertizing {
     display: flex;
@@ -356,7 +364,7 @@ font-weight: 600;
 
 .feedback__text {
   font-size: 9px;
-  line-height: 13px;
+  line-height: 12px;
 
 }
 .feedback__wrapper {
