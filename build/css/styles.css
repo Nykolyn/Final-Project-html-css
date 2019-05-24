@@ -1201,6 +1201,7 @@ img {
 
 .career__photo-2 {
   margin-bottom: 28px;
+  margin: 0 auto;
 }
 
 .career__subject-wrap {
@@ -1539,6 +1540,72 @@ img {
 
 .after-course-img-box {
   display: none;
+}
+
+.profession__row-1 {
+  display: flex;
+  flex-direction: column;
+}
+
+.profession__text {
+  text-align: center;
+  font-size: 24px;
+  font-family: 'Acrom';
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  font-weight: 700;
+  position: relative;
+}
+
+.profession__subtitle-wrap {
+  width: 206px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+.profession__subtitle {
+  text-align: center;
+  font-family: 'Acrom';
+  font-size: 13px;
+  font-weight: 500;
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.profession__text::before {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 20px;
+  height: 2px;
+  background-color: #000000;
+  top: 80px;
+  left: 90px;
+}
+
+.profession__row-image {
+  width: 100%;
+  margin: 0 auto;
+  margin-bottom: 40px;
+  position: relative;
+}
+
+.profession__text-wrap {
+  width: 213px;
+  font-family: 'Acrom';
+  font-size: 15px;
+  font-weight: 800;
+  text-align: left;
+  margin: 0 auto;
+  text-transform: uppercase;
+  word-spacing: 5px;
+}
+
+.text__row__wrap-item {
+  width: 213px;
+  margin: 0 auto;
+  text-align: left;
 }
 
 .manyPeoples {
@@ -2081,17 +2148,6 @@ img {
 
 .about__link-info:last-child {
   margin-bottom: 0;
-}
-
-img {
-  display: block;
-  max-width: 100%;
-  height: auto;
-}
-
-.container {
-  max-width: 448px;
-  margin: 0 auto;
 }
 
 .position_relative {
@@ -2680,6 +2736,17 @@ img {
   width: 174px;
   padding: 10px 0;
   font-size: 8px;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  max-width: 448px;
+  margin: 0 auto;
 }
 
 @media screen and (min-width: 480px) {
@@ -3628,10 +3695,6 @@ img {
     margin: 0 auto;
   }
 
-  .container {
-    max-width: 640px;
-  }
-
   .just-now-section {
     padding-top: 54px;
     padding-bottom: 54px;
@@ -3891,6 +3954,10 @@ img {
     font-size: 7px;
     width: 146px;
   }
+
+  .container {
+    max-width: 640px;
+  }
 }
 
 @media (min-width: 768px) {
@@ -4047,6 +4114,63 @@ img {
 
   .career__photo-2 {
     margin: 0;
+  }
+
+  .content {
+    display: flex;
+    margin-top: 20px;
+  }
+
+  .profession__text {
+    text-align: left;
+    margin: 0;
+    font-family: 'Acrom';
+    font-weight: 800;
+    font-size: 24px;
+  }
+
+  .profession__subtitle {
+    width: 137px;
+    text-align: left;
+    font-family: 'Acrom';
+    font-weight: 500;
+    font-size: 10px;
+    padding-left: 24px;
+    word-spacing: 2px;
+  }
+
+  .profession__row-1 {
+    margin: 0;
+    padding: 0 10px;
+  }
+
+  .profession__row__wrap {
+    margin-right: 0;
+    padding-left: 30px;
+  }
+
+  .profession__text::before {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 20px;
+    height: 3px;
+    background-color: #000;
+    top: 86px;
+    left: 0px;
+  }
+
+  .profession__row__wrap {
+    margin: 0 auto;
+    text-align: left;
+  }
+
+  .profession__text-wrap {
+    font-family: 'Acrom';
+    font-weight: 800;
+    font-size: 13px;
+    text-align: left;
+    word-spacing: 1px;
   }
 
   .important {
@@ -4892,10 +5016,6 @@ img {
     padding-right: 0;
   }
 
-  .container {
-    max-width: 712px;
-  }
-
   .just-now-section {
     padding: 58px 0;
   }
@@ -5081,6 +5201,10 @@ img {
   .bonuses-form__submit {
     font-size: 7px;
   }
+
+  .container {
+    max-width: 712px;
+  }
 }
 
 @media (min-width: 1200px) {
@@ -5096,6 +5220,52 @@ img {
   .career__subject-wrap {
     padding-top: 30px;
     margin-bottom: 20px;
+  }
+
+  .content {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+
+  .profession__text {
+    width: 266px;
+    text-align: left;
+    margin: 0;
+    font-family: 'Acrom';
+    font-weight: 800;
+    font-size: 24px;
+    margin-bottom: 15px;
+  }
+
+  .profession__subtitle {
+    width: 200px;
+    text-align: left;
+    font-family: 'Acrom';
+    font-weight: 500;
+    font-size: 12px;
+    padding: 0;
+  }
+
+  .profession__text::before {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 20px;
+    height: 3px;
+    background-color: #000;
+    top: 102px;
+    left: 0;
+  }
+
+  .profession__row-1 {
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  .profession__row-image {
+    margin: 0;
+    position: relative;
   }
 
   .important-box {
