@@ -1,6 +1,9 @@
 /*
 Import partials below
 */
+
+// fonts
+
 //normalize css
 
 // fonts
@@ -24,17 +27,18 @@ Import partials below
 @import './placeholder.scss';
 // color set
 
-
-
 //section4
-@import './ExceptNumbers.scss';
 @import './header.scss';
 @import './itsTimeToMakeMoney.scss';
-@import './section-14/main.scss';
+@import './ExceptNumbers.scss';
 @import './career.scss';
+@import './StepCourseStyles.scss';
+@import './section-14/main.scss';
 @import './section-15/styles.scss';
 @import './section-7.scss';
 @import './important.scss';
+@import './register.scss';
+
 
 img {
   display: block;
@@ -58,5 +62,3 @@ img {
     max-width: 712px;
   }
 }
-
-

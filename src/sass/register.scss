@@ -1,0 +1,289 @@
+@import './placeholder.scss';
+
+// SECTION 19
+
+.register-button-div {
+  position: relative;
+
+  &__background {
+    position: absolute;
+    margin: 0;
+    display: inline;
+    font-family: "Acrom", sans-serif;
+    font-weight: 800;
+    line-height: 1;
+    color: #f7f7f7;
+    transform: rotate(90deg);
+  }
+
+  &__title {
+    margin: 0;
+    font-family: "Acrom", sans-serif;
+    font-weight: 800;
+    text-transform: uppercase;
+  }
+
+  &__before-div {
+    position: relative;
+
+    &::before {
+      position: absolute;
+      left: 0;
+      display: block;
+      content: '';
+      height: 4px;
+      background-color: #000;
+    }
+  }
+
+  &__text {
+    margin: 0;
+    font-family: "Acrom", sans-serif;
+    font-weight: 500;
+  }
+}
+
+.register-button {
+  @extend %default-button;
+  font-family: "Acrom", sans-serif;
+  padding-top: 16px;
+  padding-bottom: 16px;
+
+  &:hover {
+    @extend %default-button-hover;
+  }
+}
+
+.register-text-div {
+  margin: 0 auto;
+
+  &__title {
+    margin: 0;
+    font-family: "Acrom", sans-serif;
+    font-weight: 800;
+  }
+
+  &__text {
+    margin: 0;
+    font-family: "Acrom", sans-serif;
+    font-weight: 400;
+  }
+
+  &__bold {
+    font-weight: 700;
+  }
+
+  &__motivation {
+    margin: 0;
+    font-family: "Acrom", sans-serif;
+    font-weight: 500;
+    color: $default-orange;
+  }
+}
+
+@media screen and (max-width: 767px) {
+
+  .register {
+    padding-top: 26px;
+    padding-bottom: 40px;
+  }
+
+  .register-button-div {
+    position: relative;
+    width: 380px;
+    padding-left: 84px;
+    margin: 0 auto;
+    margin-bottom: 44px;
+
+    &__background {
+      top: 30px;
+      left: -50px;
+      font-size: 102px;
+    }
+
+    &__title {
+      padding-left: 14px;
+      margin-bottom: 18px;
+      font-size: 18px;
+      line-height: 24px;
+    }
+
+    &__before-div {
+      padding-left: 28px;
+
+      &::before {
+        width: 14px;
+        top: 8px;
+      }
+    }
+
+    &__text {
+      width: 184px;
+      margin-bottom: 32px;
+      font-size: 12px;
+      line-height: 20px;
+    }
+  }
+
+  .register-text-div {
+    width: 302px;
+
+    &__title {
+      margin-bottom: 14px;
+      font-size: 20px;
+    }
+
+    &__text {
+      margin-bottom: 24px;
+      font-size: 12px;
+      line-height: 20px;
+    }
+
+    &__motivation {
+      text-align: right;
+      font-size: 14px;
+      line-height: 20px;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+
+  .register {
+    padding-top: 44px;
+    padding-bottom: 112px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .register-button-div {
+    width: 310px;
+
+    &__background {
+      top: 24px;
+      right: -42px;
+      font-size: 146px;
+      z-index: -1;
+    }
+
+    &__title {
+      margin-bottom: 24px;
+      padding-left: 4px;
+      font-size: 27px;
+      line-height: 34px;
+    }
+
+    &__before-div {
+      padding-left: 46px;
+      margin-bottom: 30px;
+
+      &::before {
+        width: 28px;
+        top: 6px;
+      }
+    }
+
+    &__text {
+      width: 184px;
+      font-size: 9px;
+      line-height: 14px;
+    }
+  }
+
+  .register-button {
+    width: 146px;
+    font-size: 9px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
+
+  .register-text-div {
+    width: 310px;
+    display: flex;
+    justify-content: space-between;
+
+    &__title {
+      font-size: 16px;
+    }
+
+    &__text-inner {
+      width: 246px;
+    }
+
+    &__text {
+      font-size: 10px;
+      line-height: 12px;
+      margin-bottom: 24px;
+    }
+
+    &__text-first {
+      margin-bottom: 14px;
+    }
+
+    &__bold {
+      font-size: 10px;
+      line-height: 14px;
+    }
+
+    &__motivation {
+      font-size: 10px;
+      line-height: 14px;
+      text-align: right;
+    }
+
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .register {
+    padding-top: 50px;
+    padding-bottom: 124px;
+  }
+
+  .register-button-div {
+    width: 348px;
+
+    &__background {
+      font-size: 162px;
+    }
+
+    &__title {
+      font-size: 30px;
+      line-height: 38px;
+      margin-bottom: 28px;
+    }
+
+    &__before-div {
+      padding-left: 52px;
+      margin-bottom: 34px;
+
+      &::before {
+        width: 32px;
+      }
+    }
+
+    &__text {
+      width: 208px;
+      font-size: 10px;
+      line-height: 15px;
+    }
+  }
+
+  .register-button {
+    margin-left: 52px;
+    width: 162px;
+    font-size: 10px;
+  }
+
+  .register-text-div {
+    width: 348px;
+
+    &__title {
+      font-size: 19px;
+    }
+
+    &__text-inner {
+      width: 274px;
+    }
+  }
+}
