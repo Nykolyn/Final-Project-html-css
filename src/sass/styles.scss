@@ -1,16 +1,52 @@
 /*
-   Import partials below
+Import partials below
 */
-@import './normalize';
 
 // fonts
 
-@import './fonts.scss';
-@import './button.scss';
-@import './article.scss';
-@import './slider.scss';
+//normalize css
 
-// Defaults
+// fonts
+
+@import './normalize';
+//add fonts
+@import './fonts.scss';
+@import './color-variables.scss';
+
+// fonts
+
+//add specifications
+@import './specification.scss';
+//variables
+// @import './variables.scss';
+//add specifications
+@import './specification.scss';
+//variables
+// color set
+//placeholers (buttons, +' '+)
+@import './placeholder.scss';
+// color set
+
+
+@import './data.scss';
+@import './header.scss';
+@import './itsTimeToMakeMoney.scss';
+@import './ExceptNumbers.scss';
+@import './section6Style.scss';
+@import './section-7.scss';
+@import './career.scss';
+@import './stepsf.scss';
+@import './StepCourseStyles.scss';
+@import './section-12.scss';
+@import './13@profession.scss';
+@import './section-14/main.scss';
+@import './section-15/styles.scss';
+@import './section-17/styles.scss';
+@import './important.scss';
+@import './register.scss';
+@import './newFooterTwo.scss';
+@import './footerStyle.scss';
+
 
 img {
   display: block;
@@ -19,7 +55,7 @@ img {
 }
 
 .container {
-  max-width: 446px;
+  max-width: 448px;
   margin: 0 auto;
 }
 
@@ -34,3 +70,4 @@ img {
     max-width: 712px;
   }
 }
+

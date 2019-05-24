@@ -1,0 +1,221 @@
+@import './variables.scss';
+
+
+.warning__section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+// Левая подсекция
+
+.warning__image,
+.warning__background__text {
+  display: none;
+}
+
+// Заголовок правой подсекции на 480px
+
+.warning__headline {
+  margin: 0 0 32px 0;
+
+  &__text {
+    font-family: $primary-font-family, sans-serif;
+    max-width: 200px;
+    line-height: 24px;
+    font-weight: 800;
+    font-size: 18px;
+    text-transform: uppercase;
+    padding: 40px 0 22px 0;
+    margin: 0 auto;
+  }
+
+  &__main__text {
+    font-family: $primary-font-family, sans-serif;
+    font-weight: 500;
+    line-height: 20px;
+    max-width: 268px;
+    font-size: 14px;
+    position: relative;
+    padding: 0 0 0 30px;
+    margin: 0 auto;
+  }
+
+  &__main__text::before {
+    content: '';
+    position: absolute;
+    display: inline-block;
+    background-color: #000000;
+    width: 20px;
+    height: 3px;
+    left: 0px;
+    top: 8px;
+  }
+
+}
+
+// Основной текст правой подсекции на 480px
+
+.warning__main {
+  max-width: 328px;
+}
+
+.warning__item li {
+  list-style: none;
+  margin: 0 0 16px 0;
+  position: relative;
+  padding: 0 0 0 20px;
+}
+
+.warning__list__headline {
+  font-family: $primary-font-family, sans-serif;
+  font-size: $font-size-section-text;
+  font-weight: 800;
+  text-transform: uppercase;
+  padding: 0 0 8px 0;
+}
+
+.warning__main__text {
+  font-family: $primary-font-family, sans-serif;
+  font-size: $font-size-section-text;
+  line-height: 20px;
+}
+
+.warning__main__text::before {
+  content: '';
+  position: absolute;
+  background-color: #000000;
+  width: 7px;
+  height: 7px;
+  display: inline-block;
+  top: 4px;
+  left: 0;
+
+}
+
+@media screen and (min-width: 768px) {
+  .warning__section {
+    padding-top: 54px;
+    padding-bottom: 54px;
+    position: relative;
+  }
+
+  .warning__section__box {
+    display: flex;
+  }
+
+  // Левая подсекция
+
+  .warning__main__image {
+    max-width: 311px;
+    top: 60px;
+    bottom: 0;
+    width: 100%;
+    background: url(../images/block-6/image-block-6-3.png) no-repeat;
+    z-index: 1;
+
+    // width: 173px;
+    // height: 412px;
+    @media (-webkit-min-device-pixel-ratio: 2),(-moz-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+      .warning__main__image {
+        background: url(../images/block-6/image-block-6-3@2x.png) no-repeat;
+      }
+    }
+  }
+
+  .warning__main__image {
+    filter: drop-shadow(6px 1px 10px rgba(0, 0, 0, .5));
+  }
+
+  .warning__background__text {
+    display: block;
+  }
+
+  .warning__background {
+    padding: 60px 0 0 0;
+  }
+
+  .warning__background__text {
+    -moz-transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    opacity: 0.05;
+    position: relative;
+    text-transform: uppercase;
+    font-size: 140px;
+    font-weight: 800;
+    font-family: $primary-font-family, sans-serif;
+  }
+
+  // Правая подсекция
+
+  .warning__inner {
+    max-width: 311px;
+  }
+
+  // Заголовок правой подсекции 
+
+  .warning__headline__text {
+    max-width: 298px;
+    font-size: 27px;
+    line-height: 36px;
+    padding: 0 0 22px 0;
+  }
+
+  .warning__headline__main__text {
+    font-size: 9px;
+    max-width: 206px;
+    line-height: 15px;
+  }
+
+  //  Основной текст правой подсекции
+
+  .warning__main {
+    max-width: 246px;
+  }
+
+  .warning__list__headline {
+    font-size: 9px;
+
+  }
+
+  .warning__main__text {
+    font-size: 8px;
+    line-height: 10px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+
+  // Правая подсекция 
+
+  .warning__inner {
+    max-width: 347px;
+  }
+
+  // Заголовок правой подсекции
+
+  .warning__headline__text {
+    font-size: 30px;
+    max-width: 332px;
+  }
+
+  .warning__headline__main__text {
+    max-width: 244px;
+    font-size: 10px;
+    margin: 0;
+    padding: 0 0 0 50px;
+  }
+
+  .warning__headline__main__text:before {
+    content: '';
+    position: absolute;
+    display: inline-block;
+    background-color: #000000;
+    width: 32px;
+    height: 5px;
+    left: 0px;
+    top: 8px;
+
+  }
+}
