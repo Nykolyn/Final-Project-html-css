@@ -142,7 +142,7 @@ img {
 
   .text__feedback {
     font-size: 6px;
-    line-height: 10px;
+    line-height: 9px;
   }
 
   .feedback__name {
@@ -366,24 +366,21 @@ img {
 
   .advertizing__article {
     font-size: 10px;
-    line-height: 15px;
+    line-height: 13px;
     max-width: 150px;
     font-weight: 600;
+    max-width: 135;
+    height: 135px;
   }
 
   .feedback__text {
     font-size: 9px;
-    line-height: 15px;
-    overflow: hidden;
+    line-height: 13px;
   }
 
   .feedback__wrapper {
     max-width: 476px;
     height: 343px;
-  }
-
-  .cookie {
-    overflow: hidden;
   }
 
   .container {
