@@ -41,6 +41,7 @@
 
 .career__photo-2 {
     margin-bottom: 28px;
+    margin: 0 auto;
 }
 
 .career__subject-wrap {
@@ -75,7 +76,7 @@
 @media (max-width: 767px) {
     .career__row-1,
     .career__row-2,
-    .career__row-4, {
+    .career__row-4 {
         max-width: 300px;
         margin: 0 auto;
     }

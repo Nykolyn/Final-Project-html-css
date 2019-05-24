@@ -29,7 +29,6 @@ Import partials below
 
 
 @import './data.scss';
-@import './ExceptNumbers.scss';
 @import './header.scss';
 @import './itsTimeToMakeMoney.scss';
 @import './ExceptNumbers.scss';
@@ -37,10 +36,14 @@ Import partials below
 @import './StepCourseStyles.scss';
 @import './section-14/main.scss';
 @import './section-15/styles.scss';
+@import './13@profession.scss';
 @import './section-7.scss';
 @import './important.scss';
 @import './register.scss';
+@import './newFooterTwo.scss';
+@import './section-12.scss';
 
+@import './section-17/styles.scss';
 
 img {
   display: block;
@@ -64,3 +67,4 @@ img {
     max-width: 712px;
   }
 }
+
