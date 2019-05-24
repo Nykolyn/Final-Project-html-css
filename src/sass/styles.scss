@@ -3,19 +3,14 @@
 */
 @import './normalize';
 
+// fonts
+
+@import './fonts.scss';
+@import './button.scss';
+@import './article.scss';
+@import './slider.scss';
+
 // Defaults
-
-html {
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-}
-
-*,
-*::before,
-*::after {
-  -webkit-box-sizing: inherit;
-  box-sizing: inherit;
-}
 
 img {
   display: block;
