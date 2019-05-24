@@ -152,7 +152,7 @@ img {
 .button__box {
   position: absolute;
   right: 0;
- transform: translateY(20px);
+ transform: translateY(-15px);
   height: 15px;
   width: 35px;
 }
@@ -295,7 +295,7 @@ img {
     position: absolute;
      display:flex;
     justify-content: space-between;
-    bottom: 3px;
+    bottom: -35px;
     height: 20px;
     width: 43px;
   }
