@@ -1,13 +1,53 @@
 /*
-   Import partials below
+Import partials below
 */
 
 // fonts
 
+//normalize css
+
+// fonts
+
+@import './normalize';
+//add fonts
 @import './fonts.scss';
 @import './test.scss';
+@import './color-variables.scss';
 
-// Defaults
+// fonts
+
+//add specifications
+@import './specification.scss';
+//variables
+// @import './variables.scss';
+//add specifications
+@import './specification.scss';
+//variables
+// color set
+//placeholers (buttons, +' '+)
+@import './placeholder.scss';
+// color set
+
+
+@import './data.scss';
+@import './header.scss';
+@import './itsTimeToMakeMoney.scss';
+@import './ExceptNumbers.scss';
+@import './section6Style.scss';
+@import './section-7.scss';
+@import './career.scss';
+@import './stepsf.scss';
+@import './StepCourseStyles.scss';
+@import './section-12.scss';
+@import './13@profession.scss';
+@import './section-14/main.scss';
+@import './section-15/styles.scss';
+@import './section-17/styles.scss';
+@import './important.scss';
+@import './register.scss';
+@import './newFooterTwo.scss';
+@import './footerStyle.scss';
+
 
 img {
   display: block;
@@ -16,7 +56,7 @@ img {
 }
 
 .container {
-  max-width: 446px;
+  max-width: 448px;
   margin: 0 auto;
 }
 
@@ -25,7 +65,7 @@ img {
     max-width: 640px;
   }
 
-  
+
 }
 
 @media screen and (min-width: 1200px) {
@@ -33,3 +73,4 @@ img {
     max-width: 712px;
   }
 }
+

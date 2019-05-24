@@ -1,0 +1,202 @@
+.sec-12__box {
+  display: block;
+  width: 290px;
+  margin: 0 auto;
+}
+
+
+.record__course {
+  font-size: 18px;
+  text-align: center;
+  font-family: 'Acrom';
+  font-style: normal;
+  font-weight: 800;
+  text-transform: uppercase;
+  margin: 20px auto 34px;
+
+}
+
+.record__banner {
+  font-size: 13px;
+  font-family: 'Acrom';
+  font-style: normal;
+  font-weight: 500;
+  margin: 0 auto 46px;
+  padding-left: 42px;
+  position: relative;
+}
+
+.record__banner::before {
+  display: block;
+  content: '';
+  background-color: rgb(0, 0, 0);
+  width: 16px;
+  height: 4px;
+  position: absolute;
+  left: 14px;
+  top: 6px;
+}
+
+.marker {
+  background-color: #16ebfe;
+}
+// FOTO ALEX
+.photo__alex {
+  margin: 0 auto 38px;
+}
+
+.photo__img {
+  width: 100%;
+}
+
+// ABOUT ALEX
+.about__list {
+  list-style: square outside;
+  padding: 0 0 0 16px;
+  margin: 0 auto;
+}
+
+.about__link {
+  font-size: 14px;
+  font-family: "Acrom";
+  font-style: normal;
+  font-weight: 800;
+  text-transform: uppercase;
+  margin: 0 auto 8px;
+}
+
+.about__link-info {
+  font-size: 14px;
+  font-family: 'Acrom';
+  font-style: normal;
+  font-weight: 400;
+  margin: 0;
+  margin-bottom: 30px;
+}
+ 
+.about__link-info:last-child {
+  margin-bottom: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .sec-12__box {
+    width: 640px;
+    height: 330px;
+    position: relative;
+  }
+
+  .sec-12 {
+    height: 440px;
+    display: flex;
+    align-items: center;
+  }
+
+  .record {
+    width: 236px;
+    height: 134px;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
+  .record__course {
+    margin: 0 auto 20px;
+    font-size: 27px;
+    text-align: start;
+  }
+
+  .record__banner::before {
+    width: 29px;
+    left: 0;
+  }
+  
+  .record__banner {
+    padding-left: 44px;
+    font-size: 9px;
+    line-height: 1.5;
+    margin: 0;
+  }
+
+  .about__alex{
+    width: 236px;
+    position: absolute;
+    right: 0;
+    top: 156px;
+  }
+  
+  .about__link {
+    font-size: 9px;
+  }
+  
+  .about__link-info {
+    font-size: 8px;
+    margin: 0 auto;
+  }
+
+
+  .about__item:not(:last-child) {
+    margin-bottom: 14px;
+  }
+
+  .about__list {
+    padding-right: 30px;
+  }
+    
+  .photo__img {
+    width: 312px;
+    height: 330px;
+  } 
+
+  .photo__alex {
+    margin: 0 auto;
+  }
+}
+
+
+@media screen and (min-width: 1200px) {
+  .photo__img {
+    width: 348px;
+    height: 368px;
+  } 
+
+  .sec-12 {
+    height: 493px;
+  }
+
+  .sec-12__box {
+    height: 368px;
+    width: 712px;
+  }
+
+  .record__course {
+    font-size: 30px;
+  }
+
+  .record {
+    width: 264px;
+    height: 148px;
+  }
+
+  .record__banner {
+    font-size: 10px;
+    padding-left: 52px;
+  }
+
+  .record__banner::before {
+    width: 32px;
+  }
+
+  .about__link {
+    font-size: 10px;
+  }
+
+  .about__alex {
+    width: 264px;
+    bottom: 0;
+    top: 192px;
+  }
+
+  .about__list {
+    padding-right: 0;
+  }
+}
