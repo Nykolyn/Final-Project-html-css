@@ -1,0 +1,292 @@
+// * {
+//   outline: 1px solid green;
+// }
+
+.list {
+  margin: 0 auto;
+  list-style: none;
+}
+
+.link {
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.stepcourse__text {
+  font-family: 'Raleway';
+  font-weight: 800;
+}
+
+.stepcourse__text--orange {
+  font-family: 'Raleway';
+  font-weight: 500;
+  color: #ff6b08;
+  position: relative;
+}
+
+.stepcourse__text--orange::before {
+  content: '/';
+  color: #000000;
+  font-family: 'Raleway';
+  font-weight: 500;
+  font-size: 28px;
+  position: absolute;
+}
+
+.stepcourse__list {
+  counter-reset: my-counter;
+}
+
+.stepcourse__item {
+  counter-increment: my-counter;
+  position: relative;
+}
+
+.stepcourse__item::before {
+  @extend %default-counter;
+}
+
+.stepcourse__item-title {
+  font-family: 'Raleway';
+  font-weight: 700;
+}
+
+.stepcourse__item-text {
+  margin: 0;
+  font-family: 'Raleway';
+  color: #3f4144;
+}
+
+.stepcourse__button {
+  @extend %default-button-orange;
+}
+
+.stepcourse__button-link {
+  font-family: 'Raleway';
+  font-size: 11px;
+  line-height: 18px;
+  font-weight: 800;
+  color: #ffffff;
+}
+
+@media screen and (min-width: 480px) {
+  .stepcourse {
+    padding: 22px 0 45px 0;
+  }
+  .stepcourse__picture-block {
+    margin: 0 0 21px 0;
+  }
+  .stepcourse__title-block {
+    display: none;
+  }
+  .stepcourse__about {
+    margin: 0 0 46px 0;
+  }
+  .stepcourse__text {
+    margin: 0 0 32px 0;
+    padding: 0 76px;
+    font-size: 14px;
+  }
+  .stepcourse__text--orange {
+    margin: 0 0 32px 0;
+    padding: 0 63px;
+    font-size: 14px;
+  }
+  .stepcourse__text--orange::before {
+    left: 33px;
+    top: -2px;  
+  }
+  .stepcourse__list {
+    padding: 0 76px;
+  }
+  .stepcourse__item {
+    margin: 0 0 28px 0;
+    padding: 0 0 0 30px;
+  }
+  .stepcourse__item:last-child {
+    margin: 0;
+  }
+  .stepcourse__item-title {
+    margin: 0 0 10px 0;
+    font-size: 13px;
+    line-height: 21px;
+  }
+  .stepcourse__item-text {
+    font-size: 13px;
+    line-height: 21px;  
+  }
+  .stepcourse__button--margin {
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .stepcourse {
+    padding: 33px 0 57px 0;
+  }
+  .stepcourse__picture-block {
+    display: flex;
+    margin: 0 0 54px 0;
+  }
+  .stepcourse__picture {
+    margin: 0 54px 0 0;
+  }
+
+  .stepcourse__title-block {
+    display: block;
+    width: 248px;
+    height: 170px;
+  }
+  .stepcourse__title, .stepcourse__title-text {
+    margin: 0;
+    font-family: 'Raleway';
+  }
+  .stepcourse__title {
+    font-size: 27px;
+    line-height: 34px;
+    font-weight: 800;
+    text-transform: uppercase;
+    margin: 20px 0 22px 0;
+  }
+  .stepcourse__title-text {
+    font-size: 9px;
+    font-weight: 500;
+    line-height: 13px;
+    padding: 0 86px 0 46px;
+    position: relative;
+  }
+  .stepcourse__title-text::before {
+    content: '';
+    width: 28px;
+    height: 4px;
+    background-color: #000000;
+    position: absolute;
+    left: 0;
+    top: 8px;
+  }
+  .stepcourse__about {
+    margin: 0 0 14px 0;
+    display: flex;
+  }
+  .stepcourse__text {
+    display: block;
+    width: 204px;
+    height: 148px;
+    font-size: 11px;
+    margin: 0 32px 0 0;
+    padding: 0;
+  }
+  .stepcourse__text--orange {
+    display: block;
+    width: 158px;
+    font-size: 9px;
+    margin: 0;
+    padding: 8px 0 0 0;
+  }
+  .stepcourse__text--orange::before {
+    left: -26px;
+    top: 6px;
+    font-size: 22px;
+  }
+  .stepcourse__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0;
+  }
+  .stepcourse__item {
+    width: 150px;
+    height: 96px;
+    margin: 0 0 28px 0;
+  }
+  .stepcourse__item:nth-child(n+4) {
+    margin: 0;
+  }
+  .stepcourse__item::before {
+    transform: rotate(-90deg) translate(-19px, -46px);
+  }
+  .stepcourse__item-title {
+    font-size: 9px;
+    line-height: 12px;
+  }
+  .stepcourse__item-text {
+    font-size: 8px;
+    line-height: 12px;  
+  }
+  .stepcourse__page-bottom {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row-reverse;
+  }
+  .stepcourse__button {
+    width: 120px;
+    height: 28px;
+  }
+  .stepcourse__button--margin {
+    margin: 0 64px 0 0;
+  }
+  .stepcourse__button-link {
+    font-size: 6px;
+    line-height: 10px;
+  }   
+}
+@media screen and (min-width: 1200px) {
+  .stepcourse {
+    padding: 38px 0 63px 0;
+  }
+  .stepcourse__picture-block {
+    margin: 0 0 63px 0;
+  }
+  .stepcourse__picture {
+    margin: 0 60px 0 0;
+  }
+  .stepcourse__title-block {
+    width: 286px;
+    height: 188px;
+  }
+  .stepcourse__title {
+    font-size: 30px;
+    line-height: 38px;
+    font-weight: 800;
+    margin: 20px 0 28px 0;
+  }
+  .stepcourse__title-text {
+    font-size: 10px;
+    line-height: 15px;
+    padding: 0 98px 0 46px;
+  }
+  .stepcourse__text--orange {
+    display: block;
+    width: 158px;
+    font-size: 10px;
+    margin: 0;
+    padding: 7px 0 0 0;
+  }
+  .stepcourse__text--orange::before {
+    left: -32px;
+  }
+  .stepcourse__item {
+    width: 170px;
+    height: 96px;
+  }
+  .stepcourse__item-title {
+    font-size: 10px;
+    line-height: 13px;
+  }
+  .stepcourse__item-text {
+    font-size: 9px;
+    line-height: 13px;  
+  }
+  .stepcourse__button {
+    width: 132px;
+    height: 30px;
+  }
+  .stepcourse__button--margin {
+    margin: 0 72px 0 0;
+  }
+  .stepcourse__button-link {
+    font-size: 7px;
+    line-height: 11px;
+  }
+}
