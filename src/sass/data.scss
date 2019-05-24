@@ -1,0 +1,250 @@
+@font-face {
+    font-family: 'Acrom', sans-serif;
+    src: url(../fonts/)
+}
+
+
+.data {
+    padding: 36px 0px 56px 0px;
+    margin: 0px;
+    font-family: 'Acrom', sans-serif;
+    font-size: 14px;
+}
+//-----------TITLE------------
+
+.data__title {
+    width: 224px;
+    margin: 0 auto;
+    font-weight: 700;
+}
+
+.data__first-title{
+    margin: 0px;
+    margin-bottom: 40px;
+    padding: 0px;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 24px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.data__second-title {
+    margin: 0px;
+    margin-bottom: 44px;
+    padding: 0px;
+
+    font-size: 12px;
+    line-height: 15px;
+    font-weight: 300;
+    position: relative;
+}
+
+.data__second-title::before{
+    display: block;
+    content: '';
+    background-color: #000;
+    width: 18px;
+    height: 2px;
+    position: absolute;
+    top: 8px;
+    left: -40px;
+}
+
+//----------------FACTS----------------
+
+.data__facts-list{
+    margin: 0px;
+    padding: 0px;
+    padding-left: 56px;
+    list-style: none;
+}
+
+.facts-list__item{
+    position: relative;
+    width: 360px;
+}
+
+.facts-list__item::before {
+    display: block;
+    content: '';
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    top: 10px;
+    left: -24px;
+    background-color: $default-orange;
+}
+
+.facts-list__item:not(:last-child) {
+    margin-bottom: 25px;
+}
+
+.facts-list__item-title {
+    margin: 0px;
+    margin-bottom: 6px;
+    font-size: 23px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.facts-list__item-title--span{
+    font-size: 12px;
+}
+
+.facts-list__item-title-description{
+    margin: 0px;
+    margin-bottom: 12px;
+    line-height: 20px;
+}
+
+.facts-list__item-title-description--span{
+    background-color: $default-blue;
+    font-weight: 700;
+}
+
+.facts-list__item-text{
+    margin: 0px;
+}
+
+
+
+@media screen and (min-width: 768px) {
+    
+    .data{
+        display: flex;
+        justify-content: space-between;
+        padding-top: 60px;
+        padding-bottom: 56px;
+        background-image: url(../images/block-3/bgimg-768.png);
+        background-position: 420px 150px;
+        background-repeat: no-repeat;
+    }
+    
+//------------TITLE----------------
+
+    .data__title{
+        margin: 0px;
+        width: 190px;
+    }
+
+    .data__first-title{
+        font-weight: 600;
+        margin-bottom: 20px;
+        font-size: 27px;
+        line-height: 33px;
+        text-align: left;
+    }
+
+    .data__second-title{
+        width: 166px;
+        margin: 0px;
+        font-size: 9px;
+        line-height: 13px;
+        font-weight: 500;
+        padding-left: 46px;
+    }
+
+    .data__second-title::before{
+        left: 0px;
+    }
+
+    //------------FACTS-------------
+
+    .data__facts{
+        height: 190px;
+        width: 420px;
+    }
+
+    .data__facts-list{
+        padding: 0px;
+        display: flex;
+        flex-wrap: wrap;     
+    }
+
+    .facts-list__item{
+        width: 164px;
+        margin-bottom: 0px;
+        margin-right: 10px;
+    }
+
+    .facts-list__item::before{
+        display: none;
+    }
+
+    .facts-list__item-title{
+        font-size: 17px;
+        margin-bottom: 5px;
+    }
+
+    .facts-list__item-title--span{
+        font-size: 9px;
+    }
+
+    .facts-list__item--order1 {
+        order: 0;
+    }
+
+    .facts-list__item--order2 {
+        order: 3;
+    }
+
+    .facts-list__item--order3 {
+        order: 2;
+    }
+
+    .facts-list__item--order4 {
+        order: 1;
+    }
+
+    .facts-list__item-title-description{
+        font-size: 8px;
+        font-weight: 600;
+        line-height: 14px;
+        margin-bottom: 12px;
+    }
+
+    .facts-list__item-text{
+        font-size: 8px;
+        line-height: 12px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .data {
+        padding: 63px  0px;
+        background-position: 494px 140px;
+    }
+
+    //---------TITLE-------------
+
+    .data__title{
+        width: 235px;
+        padding: 0px 10px;
+    }
+
+    .data__first-title{
+        font-size: 30px;
+    }
+
+    .data__second-title{
+        font-size: 10px;
+        width: 200px;
+    }
+
+    //-------FACTS------------
+
+    .data__facts{
+        width: 470px;
+        padding: 0px 10px;
+        font-size: 9px;
+    }
+
+    .facts-list__item-title{
+        font-size: 18px;
+    }
+
+    .facts-list__item-title--span{
+        font-size: 10px;
+    }
+}
