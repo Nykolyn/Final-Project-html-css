@@ -46,9 +46,11 @@ p.title-info {
   color: #3f4144;
   vertical-align: middle;
 }
+
 div.img-2 {
   display: none;
 }
+
 p.title-info::before {
   content: '';
   position: absolute;
@@ -91,6 +93,7 @@ h3.intro-title {
   color: #ffffff;
   
 }
+
 .intro-title span{
   background-color: black;
 }
@@ -238,398 +241,251 @@ h2.current {
     max-width: 640px;
   }
 
+  div.section16 {
+    margin: 65px auto;
+    padding: 0 10px;
+  }
+
+  .intro img {
+    max-width: 275px;
+    margin-right: 50px;
+  }
   div.intro {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     flex-wrap: wrap;
-    height: 188px;
   }
-
-  img.intro-img {
-    margin: 0;
-    margin-bottom: 30px;
-  }
-
   h2.intro-title {
-    padding: 0;
-    margin: 0;
-    margin-bottom: 17px;
+    width: 213px;
     font-size: 27px;
     line-height: 34px;
-    text-align: center;
-    text-transform: uppercase;
+    font-family: "Acrom";
+    text-align: left;
   }
-  
-  p.title-info {
-    margin: 0 auto;
-    margin-bottom: 37px;
-    padding: 0px;
-    width: 215px;
-    height: 55px;
+  p.title-intro {
+    width: 154px;
+    margin-left: 30px;
     font-size: 9px;
     line-height: 14px;
     font-family: "Acrom";
-    font-weight: normal;
-    color: #3f4144;
-    vertical-align: middle;
   }
-  
   p.title-info::before {
-    content: "";
-    display: inline-block;
-    margin-right: 20px;
-    padding: 0;
-    width: 20px;
-    height: 2px;
-    color: black;
+    content: '';
+    top: 8px;
+    left: 0px;
+    width: 30px;
+    height: 3px;
   }
-
   div.p2 {
-    
-  }
-
-  img.img-2 {
-    display: block;
-    margin: 0;
-    padding: 0;
-    width: 223px;
-    height: 202px;
-  }
-
-  ul.intro-list {
-    display: inline-block;
-    height: 251px;
-    width: 306px;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
-  
-  li.intro-item {
-    display: inline-block;
-    height: 45px;
-    width: 306px;
-    margin: 0;
-    margin-bottom: 30px;
-    padding: 0;
-  }
-  
-  h3.intro-title {
-    margin: 0;
-    padding: 0;
-    display: block;
-    width: 96px;
-    height: 42px;
-    text-transform: uppercase;
-    font-size: 9px;
-    line-height: 15px;
-    color: #ffffff;
-    background-color: black;
-  }
-  
-  p.intro-text {
-    display: block;
-    width: 160px;
-    height: 42px;
-    margin: 0;
-    padding: 0;
-    font-size: 8px;
-    line-height: 12px;
-    font-family: "Acrom";
-    font-weight: normal;
-    color: #3f4144;
-  }
-
-  div.advantage {
     display: flex;
-    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-bottom: 55px;
   }
-
-
-  h2.advantage-title{
-    margin: 0;
-    margin-bottom: 30px;
-    margin-right: 70px;
-    padding: 0;
-    width: 114px;
-    height: 90px;
-    font-size: 9px;
-    line-height: 15px;
-    font-family: "Acrom";
-    font-weight: ExtraBold;
-    text-transform: uppercase;
+  .img-2 img {
+    display: block;
+    width: 225px;
+    height: 205px;
   }
-
-
-  ul.advantage-list {
+  
+  .intro-list {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: space-between;
     margin: 0;
     padding: 0;
-    width: 518px;
-    height: 176px;
-   
-  } 
-
-  li.advantage-item {
-    display: block;
-    padding: 0;
-    margin: 0;
-    margin-bottom: 27px;
-    margin-right: 20px;
-    width: 165px;
-    height: 70px;  
   }
-  
-  h3.item-title {
-    display: block;
-    width: 165px;
-    height: 30px;
-    margin: 0;
-    margin-bottom: 12px;
-    padding: 0;
-    text-transform: uppercase;
-    font-size: 10px;
-    line-height: 13px;
-    font-family: "Acrom";
-    font-weight: Bold;
+  .intro-item {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
   }
-  
-  p.item-text{
-    display: block;
-    margin: 0;
-    margin-bottom: 3px;
-    padding: 0;
-    width: 165px;
-    height: 85px;
-    font-size: 9px;
-    line-height: 13px;
-    font-family: "Acrom";
-    font-weight: normal;
-    color: #3f4144;
-  } 
 
-  h2.offer-title {
-    display: block;
+  .intro-item h3{
     font-size: 9px;
     line-height: 15px;
-    font-family: "Acrom";
-    font-weight: normal;    
-    color: black;
-    background-color: #46ebfe;
-  
-  }
-
-  h3.value {
+    width: 100px;
+    height: 48px;
     margin: 0;
-    margin-bottom: 30px;
     padding: 0;
-    display: inline-block;
-    text-transform: uppercase;
-    font-size: 9px;
-    line-height: 23px;
+    font-family: "Acrom";
+    font-weight: 900;
+
+  }
+  .intro-item p{
+    font-size: 8px;
+    line-height: 12px;
+    width: 159px;
+    height: 48px;
+    margin: 0;
+    padding: 0;
+    font-family: "Acrom";
+    font-weight: 400;
+  } 
+
+  div.advantage {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
   }
 
-}
+  .advantage h2 {
+    width: 109px;
+    height: 90px;
+    font-size: 9px;
+    line-height: 15px;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+  }
 
+  ul.advantage-list {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 530px;
+    margin: 0;
+    padding: 0;
+  }
+
+  li.advantage-item {
+    width: 130px;
+    height: 90px;
+    margin: 0;
+    margin-left: 20px;
+    padding: 0;
+  }
+  .advantage-list h3 { 
+    font-size: 9px;
+    line-height: 12px;
+    height: 25px;
+    width: 100px;
+    margin: 0;
+    padding: 0;
+    text-transform: none;
+
+  }
+  .advantage-list p {
+    font-size: 8px;
+    line-height: 12px;
+    height: 55px;
+    width: 127px; 
+    margin: 0;
+    padding: 0;
+  }
+  div.offer-section {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 140px;
+  }
+
+  .offer-section h2 {
+    width: 67px;
+    font-size: 8px;
+    line-height: 14px;
+    margin: 0;
+    padding: 0;
+  }
+  h2.old {
+    font-size: 8px;
+    line-height: 20px;
+  }
+  .current span {
+    font-size: 14px;
+    line-height: 17px;
+  }
+/*   h2.currenr {
+    display: block;
+    height: 18px;
+    width: 61px;
+  } */
+
+  
+}
 
 @media screen and (min-width: 1200px) {
   .container {
     max-width: 712px;
   }
-
-  div.intro {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
+  div.section16 {
+    margin: 65px auto;
+    padding: 0 10px;
+  }
+  .intro img {
+    max-width: 306px;
     height: 188px;
-  }
-
-  img.intro-img {
     margin: 0;
-    margin-bottom: 30px;
-  }
-
-  h2.intro-title {
+    margin-right: 60px;
+    margin-bottom: 55px;
     padding: 0;
-    margin: 0;
-    margin-bottom: 17px;
-    font-size: 18px;
-    line-height: 24px;
-    text-align: center;
-    text-transform: uppercase;
   }
   
-  p.title-info {
-    margin: 0 auto;
-    margin-bottom: 37px;
-    padding: 0px;
-    width: 215px;
-    height: 55px;
-    font-size: 14px;
-    line-height: 20px;
+  .intro-cont h2 {
+    width: 230px;
+    padding-top: 30px;
+    font-size: 30px;
+    line-height: 38px;
     font-family: "Acrom";
-    font-weight: normal;
-    color: #3f4144;
-    vertical-align: middle;
+    font-weight: medium;
   }
-  
-  p.title-info::before {
-    content: "";
-    display: inline-block;;
-    margin-right: 20px;
-    padding: 0;
-    width: 20px;
-    height: 2px;
-    color: black;
+  .intro-cont p {
+    font-size: 10px;
+    line-height: 15px;
+    font-family: "Acrom";
+    font-weight: medium;
   }
-
-  ul.intro-list {
-    display: flex;
-    height: 251px;
-    flex-direction: column;
-    flex-wrap: wrap;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
-  
-  li.intro-item {
-    align-items: center;
-    display: block;
-    height: 50px;
-    width: 306px;
-    margin: 0;
-    margin-bottom: 30px;
-    padding: 0;
-  }
-  
-  h3.intro-title {
-    margin: 0;
-    margin-right: 27px;
-    padding: 0;
-    display: inline-block;
-    width: 115px;
-    height: 50px;
-    text-transform: uppercase;
+  .intro-item h3 {
     font-size: 10px;
     line-height: 16px;
-    color: #ffffff;
-    background-color: black;
+    font-family: "Acrom";
+    font-weight: 800;
   }
-  
-  p.intro-text {
-    display: inline-block;
-    width: 185px;
-    height: 50px;
-    margin: 0;
-    padding: 0;
+  .intro-item p {
+    font-size: 9px;
+    line-height: 13px;
+    font-family: "Acrom";
+    font-weight: medium;
+  }
+  h2.advantage-title {
+    font-size: 10px;
+    line-height: 16px;
+    font-family: "Acrom";
+    font-weight: 900;
+  }
+  .advantage-item h3 {
+    font-size: 10px;
+    line-height: 13px;
+    font-family: "Acrom";
+    font-weight: bold;
+  }
+  .advantage-item p {
     font-size: 9px;
     line-height: 13px;
     font-family: "Acrom";
     font-weight: normal;
-    color: #3f4144;
   }
-
-  div.advantage {
-    display: flex;
-    justify-content: space-between;
-  }
-
-
-  h2.advantage-title{
-    margin: 0;
-    margin-bottom: 30px;
-    margin-right: 70px;
-    padding: 0;
-    width: 114px;
-    height: 90px;
-    font-size: 10px;
-    line-height: 16px;
-    font-family: "Acrom";
-    font-weight: ExtraBold;
-    text-transform: uppercase;
-  }
-
-
-  ul.advantage-list {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin: 0;
-    padding: 0;
-    width: 518px;
-    height: 176px;
-   
-  } 
-
-  li.advantage-item {
-    display: block;
-    padding: 0;
-    margin: 0;
-    margin-bottom: 27px;
-    margin-right: 20px;
-    width: 165px;
-    height: 70px;  
-  }
-  
-  h3.item-title {
-    display: block;
-    width: 165px;
-    height: 30px;
-    margin: 0;
-    margin-bottom: 12px;
-    padding: 0;
-    text-transform: uppercase;
-    font-size: 10px;
-    line-height: 13px;
-    font-family: "Acrom";
-    font-weight: Bold;
-  }
-  
-  p.item-text{
-    display: block;
-    margin: 0;
-    margin-bottom: 3px;
-    padding: 0;
-    width: 165px;
-    height: 85px;
-    font-size: 9px;
-    line-height: 13px;
-    font-family: "Acrom";
-    font-weight: normal;
-    color: #3f4144;
-  } 
-
   h2.offer-title {
-    display: inline-block;
     font-size: 9px;
     line-height: 15px;
     font-family: "Acrom";
-    font-weight: normal;    
-    color: black;
-    background-color: #46ebfe;
+    font-weight: normal;
   }
-  
-  h3.value {
-    margin: 0;
-    margin-bottom: 30px;
-    padding: 0;
-    display: inline-block;
-    text-transform: uppercase;
+  h2.old {
     font-size: 9px;
     line-height: 23px;
+    font-family: "Acrom";
+    font-weight: 900;
   }
-  
-}
-
-* {
-  box-sizing: border-box;
+  h2.current {
+    font-size: 9px;
+    line-height: 23px;
+    font-family: "Acrom";
+    font-weight: 900;
+  }
 }
  
 
-//b
-@import './header.scss';
